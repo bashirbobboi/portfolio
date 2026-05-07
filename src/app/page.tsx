@@ -15,7 +15,7 @@ export default function Home() {
             <RiGithubFill className="opacity-60" size={28} aria-hidden="true" />
             GitHub
           </Button>
-          <Button size="lg" className="bg-[#0077b5] text-white after:flex-1 hover:bg-[#005f8e] w-fit h-12 lg:h-14 px-6 lg:px-8 text-base lg:text-lg rounded-xl gap-3" nativeButton={false} render={<a href="https://linkedin.com/in/mohammed-bobboi" target="_blank" rel="noopener noreferrer" />}>
+          <Button size="lg" className="bg-[#0077b5] text-white after:flex-1 hover:bg-[#004471] w-fit h-12 lg:h-14 px-6 lg:px-8 text-base lg:text-lg rounded-xl gap-3" nativeButton={false} render={<a href="https://linkedin.com/in/mohammed-bobboi" target="_blank" rel="noopener noreferrer" />}>
             <RiLinkedinFill className="text-white" size={28} aria-hidden="true" />
             LinkedIn
           </Button>

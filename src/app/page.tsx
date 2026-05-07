@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { RiGithubFill, RiLinkedinFill } from "@remixicon/react";
+import { RadialNavWrapper } from "@/components/radial-nav-wrapper";
 
 export default function Home() {
   return (
-    <main className="flex flex-1 items-center justify-between px-[10%] bg-primary-bg">
+    <main className="flex flex-1 items-center justify-between px-[18%] bg-primary-bg">
       <div className="flex flex-col gap-12 max-w-3xl">
         <h1 className="font-primary text-primary-text text-5xl font-bold">Mohammed Bobboi is a Software Engineer based in London, England.</h1>
         <p className="font-secondary text-primary-text text-2xl"> He is a Computer Science Graduate from the University of Sheffield with 2+ years of experience in Software Development, AI/ML/GenAI and delivering scalable, business-focused solutions across fintech, startups and R&D environments.</p>
@@ -37,6 +38,9 @@ export default function Home() {
           alt="doodle"
           className="absolute -bottom-18 -right-26 w-80 h-80 object-cover rotate-180 z-10"
         />
+      </div>
+      <div className="fixed top-12 left-16 z-50">
+        <RadialNavWrapper />
       </div>
     </main>
   );

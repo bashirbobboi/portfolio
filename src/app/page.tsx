@@ -16,7 +16,7 @@ export default function Home() {
             </a>
           </Button>
           <Button size="lg" className="bg-[#0077b5] text-white after:flex-1 hover:bg-[#0077b5]/90 w-fit h-14 px-8 text-lg rounded-xl gap-3" asChild>
-            <a href="https://linkedin.com/in/bashirbobboi" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/mohammed-bobboi" target="_blank" rel="noopener noreferrer">
               <RiLinkedinFill className="text-white" size={34} aria-hidden="true" />
               LinkedIn
             </a>

@@ -9,17 +9,13 @@ export default function Home() {
         <h1 className="font-primary text-primary-text text-5xl font-bold">Mohammed Bobboi is a Software Engineer based in London, England.</h1>
         <p className="font-secondary text-primary-text text-2xl"> He is a Computer Science Graduate from the University of Sheffield with 2+ years of experience in Software Development, AI/ML/GenAI and delivering scalable, business-focused solutions across fintech, startups and R&D environments.</p>
         <div className="flex gap-4">
-          <Button size="lg" className="bg-[#333333] text-white after:flex-1 hover:bg-[#333333]/90 w-fit h-14 px-8 text-lg rounded-xl gap-3" asChild>
-            <a href="https://github.com/bashirbobboi" target="_blank" rel="noopener noreferrer">
-              <RiGithubFill className="opacity-60" size={34} aria-hidden="true" />
-              GitHub
-            </a>
+          <Button size="lg" className="bg-[#333333] text-white after:flex-1 hover:bg-[#333333]/90 w-fit h-14 px-8 text-lg rounded-xl gap-3" nativeButton={false} render={<a href="https://github.com/bashirbobboi" target="_blank" rel="noopener noreferrer" />}>
+            <RiGithubFill className="opacity-60" size={34} aria-hidden="true" />
+            GitHub
           </Button>
-          <Button size="lg" className="bg-[#0077b5] text-white after:flex-1 hover:bg-[#0077b5]/90 w-fit h-14 px-8 text-lg rounded-xl gap-3" asChild>
-            <a href="https://linkedin.com/in/mohammed-bobboi" target="_blank" rel="noopener noreferrer">
-              <RiLinkedinFill className="text-white" size={34} aria-hidden="true" />
-              LinkedIn
-            </a>
+          <Button size="lg" className="bg-[#0077b5] text-white after:flex-1 hover:bg-[#0077b5]/90 w-fit h-14 px-8 text-lg rounded-xl gap-3" nativeButton={false} render={<a href="https://linkedin.com/in/mohammed-bobboi" target="_blank" rel="noopener noreferrer" />}>
+            <RiLinkedinFill className="text-white" size={34} aria-hidden="true" />
+            LinkedIn
           </Button>
         </div>
       </div>

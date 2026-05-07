@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
-import { Viaoda_Libre } from "next/font/google";
+import { Viaoda_Libre, Geist } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const viaodaLibre = Viaoda_Libre({
   weight: "400",
@@ -34,7 +37,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${viaodaLibre.variable} ${openRunde.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", viaodaLibre.variable, openRunde.variable, "font-sans", geist.variable)}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

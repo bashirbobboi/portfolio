@@ -1,15 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Viaoda_Libre } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const viaodaLibre = Viaoda_Libre({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-viaoda-libre",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const openRunde = localFont({
+  src: [
+    { path: "./fonts/OpenRunde-Regular.woff2", weight: "400" },
+    { path: "./fonts/OpenRunde-Medium.woff2", weight: "500" },
+    { path: "./fonts/OpenRunde-Semibold.woff2", weight: "600" },
+    { path: "./fonts/OpenRunde-Bold.woff2", weight: "700" },
+  ],
+  variable: "--font-open-runde",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${viaodaLibre.variable} ${openRunde.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

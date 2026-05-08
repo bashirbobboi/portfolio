@@ -3,9 +3,8 @@ import { Button } from "@/components/ui/button";
 import { RiGithubFill, RiLinkedinFill } from "@remixicon/react";
 import { RadialNavWrapper } from "@/components/radial-nav-wrapper";
 import { MapPin, Calendar } from "lucide-react";
-import { TappableVideo } from "@/components/tappable-video";
 import { TechIcon } from "@/components/tech-icon";
-import { ButtonWithIcon } from "@/components/ui/button-with-icon";
+import { GithubChart } from "@/components/github-chart";
 
 export default function Home() {
   return (
@@ -232,85 +231,7 @@ export default function Home() {
     <section id="projects" className="flex items-center px-[8%] lg:px-[18%] pt-8 pb-16 bg-primary-bg">
       <div className="flex flex-col gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Projects</h2>
-        <div className="flex gap-10 items-start">
-          <TappableVideo src="/projects/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
-          <div className="flex flex-col gap-10 py-2">
-            <div className="flex items-center justify-between gap-4">
-              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Steeze Mobile App</h3>
-              <ButtonWithIcon label="Visit Website" href="https://www.steeze.ng/" />
-            </div>
-            <div className="flex items-center gap-3">
-              <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built with</p>
-              <div className="flex items-center group/stack">
-                <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack:rotate-0"><TechIcon src="/tech/reactnative.png" label="React Native" subtitle="Mobile Framework" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-50 rotate-[-3deg] group-hover/stack:rotate-0"><TechIcon src="/tech/expo.jpeg" label="Expo" subtitle="Mobile Platform" /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-30 rotate-[5deg] group-hover/stack:rotate-0"><TechIcon src="/tech/s3.png" label="AWS S3" subtitle="Cloud Storage" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-40 rotate-[2deg] group-hover/stack:rotate-0"><TechIcon src="/tech/supabase.jpeg" label="Supabase" subtitle="Backend-as-a-Service" /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-20 rotate-[-4deg] group-hover/stack:rotate-0"><TechIcon src="/tech/postgres.png" label="PostgreSQL" subtitle="Database" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-10 rotate-[3deg] group-hover/stack:rotate-0"><TechIcon src="/tech/resend.png" label="Resend" subtitle="Email API" blackBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-0 rotate-[-2deg] group-hover/stack:rotate-0"><TechIcon src="/tech/figma.png" label="Figma" subtitle="Design Tool" whiteBg /></div>
-              </div>
-            </div>
-            <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>A cross-platform mobile app built with <span className="font-semibold text-primary-text">React Native</span> and <span className="font-semibold text-primary-text">Expo</span>, enabling users to discover, share and track their favourite spots.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Integrated <span className="font-semibold text-primary-text">Supabase</span> for real-time database, authentication and row-level security across user profiles and content.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Used <span className="font-semibold text-primary-text">AWS S3</span> for scalable media storage, handling image uploads and retrieval for user-generated content.</span></li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="flex gap-10 items-start mt-8">
-          <div className="flex flex-col gap-10 py-2">
-            <div className="flex items-center justify-between gap-4">
-              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Dissertation</h3>
-              <ButtonWithIcon label="Visit Website" href="https://www.steeze.ng/" />
-            </div>
-            <div className="flex items-center gap-3">
-              <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built with</p>
-              <div className="flex items-center group/stack2">
-                <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack2:rotate-0"><TechIcon src="/tech/python.png" label="Python" subtitle="Programming Language" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-50 rotate-[-3deg] group-hover/stack2:rotate-0"><TechIcon src="/tech/pytest.png" label="Pytest" subtitle="Testing Framework" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-10 rotate-[3deg] group-hover/stack2:rotate-0"><TechIcon src="/tech/typer.png" label="Typer" subtitle="CLI Library" blackBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-40 rotate-[2deg] group-hover/stack2:rotate-0"><TechIcon src="/tech/scipy.svg" label="SciPy" subtitle="Scientific Library" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-30 rotate-[5deg] group-hover/stack2:rotate-0"><TechIcon src="/tech/numpy.svg" label="NumPy" subtitle="Numerical Library" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-20 rotate-[-4deg] group-hover/stack2:rotate-0"><TechIcon src="/tech/streamlit.png" label="Streamlit" subtitle="Web App Framework" whiteBg /></div>
-              </div>
-            </div>
-            <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Awarded a <span className="font-semibold text-primary-text">distinction</span> for final-year dissertation research on <span className="font-semibold text-primary-text">probabilistic bisimulation</span> and <span className="font-semibold text-primary-text">Wasserstein-based behavioural distances</span>.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Engineered a high-performance <span className="font-semibold text-primary-text">Python</span> processing algorithm translating complex mathematical theorems into functional code, using <span className="font-semibold text-primary-text">SciPy</span> optimisation techniques to improve solution efficiency by <span className="font-semibold text-primary-text">60–75%</span>.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Designed a comprehensive automated testing suite using <span className="font-semibold text-primary-text">Pytest</span>, authoring unit and integration tests to achieve over <span className="font-semibold text-primary-text">90% code coverage</span> and ensure algorithmic correctness and UI stability.</span></li>
-            </ul>
-          </div>
-          <TappableVideo src="/projects/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
-        </div>
-
-        <div className="flex gap-10 items-start mt-8">
-          <TappableVideo src="/projects/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
-          <div className="flex flex-col gap-10 py-2">
-            <div className="flex items-center justify-between gap-4">
-              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Elevator Pitch</h3>
-              <ButtonWithIcon label="View Codebase" href="https://github.com/bashirbobboi/elevator-pitch" />
-            </div>
-            <div className="flex items-center gap-3">
-              <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built with</p>
-              <div className="flex items-center group/stack3">
-                <div className="transition-all duration-300 z-70 rotate-[-6deg] group-hover/stack3:rotate-0"><TechIcon src="/tech/mongodb.png" label="MongoDB" subtitle="Database" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-60 rotate-[-3deg] group-hover/stack3:rotate-0"><TechIcon src="/tech/express.png" label="Express JS" subtitle="Web Framework" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-50 rotate-[2deg] group-hover/stack3:rotate-0"><TechIcon src="/tech/reactnative.png" label="React" subtitle="JavaScript Library" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-40 rotate-[5deg] group-hover/stack3:rotate-0"><TechIcon src="/tech/nodejs.png" label="Node JS" subtitle="JavaScript Runtime" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-30 rotate-[-4deg] group-hover/stack3:rotate-0"><TechIcon src="/tech/cloudinary.png" label="Cloudinary" subtitle="Media Platform" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-20 rotate-[3deg] group-hover/stack3:rotate-0"><TechIcon src="/tech/github.webp" label="GitHub" subtitle="Version Control" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-10 rotate-[-5deg] group-hover/stack3:rotate-0"><TechIcon src="/tech/vercel.jpg" label="Vercel" subtitle="Hosting Platform" /></div>
-              </div>
-            </div>
-            <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Built <span className="font-semibold text-primary-text">Elevator Pitch</span>, an open-source <span className="font-semibold text-primary-text">video CV platform</span> used by <span className="font-semibold text-primary-text">40+ users</span>, enabling candidates to embed <span className="font-semibold text-primary-text">90-second pitch videos</span> directly into job applications and personal CVs.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Developed the platform using the <span className="font-semibold text-primary-text">MERN stack</span> with <span className="font-semibold text-primary-text">Cloudinary</span>-based media storage to support video uploads, management, and delivery.</span></li>
-            </ul>
-          </div>
-        </div>
-
+        <GithubChart username="bashirbobboi" />
         <div className="flex flex-col gap-4">
           <div className="w-full h-64 lg:h-96 rounded-2xl border border-zinc-200 bg-white flex items-center justify-center overflow-hidden">
             <span className="font-secondary text-zinc-400 text-sm">Preview image (Steeze)</span>

@@ -457,9 +457,17 @@ export default function Home() {
               </a>
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
+                <div className="flex items-center group/stack9">
+                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack9:rotate-0"><TechIcon src="/nextjs.svg" label="Next JS" subtitle="React Framework" contain blackBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-50 rotate-[-3deg] group-hover/stack9:rotate-0"><TechIcon src="/awscognito.jpg" label="AWS Cognito" subtitle="Authentication" /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-40 rotate-[2deg] group-hover/stack9:rotate-0"><TechIcon src="/google.png" label="Google OAuth" subtitle="Authentication" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-30 rotate-[5deg] group-hover/stack9:rotate-0"><TechIcon src="/Jira.png" label="Jira" subtitle="Project Management" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-20 rotate-[-4deg] group-hover/stack9:rotate-0"><TechIcon src="/BitBucket.png" label="Bitbucket" subtitle="Version Control" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-10 rotate-[3deg] group-hover/stack9:rotate-0"><TechIcon src="/Docker.png" label="Docker" subtitle="Containerization" contain whiteBg /></div>
+                </div>
               </div>
             </div>
-            <p className="font-secondary text-zinc-500 text-sm lg:text-base">Description coming soon.</p>
+            <p className="font-secondary text-zinc-500 text-sm lg:text-base">Built and shipped frontend features for a wellness booking platform using <span className="font-semibold text-primary-text">Next.js</span>, contributing across the full feature lifecycle from design and implementation to deployment within a four-person <span className="font-semibold text-primary-text">Agile</span> team serving <span className="font-semibold text-primary-text">60+ active customers</span>. Implemented <span className="font-semibold text-primary-text">Google OAuth</span> authentication with <span className="font-semibold text-primary-text">AWS Cognito</span>, significantly improving account verification reliability while reducing manual onboarding issues and support intervention by an estimated <span className="font-semibold text-primary-text">70–80%</span>. Worked within bi-weekly Agile sprints, consistently managing and delivering <span className="font-semibold text-primary-text">10+ Jira tickets</span> per sprint in collaboration with designers and developers.</p>
           </div>
         </div>
 
@@ -469,7 +477,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between gap-4">
-              <a href="#" className="group/card10 flex items-center gap-1 no-underline">
+              <a href="https://wakamate.ng" target="_blank" rel="noopener noreferrer" className="group/card10 flex items-center gap-1 no-underline">
                 <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Wakamate — Get vetted artisans</h3>
                 <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card10:border-black group-hover/card10:text-black transition-all duration-300 shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>

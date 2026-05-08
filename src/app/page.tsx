@@ -143,10 +143,9 @@ export default function Home() {
             </div>
 
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-4">
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Contributed within a world-leading manufacturing research centre collaborating with industry leaders including <span className="font-semibold text-primary-text">Boeing</span>, <span className="font-semibold text-primary-text">Rolls-Royce</span> and <span className="font-semibold text-primary-text">Airbus</span>.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Selected as the <span className="font-semibold text-primary-text">first student</span> to participate in the centre&apos;s inaugural internship programme.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Built a full-stack device management web app on <span className="font-semibold text-primary-text">Ruby on Rails</span>, following <span className="font-semibold text-primary-text">MVC</span> design, <span className="font-semibold text-primary-text">PostgreSQL</span> database and <span className="font-semibold text-primary-text">HTML &amp; CSS</span>, saving <span className="font-semibold text-primary-text">£2,000+</span> annually on lost devices.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Used <span className="font-semibold text-primary-text">GitHub</span> for collaborative development with feature branching and pull requests; integrated automated testing workflows to maintain code quality and version control in a team of <span className="font-semibold text-primary-text">9 developers</span>.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Founded and led the development of <span className="font-semibold text-primary-text">Steeze</span>, a peer-to-peer fashion marketplace designed to make shopping for fashion convenient for buyers and sellers.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Built the mobile application using <span className="font-semibold text-primary-text">React Native</span>, creating a cross-platform experience focused on usability, performance, and modern UI design — now serving <span className="font-semibold text-primary-text">1,000+ users</span>.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Partnered with <span className="font-semibold text-primary-text">20+ fashion businesses</span> to list and sell their products on Steeze, expanding the platform&apos;s catalogue and driving seller-side growth.</span></li>
             </ul>
           </div>
         </div>
@@ -235,7 +234,7 @@ export default function Home() {
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Projects</h2>
         <div className="flex gap-10 items-start">
           <TappableVideo src="/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
-          <div className="flex flex-col gap-6 py-2">
+          <div className="flex flex-col gap-10 py-2">
             <div className="flex items-center justify-between gap-4">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Steeze Mobile App</h3>
               <ButtonWithIcon label="Visit Website" href="https://www.steeze.ng/" />

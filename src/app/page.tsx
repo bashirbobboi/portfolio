@@ -242,7 +242,12 @@ export default function Home() {
             </ul>
             <div className="flex items-center gap-2">
               <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Tech Stack</p>
-              <img src="/supabase.jpeg" alt="Supabase" className="w-10 h-10 rounded-sm object-cover" />
+              <div className="relative group">
+                <img src="/supabase.jpeg" alt="Supabase" className="w-10 h-10 rounded-sm object-cover" />
+                <div className="absolute -top-9 left-1/2 -translate-x-1/2 bg-zinc-800 text-white text-xs font-secondary px-3 py-1.5 rounded-full whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+                  Supabase
+                </div>
+              </div>
             </div>
           </div>
         </div>

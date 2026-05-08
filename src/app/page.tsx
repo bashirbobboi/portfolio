@@ -149,11 +149,6 @@ export default function Home() {
         </div>
 
         <div className="flex gap-6 items-stretch">
-          {/* Logo on left */}
-          <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
-            <img src="/amrc.png" alt="AMRC" className="w-full h-full object-contain object-top" />
-          </div>
-
           {/* Entry content */}
           <div className="flex flex-col flex-1">
             <div className="flex items-baseline justify-between">
@@ -172,6 +167,11 @@ export default function Home() {
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Built a full-stack device management web app on <span className="font-semibold text-primary-text">Ruby on Rails</span>, following <span className="font-semibold text-primary-text">MVC</span> design, <span className="font-semibold text-primary-text">PostgreSQL</span> database and <span className="font-semibold text-primary-text">HTML &amp; CSS</span>, saving <span className="font-semibold text-primary-text">£2,000+</span> annually on lost devices.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Used <span className="font-semibold text-primary-text">GitHub</span> for collaborative development with feature branching and pull requests; integrated automated testing workflows to maintain code quality and version control in a team of <span className="font-semibold text-primary-text">9 developers</span>.</span></li>
             </ul>
+          </div>
+
+          {/* Logo on right */}
+          <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
+            <img src="/amrc.png" alt="AMRC" className="w-full h-full object-contain object-top" />
           </div>
         </div>
       </div>

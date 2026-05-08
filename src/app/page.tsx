@@ -9,7 +9,7 @@ import { TechIcon } from "@/components/tech-icon";
 export default function Home() {
   return (
     <>
-    <main className="flex flex-1 items-center justify-between px-[8%] lg:px-[18%] pt-24 gap-8 bg-primary-bg">
+    <main id="home" className="flex flex-1 items-center justify-between px-[8%] lg:px-[18%] pt-24 gap-8 bg-primary-bg">
       <div className="flex flex-col gap-6 lg:gap-12 max-w-xl lg:max-w-3xl">
         <h1 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Mohammed Bobboi is a Software Engineer based in London, England.</h1>
         <p className="font-secondary text-primary-text text-base lg:text-xl text-left"> He is a Computer Science Graduate from the University of Sheffield with 2+ years of experience in Software Development, AI/ML/GenAI and delivering scalable, business-focused solutions across fintech, startups and R&D environments.</p>
@@ -236,22 +236,28 @@ export default function Home() {
           <TappableVideo src="/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
           <div className="flex flex-col gap-5 py-2">
             <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Steeze Mobile App</h3>
+            <div className="flex items-center gap-3">
+              <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built with</p>
+              <div className="flex items-center group/stack">
+                <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack:rotate-0"><TechIcon src="/reactnative.png" label="React Native" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-50 rotate-[-3deg] group-hover/stack:rotate-0"><TechIcon src="/expo.jpeg" label="Expo" /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-30 rotate-[5deg] group-hover/stack:rotate-0"><TechIcon src="/s3.png" label="AWS S3" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-40 rotate-[2deg] group-hover/stack:rotate-0"><TechIcon src="/supabase.jpeg" label="Supabase" /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-20 rotate-[-4deg] group-hover/stack:rotate-0"><TechIcon src="/postgres.png" label="PostgreSQL" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-10 rotate-[3deg] group-hover/stack:rotate-0"><TechIcon src="/resend.png" label="Resend" blackBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-0 rotate-[-2deg] group-hover/stack:rotate-0"><TechIcon src="/figma.png" label="Figma" whiteBg /></div>
+              </div>
+            </div>
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>A cross-platform mobile app built with <span className="font-semibold text-primary-text">React Native</span> and <span className="font-semibold text-primary-text">Expo</span>, enabling users to discover, share and track their favourite spots.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Integrated <span className="font-semibold text-primary-text">Supabase</span> for real-time database, authentication and row-level security across user profiles and content.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Used <span className="font-semibold text-primary-text">AWS S3</span> for scalable media storage, handling image uploads and retrieval for user-generated content.</span></li>
             </ul>
-            <div className="flex items-center gap-3">
-              <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">This is the Tech Stack I used</p>
-                <TechIcon src="/reactnative.png" label="React Native" contain />
-                <TechIcon src="/expo.jpeg" label="Expo" />
-                <TechIcon src="/supabase.jpeg" label="Supabase" />
-                <TechIcon src="/s3.png" label="AWS S3" />
-                <TechIcon src="/postgres.png" label="PostgreSQL" whiteBg />
-                <TechIcon src="/resend.png" label="Resend" blackBg />
-            </div>
           </div>
         </div>
+        <p className="font-secondary text-zinc-500 text-xl lg:text-3xl text-center tracking-tight">
+          More Projects on <a href="#home" className="text-blue-500 hover:text-blue-600 transition-colors">GitHub</a>
+        </p>
       </div>
     </section>
     </>

@@ -277,9 +277,9 @@ export default function Home() {
               </div>
             </div>
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>A cross-platform mobile app built with <span className="font-semibold text-primary-text">React Native</span> and <span className="font-semibold text-primary-text">Expo</span>, enabling users to discover, share and track their favourite spots.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Integrated <span className="font-semibold text-primary-text">Supabase</span> for real-time database, authentication and row-level security across user profiles and content.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Used <span className="font-semibold text-primary-text">AWS S3</span> for scalable media storage, handling image uploads and retrieval for user-generated content.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Awarded a <span className="font-semibold text-primary-text">distinction</span> for final-year dissertation research on <span className="font-semibold text-primary-text">probabilistic bisimulation</span> and <span className="font-semibold text-primary-text">Wasserstein-based behavioural distances</span>.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Engineered a high-performance <span className="font-semibold text-primary-text">Python</span> processing algorithm translating complex mathematical theorems into functional code, using <span className="font-semibold text-primary-text">SciPy</span> optimisation techniques to improve solution efficiency by <span className="font-semibold text-primary-text">60–75%</span>.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Designed a comprehensive automated testing suite using <span className="font-semibold text-primary-text">Pytest</span>, authoring unit and integration tests to achieve over <span className="font-semibold text-primary-text">90% code coverage</span> and ensure algorithmic correctness and UI stability.</span></li>
             </ul>
           </div>
           <TappableVideo src="/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
@@ -290,7 +290,7 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-2">
             <div className="flex items-center justify-between gap-4">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Elevator Pitch</h3>
-              <ButtonWithIcon label="Visit Website" href="https://www.steeze.ng/" />
+              <ButtonWithIcon label="View Codebase" href="https://github.com/bashirbobboi/elevator-pitch" />
             </div>
             <div className="flex items-center gap-3">
               <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built with</p>
@@ -305,9 +305,8 @@ export default function Home() {
               </div>
             </div>
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>A cross-platform mobile app built with <span className="font-semibold text-primary-text">React Native</span> and <span className="font-semibold text-primary-text">Expo</span>, enabling users to discover, share and track their favourite spots.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Integrated <span className="font-semibold text-primary-text">Supabase</span> for real-time database, authentication and row-level security across user profiles and content.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Used <span className="font-semibold text-primary-text">AWS S3</span> for scalable media storage, handling image uploads and retrieval for user-generated content.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Built <span className="font-semibold text-primary-text">Elevator Pitch</span>, an open-source <span className="font-semibold text-primary-text">video CV platform</span> used by <span className="font-semibold text-primary-text">40+ users</span>, enabling candidates to embed <span className="font-semibold text-primary-text">90-second pitch videos</span> directly into job applications and personal CVs.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Developed the platform using the <span className="font-semibold text-primary-text">MERN stack</span> with <span className="font-semibold text-primary-text">Cloudinary</span>-based media storage to support video uploads, management, and delivery.</span></li>
             </ul>
           </div>
         </div>

@@ -311,6 +311,92 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="flex flex-col gap-4">
+          <div className="w-full h-64 lg:h-96 rounded-2xl border border-zinc-200 bg-white flex items-center justify-center overflow-hidden">
+            <span className="font-secondary text-zinc-400 text-sm">Preview image (Steeze)</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="flex items-center justify-between gap-4">
+              <a href="https://www.steeze.ng/" target="_blank" rel="noopener noreferrer" className="group/card6 flex items-center gap-1 no-underline">
+                <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Steeze</h3>
+                <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card6:border-black group-hover/card6:text-black transition-all duration-300 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+              </a>
+              <div className="flex items-center gap-3 shrink-0">
+                <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
+                <div className="flex items-center group/stack6">
+                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack6:rotate-0"><TechIcon src="/reactnative.png" label="React Native" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-50 rotate-[-3deg] group-hover/stack6:rotate-0"><TechIcon src="/expo.jpeg" label="Expo" /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-30 rotate-[5deg] group-hover/stack6:rotate-0"><TechIcon src="/s3.png" label="AWS S3" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-40 rotate-[2deg] group-hover/stack6:rotate-0"><TechIcon src="/supabase.jpeg" label="Supabase" /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-20 rotate-[-4deg] group-hover/stack6:rotate-0"><TechIcon src="/postgres.png" label="PostgreSQL" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-10 rotate-[3deg] group-hover/stack6:rotate-0"><TechIcon src="/resend.png" label="Resend" blackBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-0 rotate-[-2deg] group-hover/stack6:rotate-0"><TechIcon src="/figma.png" label="Figma" whiteBg /></div>
+                </div>
+              </div>
+            </div>
+            <p className="font-secondary text-zinc-500 text-sm lg:text-base">Developed a cross-platform mobile application using <span className="font-semibold text-primary-text">React Native</span> and <span className="font-semibold text-primary-text">Expo</span>, backed by a <span className="font-semibold text-primary-text">PostgreSQL</span> database with <span className="font-semibold text-primary-text">Supabase</span> as the backend-as-a-service layer, currently supporting over <span className="font-semibold text-primary-text">1,000 users</span>. Designed and translated complex user requirements into an intuitive mobile experience by producing wireframes and UI flows for <span className="font-semibold text-primary-text">26+ screens</span> in <span className="font-semibold text-primary-text">Figma</span>, while also integrating <span className="font-semibold text-primary-text">AWS S3</span> object storage via Supabase for secure file handling and <span className="font-semibold text-primary-text">Resend</span> for scalable email delivery.</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <div className="w-full h-64 lg:h-96 rounded-2xl border border-zinc-200 bg-white flex items-center justify-center overflow-hidden">
+            <span className="font-secondary text-zinc-400 text-sm">Preview image</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="flex items-center justify-between gap-4">
+              <a href="https://github.com/bashirbobboi/Bisimulation" target="_blank" rel="noopener noreferrer" className="group/card5 flex items-center gap-1 no-underline">
+                <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Dissertation</h3>
+                <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card5:border-black group-hover/card5:text-black transition-all duration-300 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+              </a>
+              <div className="flex items-center gap-3 shrink-0">
+                <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
+                <div className="flex items-center group/stack5">
+                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack5:rotate-0"><TechIcon src="/python.png" label="Python" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-50 rotate-[-3deg] group-hover/stack5:rotate-0"><TechIcon src="/pytest.png" label="Pytest" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-10 rotate-[3deg] group-hover/stack5:rotate-0"><TechIcon src="/typer.png" label="Typer" blackBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-40 rotate-[2deg] group-hover/stack5:rotate-0"><TechIcon src="/scipy.svg" label="SciPy" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-30 rotate-[5deg] group-hover/stack5:rotate-0"><TechIcon src="/numpy.svg" label="NumPy" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-20 rotate-[-4deg] group-hover/stack5:rotate-0"><TechIcon src="/Streamlit.png" label="Streamlit" whiteBg /></div>
+                </div>
+              </div>
+            </div>
+            <p className="font-secondary text-zinc-500 text-sm lg:text-base">I was awarded a <span className="font-semibold text-primary-text">distinction</span> for my final-year dissertation, which explored <span className="font-semibold text-primary-text">probabilistic bisimulation</span> and <span className="font-semibold text-primary-text">Wasserstein-based behavioural distances</span>. The project involved interpreting complex mathematical theorems and translating them into a high-performance <span className="font-semibold text-primary-text">Python</span> algorithm, using <span className="font-semibold text-primary-text">SciPy</span> optimisation techniques to improve computational efficiency by <span className="font-semibold text-primary-text">60–75%</span>. To ensure reliability and correctness, I also designed a comprehensive <span className="font-semibold text-primary-text">Pytest</span> testing suite with unit and integration tests, achieving over <span className="font-semibold text-primary-text">90% code coverage</span> while maintaining algorithmic accuracy and UI stability.</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <div className="w-full h-64 lg:h-96 rounded-2xl border border-zinc-200 bg-white flex items-center justify-center overflow-hidden">
+            <span className="font-secondary text-zinc-400 text-sm">Preview image</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="flex items-center justify-between gap-4">
+              <a href="https://github.com/bashirbobboi/elevator-pitch" target="_blank" rel="noopener noreferrer" className="group/card flex items-center gap-1 no-underline">
+                <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Elevator Pitch</h3>
+                <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card:border-black group-hover/card:text-black transition-all duration-300 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+              </a>
+              <div className="flex items-center gap-3 shrink-0">
+                <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
+                <div className="flex items-center group/stack4">
+                  <div className="transition-all duration-300 z-70 rotate-[-6deg] group-hover/stack4:rotate-0"><TechIcon src="/mongodb.png" label="MongoDB" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-60 rotate-[-3deg] group-hover/stack4:rotate-0"><TechIcon src="/Express.png" label="Express JS" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-50 rotate-[2deg] group-hover/stack4:rotate-0"><TechIcon src="/reactnative.png" label="React" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-40 rotate-[5deg] group-hover/stack4:rotate-0"><TechIcon src="/nodejs.png" label="Node JS" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-30 rotate-[-4deg] group-hover/stack4:rotate-0"><TechIcon src="/cloudinary.PNG" label="Cloudinary" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-20 rotate-[3deg] group-hover/stack4:rotate-0"><TechIcon src="/github.webp" label="GitHub" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-10 rotate-[-5deg] group-hover/stack4:rotate-0"><TechIcon src="/vercel.jpg" label="Vercel" /></div>
+                </div>
+              </div>
+            </div>
+            <p className="font-secondary text-zinc-500 text-sm lg:text-base"><span className="font-semibold text-primary-text">Elevator Pitch</span> is an open-source <span className="font-semibold text-primary-text">video CV platform</span> used by <span className="font-semibold text-primary-text">40+ users</span>, enabling candidates to embed <span className="font-semibold text-primary-text">90-second pitch videos</span> directly into job applications and personal CVs. Built using the <span className="font-semibold text-primary-text">MERN stack</span> with <span className="font-semibold text-primary-text">Cloudinary</span>-based media storage, supporting seamless video upload, management, and delivery.</p>
+          </div>
+        </div>
+
         <p className="font-secondary text-zinc-500 text-lg lg:text-2xl text-center tracking-tight">
           More Projects on <a href="#home" className="text-blue-500 hover:text-blue-600 transition-colors">GitHub</a>
         </p>

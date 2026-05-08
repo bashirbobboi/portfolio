@@ -5,6 +5,7 @@ import { RadialNavWrapper } from "@/components/radial-nav-wrapper";
 import { MapPin, Calendar } from "lucide-react";
 import { TappableVideo } from "@/components/tappable-video";
 import { TechIcon } from "@/components/tech-icon";
+import { ButtonWithIcon } from "@/components/ui/button-with-icon";
 
 export default function Home() {
   return (
@@ -234,8 +235,11 @@ export default function Home() {
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Projects</h2>
         <div className="flex gap-10 items-start">
           <TappableVideo src="/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
-          <div className="flex flex-col gap-5 py-2">
-            <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Steeze Mobile App</h3>
+          <div className="flex flex-col gap-6 py-2">
+            <div className="flex items-center justify-between gap-4">
+              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Steeze Mobile App</h3>
+              <ButtonWithIcon label="Visit Website" href="https://www.steeze.ng/" />
+            </div>
             <div className="flex items-center gap-3">
               <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built with</p>
               <div className="flex items-center group/stack">

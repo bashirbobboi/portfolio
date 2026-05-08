@@ -242,13 +242,13 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built with</p>
               <div className="flex items-center group/stack">
-                <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack:rotate-0"><TechIcon src="/reactnative.png" label="React Native" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-50 rotate-[-3deg] group-hover/stack:rotate-0"><TechIcon src="/expo.jpeg" label="Expo" /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-30 rotate-[5deg] group-hover/stack:rotate-0"><TechIcon src="/s3.png" label="AWS S3" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-40 rotate-[2deg] group-hover/stack:rotate-0"><TechIcon src="/supabase.jpeg" label="Supabase" /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-20 rotate-[-4deg] group-hover/stack:rotate-0"><TechIcon src="/postgres.png" label="PostgreSQL" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-10 rotate-[3deg] group-hover/stack:rotate-0"><TechIcon src="/resend.png" label="Resend" blackBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-0 rotate-[-2deg] group-hover/stack:rotate-0"><TechIcon src="/figma.png" label="Figma" whiteBg /></div>
+                <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack:rotate-0"><TechIcon src="/reactnative.png" label="React Native" subtitle="Mobile Framework" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-50 rotate-[-3deg] group-hover/stack:rotate-0"><TechIcon src="/expo.jpeg" label="Expo" subtitle="Mobile Platform" /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-30 rotate-[5deg] group-hover/stack:rotate-0"><TechIcon src="/s3.png" label="AWS S3" subtitle="Cloud Storage" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-40 rotate-[2deg] group-hover/stack:rotate-0"><TechIcon src="/supabase.jpeg" label="Supabase" subtitle="Backend-as-a-Service" /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-20 rotate-[-4deg] group-hover/stack:rotate-0"><TechIcon src="/postgres.png" label="PostgreSQL" subtitle="Database" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-10 rotate-[3deg] group-hover/stack:rotate-0"><TechIcon src="/resend.png" label="Resend" subtitle="Email API" blackBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-0 rotate-[-2deg] group-hover/stack:rotate-0"><TechIcon src="/figma.png" label="Figma" subtitle="Design Tool" whiteBg /></div>
               </div>
             </div>
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
@@ -268,12 +268,12 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built with</p>
               <div className="flex items-center group/stack2">
-                <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack2:rotate-0"><TechIcon src="/python.png" label="Python" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-50 rotate-[-3deg] group-hover/stack2:rotate-0"><TechIcon src="/pytest.png" label="Pytest" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-10 rotate-[3deg] group-hover/stack2:rotate-0"><TechIcon src="/typer.png" label="Typer" blackBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-40 rotate-[2deg] group-hover/stack2:rotate-0"><TechIcon src="/scipy.svg" label="SciPy" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-30 rotate-[5deg] group-hover/stack2:rotate-0"><TechIcon src="/numpy.svg" label="NumPy" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-20 rotate-[-4deg] group-hover/stack2:rotate-0"><TechIcon src="/Streamlit.png" label="Streamlit" whiteBg /></div>
+                <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack2:rotate-0"><TechIcon src="/python.png" label="Python" subtitle="Programming Language" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-50 rotate-[-3deg] group-hover/stack2:rotate-0"><TechIcon src="/pytest.png" label="Pytest" subtitle="Testing Framework" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-10 rotate-[3deg] group-hover/stack2:rotate-0"><TechIcon src="/typer.png" label="Typer" subtitle="CLI Library" blackBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-40 rotate-[2deg] group-hover/stack2:rotate-0"><TechIcon src="/scipy.svg" label="SciPy" subtitle="Scientific Library" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-30 rotate-[5deg] group-hover/stack2:rotate-0"><TechIcon src="/numpy.svg" label="NumPy" subtitle="Numerical Library" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-20 rotate-[-4deg] group-hover/stack2:rotate-0"><TechIcon src="/Streamlit.png" label="Streamlit" subtitle="Web App Framework" whiteBg /></div>
               </div>
             </div>
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
@@ -295,13 +295,13 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built with</p>
               <div className="flex items-center group/stack3">
-                <div className="transition-all duration-300 z-70 rotate-[-6deg] group-hover/stack3:rotate-0"><TechIcon src="/mongodb.png" label="MongoDB" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-60 rotate-[-3deg] group-hover/stack3:rotate-0"><TechIcon src="/Express.png" label="Express JS" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-50 rotate-[2deg] group-hover/stack3:rotate-0"><TechIcon src="/reactnative.png" label="React" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-40 rotate-[5deg] group-hover/stack3:rotate-0"><TechIcon src="/nodejs.png" label="Node JS" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-30 rotate-[-4deg] group-hover/stack3:rotate-0"><TechIcon src="/cloudinary.PNG" label="Cloudinary" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-20 rotate-[3deg] group-hover/stack3:rotate-0"><TechIcon src="/github.webp" label="GitHub" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-10 rotate-[-5deg] group-hover/stack3:rotate-0"><TechIcon src="/vercel.jpg" label="Vercel" /></div>
+                <div className="transition-all duration-300 z-70 rotate-[-6deg] group-hover/stack3:rotate-0"><TechIcon src="/mongodb.png" label="MongoDB" subtitle="Database" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-60 rotate-[-3deg] group-hover/stack3:rotate-0"><TechIcon src="/Express.png" label="Express JS" subtitle="Web Framework" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-50 rotate-[2deg] group-hover/stack3:rotate-0"><TechIcon src="/reactnative.png" label="React" subtitle="JavaScript Library" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-40 rotate-[5deg] group-hover/stack3:rotate-0"><TechIcon src="/nodejs.png" label="Node JS" subtitle="JavaScript Runtime" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-30 rotate-[-4deg] group-hover/stack3:rotate-0"><TechIcon src="/cloudinary.PNG" label="Cloudinary" subtitle="Media Platform" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-20 rotate-[3deg] group-hover/stack3:rotate-0"><TechIcon src="/github.webp" label="GitHub" subtitle="Version Control" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-10 rotate-[-5deg] group-hover/stack3:rotate-0"><TechIcon src="/vercel.jpg" label="Vercel" subtitle="Hosting Platform" /></div>
               </div>
             </div>
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
@@ -326,13 +326,13 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <div className="flex items-center group/stack6">
-                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack6:rotate-0"><TechIcon src="/reactnative.png" label="React Native" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-50 rotate-[-3deg] group-hover/stack6:rotate-0"><TechIcon src="/expo.jpeg" label="Expo" /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-30 rotate-[5deg] group-hover/stack6:rotate-0"><TechIcon src="/s3.png" label="AWS S3" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-40 rotate-[2deg] group-hover/stack6:rotate-0"><TechIcon src="/supabase.jpeg" label="Supabase" /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-20 rotate-[-4deg] group-hover/stack6:rotate-0"><TechIcon src="/postgres.png" label="PostgreSQL" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-10 rotate-[3deg] group-hover/stack6:rotate-0"><TechIcon src="/resend.png" label="Resend" blackBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-0 rotate-[-2deg] group-hover/stack6:rotate-0"><TechIcon src="/figma.png" label="Figma" whiteBg /></div>
+                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack6:rotate-0"><TechIcon src="/reactnative.png" label="React Native" subtitle="Mobile Framework" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-50 rotate-[-3deg] group-hover/stack6:rotate-0"><TechIcon src="/expo.jpeg" label="Expo" subtitle="Mobile Platform" /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-30 rotate-[5deg] group-hover/stack6:rotate-0"><TechIcon src="/s3.png" label="AWS S3" subtitle="Cloud Storage" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-40 rotate-[2deg] group-hover/stack6:rotate-0"><TechIcon src="/supabase.jpeg" label="Supabase" subtitle="Backend-as-a-Service" /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-20 rotate-[-4deg] group-hover/stack6:rotate-0"><TechIcon src="/postgres.png" label="PostgreSQL" subtitle="Database" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-10 rotate-[3deg] group-hover/stack6:rotate-0"><TechIcon src="/resend.png" label="Resend" subtitle="Email API" blackBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-0 rotate-[-2deg] group-hover/stack6:rotate-0"><TechIcon src="/figma.png" label="Figma" subtitle="Design Tool" whiteBg /></div>
                 </div>
               </div>
             </div>
@@ -355,16 +355,16 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <div className="flex items-center group/stack5">
-                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack5:rotate-0"><TechIcon src="/python.png" label="Python" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-50 rotate-[-3deg] group-hover/stack5:rotate-0"><TechIcon src="/pytest.png" label="Pytest" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-10 rotate-[3deg] group-hover/stack5:rotate-0"><TechIcon src="/typer.png" label="Typer" blackBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-40 rotate-[2deg] group-hover/stack5:rotate-0"><TechIcon src="/scipy.svg" label="SciPy" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-30 rotate-[5deg] group-hover/stack5:rotate-0"><TechIcon src="/numpy.svg" label="NumPy" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-20 rotate-[-4deg] group-hover/stack5:rotate-0"><TechIcon src="/Streamlit.png" label="Streamlit" whiteBg /></div>
+                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack5:rotate-0"><TechIcon src="/python.png" label="Python" subtitle="Programming Language" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-50 rotate-[-3deg] group-hover/stack5:rotate-0"><TechIcon src="/pytest.png" label="Pytest" subtitle="Testing Framework" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-10 rotate-[3deg] group-hover/stack5:rotate-0"><TechIcon src="/typer.png" label="Typer" subtitle="CLI Library" blackBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-40 rotate-[2deg] group-hover/stack5:rotate-0"><TechIcon src="/scipy.svg" label="SciPy" subtitle="Scientific Library" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-30 rotate-[5deg] group-hover/stack5:rotate-0"><TechIcon src="/numpy.svg" label="NumPy" subtitle="Numerical Library" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-20 rotate-[-4deg] group-hover/stack5:rotate-0"><TechIcon src="/Streamlit.png" label="Streamlit" subtitle="Web App Framework" whiteBg /></div>
                 </div>
               </div>
             </div>
-            <p className="font-secondary text-zinc-500 text-sm lg:text-base">I was awarded a <span className="font-semibold text-primary-text">distinction</span> for my final-year dissertation, which explored <span className="font-semibold text-primary-text">probabilistic bisimulation</span> and <span className="font-semibold text-primary-text">Wasserstein-based behavioural distances</span>. The project involved interpreting complex mathematical theorems and translating them into a high-performance <span className="font-semibold text-primary-text">Python</span> algorithm, using <span className="font-semibold text-primary-text">SciPy</span> optimisation techniques to improve computational efficiency by <span className="font-semibold text-primary-text">60–75%</span>. To ensure reliability and correctness, I also designed a comprehensive <span className="font-semibold text-primary-text">Pytest</span> testing suite with unit and integration tests, achieving over <span className="font-semibold text-primary-text">90% code coverage</span> while maintaining algorithmic accuracy and UI stability.</p>
+            <p className="font-secondary text-zinc-500 text-sm lg:text-base">I was awarded a <span className="font-semibold text-primary-text">distinction</span> for my final-year dissertation, which explored <span className="font-semibold text-primary-text">probabilistic bisimulation</span> and <span className="font-semibold text-primary-text">Wasserstein-based behavioural distances</span>. The project involved interpreting complex mathematical theorems and translating them into a high-performance <span className="font-semibold text-primary-text">Python</span> algorithm, leveraging <span className="font-semibold text-primary-text">SciPy</span> optimisation techniques to improve computational efficiency by <span className="font-semibold text-primary-text">60–75%</span>. I also developed both a command-line interface using <span className="font-semibold text-primary-text">Typer</span> and an interactive GUI with <span className="font-semibold text-primary-text">Streamlit</span> to make the system more accessible for simulation and analysis. To ensure reliability and correctness, I designed a comprehensive <span className="font-semibold text-primary-text">Pytest</span> testing suite with unit and integration tests, achieving over <span className="font-semibold text-primary-text">90% code coverage</span> while maintaining algorithmic accuracy and UI stability.</p>
           </div>
         </div>
 
@@ -383,17 +383,103 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <div className="flex items-center group/stack4">
-                  <div className="transition-all duration-300 z-70 rotate-[-6deg] group-hover/stack4:rotate-0"><TechIcon src="/mongodb.png" label="MongoDB" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-60 rotate-[-3deg] group-hover/stack4:rotate-0"><TechIcon src="/Express.png" label="Express JS" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-50 rotate-[2deg] group-hover/stack4:rotate-0"><TechIcon src="/reactnative.png" label="React" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-40 rotate-[5deg] group-hover/stack4:rotate-0"><TechIcon src="/nodejs.png" label="Node JS" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-30 rotate-[-4deg] group-hover/stack4:rotate-0"><TechIcon src="/cloudinary.PNG" label="Cloudinary" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-20 rotate-[3deg] group-hover/stack4:rotate-0"><TechIcon src="/github.webp" label="GitHub" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-10 rotate-[-5deg] group-hover/stack4:rotate-0"><TechIcon src="/vercel.jpg" label="Vercel" /></div>
+                  <div className="transition-all duration-300 z-70 rotate-[-6deg] group-hover/stack4:rotate-0"><TechIcon src="/mongodb.png" label="MongoDB" subtitle="Database" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-60 rotate-[-3deg] group-hover/stack4:rotate-0"><TechIcon src="/Express.png" label="Express JS" subtitle="Web Framework" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-50 rotate-[2deg] group-hover/stack4:rotate-0"><TechIcon src="/reactnative.png" label="React" subtitle="JavaScript Library" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-40 rotate-[5deg] group-hover/stack4:rotate-0"><TechIcon src="/nodejs.png" label="Node JS" subtitle="JavaScript Runtime" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-30 rotate-[-4deg] group-hover/stack4:rotate-0"><TechIcon src="/cloudinary.PNG" label="Cloudinary" subtitle="Media Platform" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-20 rotate-[3deg] group-hover/stack4:rotate-0"><TechIcon src="/github.webp" label="GitHub" subtitle="Version Control" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-10 rotate-[-5deg] group-hover/stack4:rotate-0"><TechIcon src="/vercel.jpg" label="Vercel" subtitle="Hosting Platform" /></div>
                 </div>
               </div>
             </div>
             <p className="font-secondary text-zinc-500 text-sm lg:text-base"><span className="font-semibold text-primary-text">Elevator Pitch</span> is an open-source <span className="font-semibold text-primary-text">video CV platform</span> used by <span className="font-semibold text-primary-text">40+ users</span>, enabling candidates to embed <span className="font-semibold text-primary-text">90-second pitch videos</span> directly into job applications and personal CVs. Built using the <span className="font-semibold text-primary-text">MERN stack</span> with <span className="font-semibold text-primary-text">Cloudinary</span>-based media storage, supporting seamless video upload, management, and delivery.</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <div className="w-full h-64 lg:h-96 rounded-2xl border border-zinc-200 bg-white flex items-center justify-center overflow-hidden">
+            <span className="font-secondary text-zinc-400 text-sm">Preview image</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="flex items-center justify-between gap-4">
+              <a href="https://binaniair.com" target="_blank" rel="noopener noreferrer" className="group/card7 flex items-center gap-1 no-underline">
+                <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Binani Air</h3>
+                <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card7:border-black group-hover/card7:text-black transition-all duration-300 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+              </a>
+              <div className="flex items-center gap-3 shrink-0">
+                <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
+                <div className="flex items-center group/stack7">
+                  <div className="transition-all duration-300 z-40 rotate-[-6deg] group-hover/stack7:rotate-0"><TechIcon src="/javascript.png" label="JavaScript" subtitle="Programming Language" bg="bg-[#fed703]" contain /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack7:ml-2 z-30 rotate-[-3deg] group-hover/stack7:rotate-0"><TechIcon src="/sqlite.png" label="SQLite" subtitle="Database" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack7:ml-2 z-20 rotate-[3deg] group-hover/stack7:rotate-0"><TechIcon src="/trello.png" label="Trello" subtitle="Project Management" bg="bg-[#1e88e5]" contain /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack7:ml-2 z-10 rotate-[5deg] group-hover/stack7:rotate-0"><TechIcon src="/github.webp" label="GitHub" subtitle="Version Control" whiteBg /></div>
+                </div>
+              </div>
+            </div>
+            <p className="font-secondary text-zinc-500 text-sm lg:text-base">Developed the website for <span className="font-semibold text-primary-text">Binani Air</span>, a private jet chartering company, as part of my internship, building a booking-focused platform that now serves over <span className="font-semibold text-primary-text">15,000 weekly visitors</span>. Built the application using <span className="font-semibold text-primary-text">JavaScript</span> with an <span className="font-semibold text-primary-text">SQLite</span>-backed backend, while collaborating closely with non-technical stakeholders to translate business requirements into an intuitive customer experience. I also used <span className="font-semibold text-primary-text">Trello</span> for task tracking and project coordination, helping manage feature delivery and communication throughout development.</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <div className="w-full h-64 lg:h-96 rounded-2xl border border-zinc-200 bg-white flex items-center justify-center overflow-hidden">
+            <span className="font-secondary text-zinc-400 text-sm">Preview image</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="flex items-center justify-between gap-4">
+              <a href="#" className="group/card8 flex items-center gap-1 no-underline">
+                <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Machine Learning Premier League Predictor</h3>
+                <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card8:border-black group-hover/card8:text-black transition-all duration-300 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+              </a>
+              <div className="flex items-center gap-3 shrink-0">
+                <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
+              </div>
+            </div>
+            <p className="font-secondary text-zinc-500 text-sm lg:text-base">Description coming soon.</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <div className="w-full h-64 lg:h-96 rounded-2xl border border-zinc-200 bg-white flex items-center justify-center overflow-hidden">
+            <span className="font-secondary text-zinc-400 text-sm">Preview image</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="flex items-center justify-between gap-4">
+              <a href="#" className="group/card9 flex items-center gap-1 no-underline">
+                <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">MMXX Dynamics Wellness</h3>
+                <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card9:border-black group-hover/card9:text-black transition-all duration-300 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+              </a>
+              <div className="flex items-center gap-3 shrink-0">
+                <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
+              </div>
+            </div>
+            <p className="font-secondary text-zinc-500 text-sm lg:text-base">Description coming soon.</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <div className="w-full h-64 lg:h-96 rounded-2xl border border-zinc-200 bg-white flex items-center justify-center overflow-hidden">
+            <span className="font-secondary text-zinc-400 text-sm">Preview image</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="flex items-center justify-between gap-4">
+              <a href="#" className="group/card10 flex items-center gap-1 no-underline">
+                <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Wakamate — Get vetted artisans</h3>
+                <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card10:border-black group-hover/card10:text-black transition-all duration-300 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+              </a>
+              <div className="flex items-center gap-3 shrink-0">
+                <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
+              </div>
+            </div>
+            <p className="font-secondary text-zinc-500 text-sm lg:text-base">Description coming soon.</p>
           </div>
         </div>
 

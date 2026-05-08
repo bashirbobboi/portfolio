@@ -56,7 +56,7 @@ export default function Home() {
         <div className="flex gap-6 items-stretch">
           {/* Logo spanning full entry height */}
           <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
-            <img src="/sheffield.png" alt="University of Sheffield" className="w-full h-full object-contain object-top" />
+            <img src="/logos/sheffield.png" alt="University of Sheffield" className="w-full h-full object-contain object-top" />
           </div>
 
           {/* Entry content */}
@@ -115,7 +115,7 @@ export default function Home() {
 
           {/* Logo on right spanning full entry height */}
           <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
-            <img src="/INTO.png" alt="INTO" className="w-full h-full object-contain object-top" />
+            <img src="/logos/into.png" alt="INTO" className="w-full h-full object-contain object-top" />
           </div>
         </div>
       </div>
@@ -127,7 +127,7 @@ export default function Home() {
         <div className="flex gap-6 items-stretch">
           {/* Logo on left */}
           <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
-            <img src="/steeze.png" alt="Steeze" className="w-full h-full object-contain object-top" />
+            <img src="/projects/steeze.png" alt="Steeze" className="w-full h-full object-contain object-top" />
           </div>
 
           {/* Entry content */}
@@ -172,14 +172,14 @@ export default function Home() {
 
           {/* Logo on right */}
           <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
-            <img src="/180dc.png" alt="180DC" className="w-full h-full object-contain object-top" />
+            <img src="/logos/180dc.png" alt="180DC" className="w-full h-full object-contain object-top" />
           </div>
         </div>
 
         <div className="flex gap-6 items-stretch mt-8">
           {/* Logo on left */}
           <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
-            <img src="/amrc.png" alt="AMRC" className="w-full h-full object-contain object-top" />
+            <img src="/logos/amrc.png" alt="AMRC" className="w-full h-full object-contain object-top" />
           </div>
 
           {/* Entry content */}
@@ -224,7 +224,7 @@ export default function Home() {
 
           {/* Logo on right */}
           <div className="self-start w-16 lg:w-100 shrink-0 flex h-72 lg:h-96">
-            <img src="/twikkerfund.png" alt="Twikker Fund" className="w-full h-full object-contain object-top" />
+            <img src="/projects/twikkerfund.png" alt="Twikker Fund" className="w-full h-full object-contain object-top" />
           </div>
         </div>
       </div>
@@ -233,7 +233,7 @@ export default function Home() {
       <div className="flex flex-col gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Projects</h2>
         <div className="flex gap-10 items-start">
-          <TappableVideo src="/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
+          <TappableVideo src="/projects/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
           <div className="flex flex-col gap-10 py-2">
             <div className="flex items-center justify-between gap-4">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Steeze Mobile App</h3>
@@ -242,13 +242,13 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built with</p>
               <div className="flex items-center group/stack">
-                <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack:rotate-0"><TechIcon src="/reactnative.png" label="React Native" subtitle="Mobile Framework" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-50 rotate-[-3deg] group-hover/stack:rotate-0"><TechIcon src="/expo.jpeg" label="Expo" subtitle="Mobile Platform" /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-30 rotate-[5deg] group-hover/stack:rotate-0"><TechIcon src="/s3.png" label="AWS S3" subtitle="Cloud Storage" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-40 rotate-[2deg] group-hover/stack:rotate-0"><TechIcon src="/supabase.jpeg" label="Supabase" subtitle="Backend-as-a-Service" /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-20 rotate-[-4deg] group-hover/stack:rotate-0"><TechIcon src="/postgres.png" label="PostgreSQL" subtitle="Database" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-10 rotate-[3deg] group-hover/stack:rotate-0"><TechIcon src="/resend.png" label="Resend" subtitle="Email API" blackBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-0 rotate-[-2deg] group-hover/stack:rotate-0"><TechIcon src="/figma.png" label="Figma" subtitle="Design Tool" whiteBg /></div>
+                <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack:rotate-0"><TechIcon src="/tech/reactnative.png" label="React Native" subtitle="Mobile Framework" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-50 rotate-[-3deg] group-hover/stack:rotate-0"><TechIcon src="/tech/expo.jpeg" label="Expo" subtitle="Mobile Platform" /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-30 rotate-[5deg] group-hover/stack:rotate-0"><TechIcon src="/tech/s3.png" label="AWS S3" subtitle="Cloud Storage" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-40 rotate-[2deg] group-hover/stack:rotate-0"><TechIcon src="/tech/supabase.jpeg" label="Supabase" subtitle="Backend-as-a-Service" /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-20 rotate-[-4deg] group-hover/stack:rotate-0"><TechIcon src="/tech/postgres.png" label="PostgreSQL" subtitle="Database" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-10 rotate-[3deg] group-hover/stack:rotate-0"><TechIcon src="/tech/resend.png" label="Resend" subtitle="Email API" blackBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack:ml-2 z-0 rotate-[-2deg] group-hover/stack:rotate-0"><TechIcon src="/tech/figma.png" label="Figma" subtitle="Design Tool" whiteBg /></div>
               </div>
             </div>
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
@@ -268,12 +268,12 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built with</p>
               <div className="flex items-center group/stack2">
-                <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack2:rotate-0"><TechIcon src="/python.png" label="Python" subtitle="Programming Language" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-50 rotate-[-3deg] group-hover/stack2:rotate-0"><TechIcon src="/pytest.png" label="Pytest" subtitle="Testing Framework" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-10 rotate-[3deg] group-hover/stack2:rotate-0"><TechIcon src="/typer.png" label="Typer" subtitle="CLI Library" blackBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-40 rotate-[2deg] group-hover/stack2:rotate-0"><TechIcon src="/scipy.svg" label="SciPy" subtitle="Scientific Library" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-30 rotate-[5deg] group-hover/stack2:rotate-0"><TechIcon src="/numpy.svg" label="NumPy" subtitle="Numerical Library" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-20 rotate-[-4deg] group-hover/stack2:rotate-0"><TechIcon src="/Streamlit.png" label="Streamlit" subtitle="Web App Framework" whiteBg /></div>
+                <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack2:rotate-0"><TechIcon src="/tech/python.png" label="Python" subtitle="Programming Language" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-50 rotate-[-3deg] group-hover/stack2:rotate-0"><TechIcon src="/tech/pytest.png" label="Pytest" subtitle="Testing Framework" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-10 rotate-[3deg] group-hover/stack2:rotate-0"><TechIcon src="/tech/typer.png" label="Typer" subtitle="CLI Library" blackBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-40 rotate-[2deg] group-hover/stack2:rotate-0"><TechIcon src="/tech/scipy.svg" label="SciPy" subtitle="Scientific Library" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-30 rotate-[5deg] group-hover/stack2:rotate-0"><TechIcon src="/tech/numpy.svg" label="NumPy" subtitle="Numerical Library" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-20 rotate-[-4deg] group-hover/stack2:rotate-0"><TechIcon src="/tech/streamlit.png" label="Streamlit" subtitle="Web App Framework" whiteBg /></div>
               </div>
             </div>
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
@@ -282,11 +282,11 @@ export default function Home() {
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Designed a comprehensive automated testing suite using <span className="font-semibold text-primary-text">Pytest</span>, authoring unit and integration tests to achieve over <span className="font-semibold text-primary-text">90% code coverage</span> and ensure algorithmic correctness and UI stability.</span></li>
             </ul>
           </div>
-          <TappableVideo src="/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
+          <TappableVideo src="/projects/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
         </div>
 
         <div className="flex gap-10 items-start mt-8">
-          <TappableVideo src="/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
+          <TappableVideo src="/projects/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
           <div className="flex flex-col gap-10 py-2">
             <div className="flex items-center justify-between gap-4">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Elevator Pitch</h3>
@@ -295,13 +295,13 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built with</p>
               <div className="flex items-center group/stack3">
-                <div className="transition-all duration-300 z-70 rotate-[-6deg] group-hover/stack3:rotate-0"><TechIcon src="/mongodb.png" label="MongoDB" subtitle="Database" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-60 rotate-[-3deg] group-hover/stack3:rotate-0"><TechIcon src="/Express.png" label="Express JS" subtitle="Web Framework" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-50 rotate-[2deg] group-hover/stack3:rotate-0"><TechIcon src="/reactnative.png" label="React" subtitle="JavaScript Library" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-40 rotate-[5deg] group-hover/stack3:rotate-0"><TechIcon src="/nodejs.png" label="Node JS" subtitle="JavaScript Runtime" contain whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-30 rotate-[-4deg] group-hover/stack3:rotate-0"><TechIcon src="/cloudinary.PNG" label="Cloudinary" subtitle="Media Platform" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-20 rotate-[3deg] group-hover/stack3:rotate-0"><TechIcon src="/github.webp" label="GitHub" subtitle="Version Control" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-10 rotate-[-5deg] group-hover/stack3:rotate-0"><TechIcon src="/vercel.jpg" label="Vercel" subtitle="Hosting Platform" /></div>
+                <div className="transition-all duration-300 z-70 rotate-[-6deg] group-hover/stack3:rotate-0"><TechIcon src="/tech/mongodb.png" label="MongoDB" subtitle="Database" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-60 rotate-[-3deg] group-hover/stack3:rotate-0"><TechIcon src="/tech/express.png" label="Express JS" subtitle="Web Framework" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-50 rotate-[2deg] group-hover/stack3:rotate-0"><TechIcon src="/tech/reactnative.png" label="React" subtitle="JavaScript Library" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-40 rotate-[5deg] group-hover/stack3:rotate-0"><TechIcon src="/tech/nodejs.png" label="Node JS" subtitle="JavaScript Runtime" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-30 rotate-[-4deg] group-hover/stack3:rotate-0"><TechIcon src="/tech/cloudinary.png" label="Cloudinary" subtitle="Media Platform" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-20 rotate-[3deg] group-hover/stack3:rotate-0"><TechIcon src="/tech/github.webp" label="GitHub" subtitle="Version Control" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-10 rotate-[-5deg] group-hover/stack3:rotate-0"><TechIcon src="/tech/vercel.jpg" label="Vercel" subtitle="Hosting Platform" /></div>
               </div>
             </div>
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
@@ -326,13 +326,13 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <div className="flex items-center group/stack6">
-                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack6:rotate-0"><TechIcon src="/reactnative.png" label="React Native" subtitle="Mobile Framework" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-50 rotate-[-3deg] group-hover/stack6:rotate-0"><TechIcon src="/expo.jpeg" label="Expo" subtitle="Mobile Platform" /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-30 rotate-[5deg] group-hover/stack6:rotate-0"><TechIcon src="/s3.png" label="AWS S3" subtitle="Cloud Storage" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-40 rotate-[2deg] group-hover/stack6:rotate-0"><TechIcon src="/supabase.jpeg" label="Supabase" subtitle="Backend-as-a-Service" /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-20 rotate-[-4deg] group-hover/stack6:rotate-0"><TechIcon src="/postgres.png" label="PostgreSQL" subtitle="Database" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-10 rotate-[3deg] group-hover/stack6:rotate-0"><TechIcon src="/resend.png" label="Resend" subtitle="Email API" blackBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-0 rotate-[-2deg] group-hover/stack6:rotate-0"><TechIcon src="/figma.png" label="Figma" subtitle="Design Tool" whiteBg /></div>
+                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack6:rotate-0"><TechIcon src="/tech/reactnative.png" label="React Native" subtitle="Mobile Framework" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-50 rotate-[-3deg] group-hover/stack6:rotate-0"><TechIcon src="/tech/expo.jpeg" label="Expo" subtitle="Mobile Platform" /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-30 rotate-[5deg] group-hover/stack6:rotate-0"><TechIcon src="/tech/s3.png" label="AWS S3" subtitle="Cloud Storage" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-40 rotate-[2deg] group-hover/stack6:rotate-0"><TechIcon src="/tech/supabase.jpeg" label="Supabase" subtitle="Backend-as-a-Service" /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-20 rotate-[-4deg] group-hover/stack6:rotate-0"><TechIcon src="/tech/postgres.png" label="PostgreSQL" subtitle="Database" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-10 rotate-[3deg] group-hover/stack6:rotate-0"><TechIcon src="/tech/resend.png" label="Resend" subtitle="Email API" blackBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-0 rotate-[-2deg] group-hover/stack6:rotate-0"><TechIcon src="/tech/figma.png" label="Figma" subtitle="Design Tool" whiteBg /></div>
                 </div>
               </div>
             </div>
@@ -355,12 +355,12 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <div className="flex items-center group/stack5">
-                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack5:rotate-0"><TechIcon src="/python.png" label="Python" subtitle="Programming Language" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-50 rotate-[-3deg] group-hover/stack5:rotate-0"><TechIcon src="/pytest.png" label="Pytest" subtitle="Testing Framework" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-10 rotate-[3deg] group-hover/stack5:rotate-0"><TechIcon src="/typer.png" label="Typer" subtitle="CLI Library" blackBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-40 rotate-[2deg] group-hover/stack5:rotate-0"><TechIcon src="/scipy.svg" label="SciPy" subtitle="Scientific Library" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-30 rotate-[5deg] group-hover/stack5:rotate-0"><TechIcon src="/numpy.svg" label="NumPy" subtitle="Numerical Library" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-20 rotate-[-4deg] group-hover/stack5:rotate-0"><TechIcon src="/Streamlit.png" label="Streamlit" subtitle="Web App Framework" whiteBg /></div>
+                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack5:rotate-0"><TechIcon src="/tech/python.png" label="Python" subtitle="Programming Language" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-50 rotate-[-3deg] group-hover/stack5:rotate-0"><TechIcon src="/tech/pytest.png" label="Pytest" subtitle="Testing Framework" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-10 rotate-[3deg] group-hover/stack5:rotate-0"><TechIcon src="/tech/typer.png" label="Typer" subtitle="CLI Library" blackBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-40 rotate-[2deg] group-hover/stack5:rotate-0"><TechIcon src="/tech/scipy.svg" label="SciPy" subtitle="Scientific Library" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-30 rotate-[5deg] group-hover/stack5:rotate-0"><TechIcon src="/tech/numpy.svg" label="NumPy" subtitle="Numerical Library" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-20 rotate-[-4deg] group-hover/stack5:rotate-0"><TechIcon src="/tech/streamlit.png" label="Streamlit" subtitle="Web App Framework" whiteBg /></div>
                 </div>
               </div>
             </div>
@@ -383,13 +383,13 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <div className="flex items-center group/stack4">
-                  <div className="transition-all duration-300 z-70 rotate-[-6deg] group-hover/stack4:rotate-0"><TechIcon src="/mongodb.png" label="MongoDB" subtitle="Database" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-60 rotate-[-3deg] group-hover/stack4:rotate-0"><TechIcon src="/Express.png" label="Express JS" subtitle="Web Framework" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-50 rotate-[2deg] group-hover/stack4:rotate-0"><TechIcon src="/reactnative.png" label="React" subtitle="JavaScript Library" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-40 rotate-[5deg] group-hover/stack4:rotate-0"><TechIcon src="/nodejs.png" label="Node JS" subtitle="JavaScript Runtime" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-30 rotate-[-4deg] group-hover/stack4:rotate-0"><TechIcon src="/cloudinary.PNG" label="Cloudinary" subtitle="Media Platform" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-20 rotate-[3deg] group-hover/stack4:rotate-0"><TechIcon src="/github.webp" label="GitHub" subtitle="Version Control" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-10 rotate-[-5deg] group-hover/stack4:rotate-0"><TechIcon src="/vercel.jpg" label="Vercel" subtitle="Hosting Platform" /></div>
+                  <div className="transition-all duration-300 z-70 rotate-[-6deg] group-hover/stack4:rotate-0"><TechIcon src="/tech/mongodb.png" label="MongoDB" subtitle="Database" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-60 rotate-[-3deg] group-hover/stack4:rotate-0"><TechIcon src="/tech/express.png" label="Express JS" subtitle="Web Framework" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-50 rotate-[2deg] group-hover/stack4:rotate-0"><TechIcon src="/tech/reactnative.png" label="React" subtitle="JavaScript Library" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-40 rotate-[5deg] group-hover/stack4:rotate-0"><TechIcon src="/tech/nodejs.png" label="Node JS" subtitle="JavaScript Runtime" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-30 rotate-[-4deg] group-hover/stack4:rotate-0"><TechIcon src="/tech/cloudinary.png" label="Cloudinary" subtitle="Media Platform" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-20 rotate-[3deg] group-hover/stack4:rotate-0"><TechIcon src="/tech/github.webp" label="GitHub" subtitle="Version Control" whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-10 rotate-[-5deg] group-hover/stack4:rotate-0"><TechIcon src="/tech/vercel.jpg" label="Vercel" subtitle="Hosting Platform" /></div>
                 </div>
               </div>
             </div>
@@ -412,10 +412,10 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <div className="flex items-center group/stack7">
-                  <div className="transition-all duration-300 z-40 rotate-[-6deg] group-hover/stack7:rotate-0"><TechIcon src="/javascript.png" label="JavaScript" subtitle="Programming Language" bg="bg-[#fed703]" contain /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack7:ml-2 z-30 rotate-[-3deg] group-hover/stack7:rotate-0"><TechIcon src="/sqlite.png" label="SQLite" subtitle="Database" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack7:ml-2 z-20 rotate-[3deg] group-hover/stack7:rotate-0"><TechIcon src="/trello.png" label="Trello" subtitle="Project Management" bg="bg-[#1e88e5]" contain /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack7:ml-2 z-10 rotate-[5deg] group-hover/stack7:rotate-0"><TechIcon src="/github.webp" label="GitHub" subtitle="Version Control" whiteBg /></div>
+                  <div className="transition-all duration-300 z-40 rotate-[-6deg] group-hover/stack7:rotate-0"><TechIcon src="/tech/javascript.png" label="JavaScript" subtitle="Programming Language" bg="bg-[#fed703]" contain /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack7:ml-2 z-30 rotate-[-3deg] group-hover/stack7:rotate-0"><TechIcon src="/tech/sqlite.png" label="SQLite" subtitle="Database" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack7:ml-2 z-20 rotate-[3deg] group-hover/stack7:rotate-0"><TechIcon src="/tech/trello.png" label="Trello" subtitle="Project Management" bg="bg-[#1e88e5]" contain /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack7:ml-2 z-10 rotate-[5deg] group-hover/stack7:rotate-0"><TechIcon src="/tech/github.webp" label="GitHub" subtitle="Version Control" whiteBg /></div>
                 </div>
               </div>
             </div>
@@ -438,10 +438,10 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <div className="flex items-center group/stack8">
-                  <div className="transition-all duration-300 z-40 rotate-[-6deg] group-hover/stack8:rotate-0"><TechIcon src="/python.png" label="Python" subtitle="Programming Language" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack8:ml-2 z-30 rotate-[-3deg] group-hover/stack8:rotate-0"><TechIcon src="/scikit-learn.svg" label="scikit-learn" subtitle="ML Library" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack8:ml-2 z-20 rotate-[3deg] group-hover/stack8:rotate-0"><TechIcon src="/pandas.png" label="Pandas" subtitle="Data Analysis" /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack8:ml-2 z-10 rotate-[5deg] group-hover/stack8:rotate-0"><TechIcon src="/Jupyter.png" label="Jupyter Notebook" subtitle="Interactive Notebook" contain whiteBg /></div>
+                  <div className="transition-all duration-300 z-40 rotate-[-6deg] group-hover/stack8:rotate-0"><TechIcon src="/tech/python.png" label="Python" subtitle="Programming Language" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack8:ml-2 z-30 rotate-[-3deg] group-hover/stack8:rotate-0"><TechIcon src="/tech/scikit-learn.svg" label="scikit-learn" subtitle="ML Library" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack8:ml-2 z-20 rotate-[3deg] group-hover/stack8:rotate-0"><TechIcon src="/tech/pandas.png" label="Pandas" subtitle="Data Analysis" /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack8:ml-2 z-10 rotate-[5deg] group-hover/stack8:rotate-0"><TechIcon src="/tech/jupyter.png" label="Jupyter Notebook" subtitle="Interactive Notebook" contain whiteBg /></div>
                 </div>
               </div>
             </div>
@@ -464,16 +464,45 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <div className="flex items-center group/stack9">
-                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack9:rotate-0"><TechIcon src="/nextjs.svg" label="Next JS" subtitle="React Framework" contain blackBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-50 rotate-[-3deg] group-hover/stack9:rotate-0"><TechIcon src="/awscognito.jpg" label="AWS Cognito" subtitle="Authentication" /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-40 rotate-[2deg] group-hover/stack9:rotate-0"><TechIcon src="/google.png" label="Google OAuth" subtitle="Authentication" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-30 rotate-[5deg] group-hover/stack9:rotate-0"><TechIcon src="/Jira.png" label="Jira" subtitle="Project Management" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-20 rotate-[-4deg] group-hover/stack9:rotate-0"><TechIcon src="/BitBucket.png" label="Bitbucket" subtitle="Version Control" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-10 rotate-[3deg] group-hover/stack9:rotate-0"><TechIcon src="/Docker.png" label="Docker" subtitle="Containerization" contain whiteBg /></div>
+                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack9:rotate-0"><TechIcon src="/tech/nextjs.svg" label="Next JS" subtitle="React Framework" contain blackBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-50 rotate-[-3deg] group-hover/stack9:rotate-0"><TechIcon src="/tech/awscognito.jpg" label="AWS Cognito" subtitle="Authentication" /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-40 rotate-[2deg] group-hover/stack9:rotate-0"><TechIcon src="/tech/google.png" label="Google OAuth" subtitle="Authentication" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-30 rotate-[5deg] group-hover/stack9:rotate-0"><TechIcon src="/tech/jira.png" label="Jira" subtitle="Project Management" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-20 rotate-[-4deg] group-hover/stack9:rotate-0"><TechIcon src="/tech/bitbucket.png" label="Bitbucket" subtitle="Version Control" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-10 rotate-[3deg] group-hover/stack9:rotate-0"><TechIcon src="/tech/docker.png" label="Docker" subtitle="Containerization" contain whiteBg /></div>
                 </div>
               </div>
             </div>
             <p className="font-secondary text-zinc-500 text-sm lg:text-base">Built and shipped frontend features for a wellness booking platform using <span className="font-semibold text-primary-text">Next.js</span>, contributing across the full feature lifecycle from design and implementation to deployment within a four-person <span className="font-semibold text-primary-text">Agile</span> team serving <span className="font-semibold text-primary-text">60+ active customers</span>. Implemented <span className="font-semibold text-primary-text">Google OAuth</span> authentication with <span className="font-semibold text-primary-text">AWS Cognito</span>, significantly improving account verification reliability while reducing manual onboarding issues and support intervention by an estimated <span className="font-semibold text-primary-text">70–80%</span>. Worked within bi-weekly Agile sprints, consistently managing and delivering <span className="font-semibold text-primary-text">10+ Jira tickets</span> per sprint in collaboration with designers and developers.</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <div className="w-full h-64 lg:h-96 rounded-2xl border border-zinc-200 bg-white flex items-center justify-center overflow-hidden">
+            <span className="font-secondary text-zinc-400 text-sm">Preview image</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="flex items-center justify-between gap-4">
+              <a href="https://wakamate.ng" target="_blank" rel="noopener noreferrer" className="group/card10 flex items-center gap-1 no-underline">
+                <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Wakamate — Get vetted artisans</h3>
+                <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card10:border-black group-hover/card10:text-black transition-all duration-300 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+              </a>
+              <div className="flex items-center gap-3 shrink-0">
+                <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
+                <div className="flex items-center group/stack10">
+                  <div className="transition-all duration-300 z-70 rotate-[-6deg] group-hover/stack10:rotate-0"><TechIcon src="/tech/googleplay.svg.png" label="Google Play Store" subtitle="App Distribution" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack10:ml-2 z-60 rotate-[-3deg] group-hover/stack10:rotate-0"><TechIcon src="/tech/appstore.svg.png" label="App Store" subtitle="App Distribution" contain bg="bg-[#207df4]" /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack10:ml-2 z-50 rotate-[2deg] group-hover/stack10:rotate-0"><TechIcon src="/tech/reactnative.png" label="React Native" subtitle="Mobile Framework" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack10:ml-2 z-40 rotate-[5deg] group-hover/stack10:rotate-0"><TechIcon src="/tech/expo.jpeg" label="Expo" subtitle="Mobile Platform" /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack10:ml-2 z-30 rotate-[-4deg] group-hover/stack10:rotate-0"><TechIcon src="/tech/xcode.png" label="Xcode" subtitle="iOS IDE" contain bg="bg-[#207df4]" /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack10:ml-2 z-20 rotate-[3deg] group-hover/stack10:rotate-0"><TechIcon src="/tech/supabase.jpeg" label="Supabase" subtitle="Backend-as-a-Service" /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack10:ml-2 z-10 rotate-[-5deg] group-hover/stack10:rotate-0"><TechIcon src="/tech/nextjs.svg" label="Next JS" subtitle="React Framework" contain blackBg /></div>
+                </div>
+              </div>
+            </div>
+            <p className="font-secondary text-zinc-500 text-sm lg:text-base">Built <span className="font-semibold text-primary-text">Wakamate</span>, a mobile-first <span className="font-semibold text-primary-text">&ldquo;Uber for artisans&rdquo;</span> platform in <span className="font-semibold text-primary-text">Nigeria</span> connecting users with vetted service providers such as cleaners, plumbers, and tilers to improve access and trust in home and office services. Developed the cross-platform mobile application using <span className="font-semibold text-primary-text">React Native (Expo)</span> with <span className="font-semibold text-primary-text">Supabase</span> as the backend, implementing secure authentication flows including <span className="font-semibold text-primary-text">Google OAuth</span> and <span className="font-semibold text-primary-text">Sign in with Apple</span>, alongside SMS verification via <span className="font-semibold text-primary-text">Termii</span>. Built a <span className="font-semibold text-primary-text">Next.js</span> landing page to support product rollout and early user acquisition, with initial traction of <span className="font-semibold text-primary-text">20+ onboarded artisans</span>.</p>
           </div>
         </div>
 

@@ -270,10 +270,10 @@ export default function Home() {
               <div className="flex items-center group/stack2">
                 <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack2:rotate-0"><TechIcon src="/python.png" label="Python" contain whiteBg /></div>
                 <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-50 rotate-[-3deg] group-hover/stack2:rotate-0"><TechIcon src="/pytest.png" label="Pytest" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-10 rotate-[3deg] group-hover/stack2:rotate-0"><TechIcon src="/typer.png" label="Typer" blackBg /></div>
                 <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-40 rotate-[2deg] group-hover/stack2:rotate-0"><TechIcon src="/scipy.svg" label="SciPy" whiteBg /></div>
                 <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-30 rotate-[5deg] group-hover/stack2:rotate-0"><TechIcon src="/numpy.svg" label="NumPy" whiteBg /></div>
                 <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-20 rotate-[-4deg] group-hover/stack2:rotate-0"><TechIcon src="/Streamlit.png" label="Streamlit" whiteBg /></div>
-                <div className="transition-all duration-300 -ml-2 group-hover/stack2:ml-2 z-10 rotate-[3deg] group-hover/stack2:rotate-0"><TechIcon src="/typer.png" label="Typer" blackBg /></div>
               </div>
             </div>
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
@@ -283,6 +283,33 @@ export default function Home() {
             </ul>
           </div>
           <TappableVideo src="/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
+        </div>
+
+        <div className="flex gap-10 items-start mt-8">
+          <TappableVideo src="/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
+          <div className="flex flex-col gap-10 py-2">
+            <div className="flex items-center justify-between gap-4">
+              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Elevator Pitch</h3>
+              <ButtonWithIcon label="Visit Website" href="https://www.steeze.ng/" />
+            </div>
+            <div className="flex items-center gap-3">
+              <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built with</p>
+              <div className="flex items-center group/stack3">
+                <div className="transition-all duration-300 z-70 rotate-[-6deg] group-hover/stack3:rotate-0"><TechIcon src="/mongodb.png" label="MongoDB" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-60 rotate-[-3deg] group-hover/stack3:rotate-0"><TechIcon src="/Express.png" label="Express JS" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-50 rotate-[2deg] group-hover/stack3:rotate-0"><TechIcon src="/reactnative.png" label="React" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-40 rotate-[5deg] group-hover/stack3:rotate-0"><TechIcon src="/nodejs.png" label="Node JS" contain whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-30 rotate-[-4deg] group-hover/stack3:rotate-0"><TechIcon src="/cloudinary.PNG" label="Cloudinary" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-20 rotate-[3deg] group-hover/stack3:rotate-0"><TechIcon src="/github.webp" label="GitHub" whiteBg /></div>
+                <div className="transition-all duration-300 -ml-2 group-hover/stack3:ml-2 z-10 rotate-[-5deg] group-hover/stack3:rotate-0"><TechIcon src="/vercel.jpg" label="Vercel" /></div>
+              </div>
+            </div>
+            <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>A cross-platform mobile app built with <span className="font-semibold text-primary-text">React Native</span> and <span className="font-semibold text-primary-text">Expo</span>, enabling users to discover, share and track their favourite spots.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Integrated <span className="font-semibold text-primary-text">Supabase</span> for real-time database, authentication and row-level security across user profiles and content.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Used <span className="font-semibold text-primary-text">AWS S3</span> for scalable media storage, handling image uploads and retrieval for user-generated content.</span></li>
+            </ul>
+          </div>
         </div>
 
         <p className="font-secondary text-zinc-500 text-lg lg:text-2xl text-center tracking-tight">

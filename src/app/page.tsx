@@ -318,7 +318,7 @@ export default function Home() {
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between gap-4">
               <a href="https://www.steeze.ng/" target="_blank" rel="noopener noreferrer" className="group/card6 flex items-center gap-1 no-underline">
-                <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Steeze</h3>
+                <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Steeze Mobile App</h3>
                 <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card6:border-black group-hover/card6:text-black transition-all duration-300 shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                 </div>
@@ -429,7 +429,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between gap-4">
-              <a href="#" className="group/card8 flex items-center gap-1 no-underline">
+              <a href="https://github.com/bashirbobboi/predictor" target="_blank" rel="noopener noreferrer" className="group/card8 flex items-center gap-1 no-underline">
                 <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Machine Learning Premier League Predictor</h3>
                 <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card8:border-black group-hover/card8:text-black transition-all duration-300 shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -437,9 +437,15 @@ export default function Home() {
               </a>
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
+                <div className="flex items-center group/stack8">
+                  <div className="transition-all duration-300 z-40 rotate-[-6deg] group-hover/stack8:rotate-0"><TechIcon src="/python.png" label="Python" subtitle="Programming Language" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack8:ml-2 z-30 rotate-[-3deg] group-hover/stack8:rotate-0"><TechIcon src="/scikit-learn.svg" label="scikit-learn" subtitle="ML Library" contain whiteBg /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack8:ml-2 z-20 rotate-[3deg] group-hover/stack8:rotate-0"><TechIcon src="/pandas.png" label="Pandas" subtitle="Data Analysis" /></div>
+                  <div className="transition-all duration-300 -ml-2 group-hover/stack8:ml-2 z-10 rotate-[5deg] group-hover/stack8:rotate-0"><TechIcon src="/Jupyter.png" label="Jupyter Notebook" subtitle="Interactive Notebook" contain whiteBg /></div>
+                </div>
               </div>
             </div>
-            <p className="font-secondary text-zinc-500 text-sm lg:text-base">Description coming soon.</p>
+            <p className="font-secondary text-zinc-500 text-sm lg:text-base">Built an end-to-end <span className="font-semibold text-primary-text">machine learning pipeline</span> in <span className="font-semibold text-primary-text">Python</span> to predict English Premier League match outcomes, processing over a decade of historical data covering <span className="font-semibold text-primary-text">3,800+ matches</span> to train and evaluate the model. Implemented a <span className="font-semibold text-primary-text">Random Forest Classifier</span> using <span className="font-semibold text-primary-text">scikit-learn</span>, leveraging <span className="font-semibold text-primary-text">25+ engineered features</span> to classify match results, achieving a cross-validated accuracy of <span className="font-semibold text-primary-text">62%</span>. Improved predictive performance by engineering rolling-window features (5- and 10-match averages of team statistics such as goals and shots), increasing precision from <span className="font-semibold text-primary-text">47%</span> to <span className="font-semibold text-primary-text">67.5%</span>.</p>
           </div>
         </div>
 
@@ -449,7 +455,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between gap-4">
-              <a href="#" className="group/card9 flex items-center gap-1 no-underline">
+              <a href="https://mmxxdynamics.com" target="_blank" rel="noopener noreferrer" className="group/card9 flex items-center gap-1 no-underline">
                 <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">MMXX Dynamics Wellness</h3>
                 <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card9:border-black group-hover/card9:text-black transition-all duration-300 shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -468,26 +474,6 @@ export default function Home() {
               </div>
             </div>
             <p className="font-secondary text-zinc-500 text-sm lg:text-base">Built and shipped frontend features for a wellness booking platform using <span className="font-semibold text-primary-text">Next.js</span>, contributing across the full feature lifecycle from design and implementation to deployment within a four-person <span className="font-semibold text-primary-text">Agile</span> team serving <span className="font-semibold text-primary-text">60+ active customers</span>. Implemented <span className="font-semibold text-primary-text">Google OAuth</span> authentication with <span className="font-semibold text-primary-text">AWS Cognito</span>, significantly improving account verification reliability while reducing manual onboarding issues and support intervention by an estimated <span className="font-semibold text-primary-text">70–80%</span>. Worked within bi-weekly Agile sprints, consistently managing and delivering <span className="font-semibold text-primary-text">10+ Jira tickets</span> per sprint in collaboration with designers and developers.</p>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-4">
-          <div className="w-full h-64 lg:h-96 rounded-2xl border border-zinc-200 bg-white flex items-center justify-center overflow-hidden">
-            <span className="font-secondary text-zinc-400 text-sm">Preview image</span>
-          </div>
-          <div className="flex flex-col gap-5">
-            <div className="flex items-center justify-between gap-4">
-              <a href="https://wakamate.ng" target="_blank" rel="noopener noreferrer" className="group/card10 flex items-center gap-1 no-underline">
-                <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Wakamate — Get vetted artisans</h3>
-                <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card10:border-black group-hover/card10:text-black transition-all duration-300 shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                </div>
-              </a>
-              <div className="flex items-center gap-3 shrink-0">
-                <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
-              </div>
-            </div>
-            <p className="font-secondary text-zinc-500 text-sm lg:text-base">Description coming soon.</p>
           </div>
         </div>
 

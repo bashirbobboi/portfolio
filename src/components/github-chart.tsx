@@ -27,6 +27,7 @@ export function GithubChart({ username }: { username: string }) {
   const [data, setData] = useState<Contribution[] | null>(null);
   const [total, setTotal] = useState<number>(0);
   const [error, setError] = useState<string | null>(null);
+  const [hover, setHover] = useState<{ c: Contribution; cx: number; cy: number } | null>(null);
   const filterId = useId();
   const splatterId = useId();
 
@@ -115,6 +116,7 @@ export function GithubChart({ username }: { username: string }) {
           viewBox={`0 0 ${width} ${height}`}
           className="w-full h-auto"
           xmlns="http://www.w3.org/2000/svg"
+          style={{ overflow: "visible" }}
         >
           <defs>
             <filter id={filterId} x="-10%" y="-10%" width="120%" height="120%">
@@ -179,13 +181,37 @@ export function GithubChart({ username }: { username: string }) {
                     fill={PALETTE[level]}
                     opacity={opacity}
                     transform={`rotate(${rot} ${x + CELL_SIZE / 2} ${y + CELL_SIZE / 2})`}
-                  >
-                    <title>{`${c.date}: ${c.count} contributions`}</title>
-                  </rect>
+                    onMouseEnter={() => setHover({ c, cx: x + CELL_SIZE / 2, cy: y })}
+                    onMouseLeave={() => setHover((h) => (h && h.c.date === c.date ? null : h))}
+                    style={{ cursor: "pointer" }}
+                  />
                 );
               })
             )}
           </g>
+
+          {hover && (() => {
+            const dateObj = new Date(hover.c.date);
+            const dateStr = dateObj.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+            const countStr = hover.c.count === 0 ? "No contributions" : `${hover.c.count} contribution${hover.c.count === 1 ? "" : "s"}`;
+            const text = `${countStr} on ${dateStr}`;
+            const charW = 4.4;
+            const tw = text.length * charW + 16;
+            const th = 22;
+            let tx = hover.cx - tw / 2;
+            tx = Math.max(2, Math.min(tx, width - tw - 2));
+            const above = hover.cy - th - 6;
+            const below = hover.cy + CELL_SIZE + 6;
+            const ty = above < 2 ? below : above;
+            return (
+              <g pointerEvents="none">
+                <rect x={tx} y={ty} width={tw} height={th} rx={4} fill="#27272a" />
+                <text x={tx + tw / 2} y={ty + th / 2 + 3} textAnchor="middle" fontFamily="var(--font-secondary, sans-serif)" fontSize="9" fill="#ffffff">
+                  {text}
+                </text>
+              </g>
+            );
+          })()}
         </svg>
       </div>
 

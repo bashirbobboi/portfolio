@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { RiGithubFill, RiLinkedinFill } from "@remixicon/react";
 import { RadialNavWrapper } from "@/components/radial-nav-wrapper";
 import { MapPin, Calendar } from "lucide-react";
+import { TappableVideo } from "@/components/tappable-video";
 
 export default function Home() {
   return (
@@ -230,6 +231,7 @@ export default function Home() {
     <section id="projects" className="flex items-center px-[8%] lg:px-[18%] pt-8 pb-16 bg-primary-bg">
       <div className="flex flex-col gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Projects</h2>
+        <TappableVideo src="/steeze.mp4" className="w-1/3 h-[50vh] object-cover rounded-2xl" />
       </div>
     </section>
     </>

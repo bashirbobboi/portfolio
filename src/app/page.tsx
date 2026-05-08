@@ -4,6 +4,7 @@ import { RiGithubFill, RiLinkedinFill } from "@remixicon/react";
 import { RadialNavWrapper } from "@/components/radial-nav-wrapper";
 import { MapPin, Calendar } from "lucide-react";
 import { TappableVideo } from "@/components/tappable-video";
+import { TechIcon } from "@/components/tech-icon";
 
 export default function Home() {
   return (
@@ -240,14 +241,14 @@ export default function Home() {
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Integrated <span className="font-semibold text-primary-text">Supabase</span> for real-time database, authentication and row-level security across user profiles and content.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Used <span className="font-semibold text-primary-text">AWS S3</span> for scalable media storage, handling image uploads and retrieval for user-generated content.</span></li>
             </ul>
-            <div className="flex items-center gap-2">
-              <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Tech Stack</p>
-              <div className="relative group">
-                <img src="/supabase.jpeg" alt="Supabase" className="w-10 h-10 rounded-sm object-cover" />
-                <div className="absolute -top-9 left-1/2 -translate-x-1/2 bg-zinc-800 text-white text-xs font-secondary px-3 py-1.5 rounded-full whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
-                  Supabase
-                </div>
-              </div>
+            <div className="flex items-center gap-3">
+              <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">This is the Tech Stack I used</p>
+                <TechIcon src="/reactnative.png" label="React Native" contain />
+                <TechIcon src="/expo.jpeg" label="Expo" />
+                <TechIcon src="/supabase.jpeg" label="Supabase" />
+                <TechIcon src="/s3.png" label="AWS S3" />
+                <TechIcon src="/postgres.png" label="PostgreSQL" whiteBg />
+                <TechIcon src="/resend.png" label="Resend" blackBg />
             </div>
           </div>
         </div>

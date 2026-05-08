@@ -77,9 +77,9 @@ export default function Home() {
               <div className="flex flex-col gap-2">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Selected Highlights:</p>
                 <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-1">
-                  <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Awarded a distinction for dissertation research on probabilistic bisimulation and Wasserstein-based behavioural distances.</span></li>
-                  <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Chosen to represent the Computer Science department as a Student Ambassador from a cohort of 3,000+ students.</span></li>
-                  <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Worked directly with an external company in the COM3420 Software Hut module to develop production-ready software, later being individually selected to continue the project as a summer intern.</span></li>
+                  <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Awarded a <span className="font-semibold text-primary-text">distinction</span> for dissertation research on <span className="font-semibold text-primary-text">probabilistic bisimulation</span> and <span className="font-semibold text-primary-text">Wasserstein-based behavioural distances</span>.</span></li>
+                  <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Chosen to represent the Computer Science department as a <span className="font-semibold text-primary-text">Student Ambassador</span> from a cohort of <span className="font-semibold text-primary-text">3,000+ students</span>.</span></li>
+                  <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Worked directly with an external company in the <span className="font-semibold text-primary-text">COM3420 Software Hut</span> module to develop <span className="font-semibold text-primary-text">production-ready software</span>, later being <span className="font-semibold text-primary-text">individually selected</span> to continue the project as a summer intern.</span></li>
                 </ul>
               </div>
             </div>

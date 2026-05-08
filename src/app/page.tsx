@@ -124,7 +124,7 @@ export default function Home() {
         <div className="flex gap-6 items-stretch">
           {/* Logo on left */}
           <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
-            <img src="/amrc.png" alt="AMRC" className="w-full h-full object-contain object-top" />
+            <img src="/steeze.png" alt="Steeze" className="w-full h-full object-contain object-top" />
           </div>
 
           {/* Entry content */}
@@ -162,16 +162,15 @@ export default function Home() {
             </div>
 
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-4">
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Contributed within a world-leading manufacturing research centre collaborating with industry leaders including <span className="font-semibold text-primary-text">Boeing</span>, <span className="font-semibold text-primary-text">Rolls-Royce</span> and <span className="font-semibold text-primary-text">Airbus</span>.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Selected as the <span className="font-semibold text-primary-text">first student</span> to participate in the centre&apos;s inaugural internship programme.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Built a full-stack device management web app on <span className="font-semibold text-primary-text">Ruby on Rails</span>, following <span className="font-semibold text-primary-text">MVC</span> design, <span className="font-semibold text-primary-text">PostgreSQL</span> database and <span className="font-semibold text-primary-text">HTML &amp; CSS</span>, saving <span className="font-semibold text-primary-text">£2,000+</span> annually on lost devices.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Used <span className="font-semibold text-primary-text">GitHub</span> for collaborative development with feature branching and pull requests; integrated automated testing workflows to maintain code quality and version control in a team of <span className="font-semibold text-primary-text">9 developers</span>.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Contributed within the <span className="font-semibold text-primary-text">world&apos;s largest student-led consultancy</span>, operating across <span className="font-semibold text-primary-text">200+ branches</span> globally.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Served as the <span className="font-semibold text-primary-text">founding Technology Director</span> for the Sheffield branch, contributing to the branch being recognised as the organisation&apos;s <span className="font-semibold text-primary-text">&quot;Best New Branch&quot;</span>.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Led development of a client outreach web app, independently building the <span className="font-semibold text-primary-text">TypeScript</span> frontend and integrating third-party APIs to identify potential clients, resulting in a <span className="font-semibold text-primary-text">500% increase</span> in client reach.</span></li>
             </ul>
           </div>
 
           {/* Logo on right */}
           <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
-            <img src="/amrc.png" alt="AMRC" className="w-full h-full object-contain object-top" />
+            <img src="/180dc.png" alt="180DC" className="w-full h-full object-contain object-top" />
           </div>
         </div>
 
@@ -185,7 +184,7 @@ export default function Home() {
           <div className="flex flex-col flex-1">
             <div className="flex items-baseline justify-between">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Advanced Manufacturing Research Centre</h3>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><MapPin size={13} className="shrink-0" />Sheffield, England</p>
             </div>
 
             <div className="flex items-baseline justify-between mt-1">
@@ -194,10 +193,9 @@ export default function Home() {
             </div>
 
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-4">
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Contributed within a world-leading manufacturing research centre collaborating with industry leaders including <span className="font-semibold text-primary-text">Boeing</span>, <span className="font-semibold text-primary-text">Rolls-Royce</span> and <span className="font-semibold text-primary-text">Airbus</span>.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Operated within a world-leading manufacturing research centre collaborating with industry leaders including <span className="font-semibold text-primary-text">Boeing</span>, <span className="font-semibold text-primary-text">Rolls-Royce</span> and <span className="font-semibold text-primary-text">Airbus</span>.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Selected as the <span className="font-semibold text-primary-text">first student</span> to participate in the centre&apos;s inaugural internship programme.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Built a full-stack device management web app on <span className="font-semibold text-primary-text">Ruby on Rails</span>, following <span className="font-semibold text-primary-text">MVC</span> design, <span className="font-semibold text-primary-text">PostgreSQL</span> database and <span className="font-semibold text-primary-text">HTML &amp; CSS</span>, saving <span className="font-semibold text-primary-text">£2,000+</span> annually on lost devices.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Used <span className="font-semibold text-primary-text">GitHub</span> for collaborative development with feature branching and pull requests; integrated automated testing workflows to maintain code quality and version control in a team of <span className="font-semibold text-primary-text">9 developers</span>.</span></li>
             </ul>
           </div>
         </div>
@@ -216,10 +214,9 @@ export default function Home() {
             </div>
 
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-4">
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Contributed within a world-leading manufacturing research centre collaborating with industry leaders including <span className="font-semibold text-primary-text">Boeing</span>, <span className="font-semibold text-primary-text">Rolls-Royce</span> and <span className="font-semibold text-primary-text">Airbus</span>.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Selected as the <span className="font-semibold text-primary-text">first student</span> to participate in the centre&apos;s inaugural internship programme.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Built a full-stack device management web app on <span className="font-semibold text-primary-text">Ruby on Rails</span>, following <span className="font-semibold text-primary-text">MVC</span> design, <span className="font-semibold text-primary-text">PostgreSQL</span> database and <span className="font-semibold text-primary-text">HTML &amp; CSS</span>, saving <span className="font-semibold text-primary-text">£2,000+</span> annually on lost devices.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Used <span className="font-semibold text-primary-text">GitHub</span> for collaborative development with feature branching and pull requests; integrated automated testing workflows to maintain code quality and version control in a team of <span className="font-semibold text-primary-text">9 developers</span>.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Worked within <span className="font-semibold text-primary-text">Europe&apos;s largest student-led investment fund</span>, overseeing more than <span className="font-semibold text-primary-text">£250,000</span> in assets under management.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Developed a portfolio analytics dashboard by integrating data from the fund&apos;s <span className="font-semibold text-primary-text">C# investment platform API</span> to improve visibility into portfolio performance and allocation data.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Explored quantitative portfolio optimisation approaches using <span className="font-semibold text-primary-text">Modern Portfolio Theory</span> to investigate future allocation strategies and risk-adjusted portfolio balancing.</span></li>
             </ul>
           </div>
 
@@ -228,6 +225,11 @@ export default function Home() {
             <img src="/twikkerfund.png" alt="Twikker Fund" className="w-full h-full object-contain object-top" />
           </div>
         </div>
+      </div>
+    </section>
+    <section id="projects" className="flex items-center px-[8%] lg:px-[18%] pt-8 pb-16 bg-primary-bg">
+      <div className="flex flex-col gap-12 w-full">
+        <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Projects</h2>
       </div>
     </section>
     </>

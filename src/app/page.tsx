@@ -231,7 +231,21 @@ export default function Home() {
     <section id="projects" className="flex items-center px-[8%] lg:px-[18%] pt-8 pb-16 bg-primary-bg">
       <div className="flex flex-col gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Projects</h2>
-        <TappableVideo src="/steeze.mp4" className="w-1/3 h-[50vh] object-cover rounded-2xl" />
+        <div className="flex gap-10 items-start">
+          <TappableVideo src="/steeze.mp4" className="w-1/4 shrink-0 h-[50vh] object-cover rounded-2xl" />
+          <div className="flex flex-col gap-5 py-2">
+            <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Steeze Mobile App</h3>
+            <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3">
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>A cross-platform mobile app built with <span className="font-semibold text-primary-text">React Native</span> and <span className="font-semibold text-primary-text">Expo</span>, enabling users to discover, share and track their favourite spots.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Integrated <span className="font-semibold text-primary-text">Supabase</span> for real-time database, authentication and row-level security across user profiles and content.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Used <span className="font-semibold text-primary-text">AWS S3</span> for scalable media storage, handling image uploads and retrieval for user-generated content.</span></li>
+            </ul>
+            <div className="flex items-center gap-2">
+              <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Tech Stack</p>
+              <img src="/supabase.jpeg" alt="Supabase" className="w-10 h-10 rounded-sm object-cover" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     </>

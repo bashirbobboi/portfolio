@@ -148,7 +148,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex gap-6 items-stretch">
+        <div className="flex gap-6 items-stretch mt-8">
           {/* Entry content */}
           <div className="flex flex-col flex-1">
             <div className="flex items-baseline justify-between">

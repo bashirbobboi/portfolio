@@ -5,6 +5,7 @@ import { RadialNavWrapper } from "@/components/radial-nav-wrapper";
 import { MapPin, Calendar } from "lucide-react";
 import { TechIcon } from "@/components/tech-icon";
 import { GithubChart } from "@/components/github-chart";
+import { ButtonWithIcon } from "@/components/ui/button-with-icon";
 
 export default function Home() {
   return (
@@ -430,6 +431,31 @@ export default function Home() {
         <p className="font-secondary text-zinc-500 text-lg lg:text-2xl text-center tracking-tight">
           More Projects on <a href="#home" className="text-blue-500 hover:text-blue-600 transition-colors">GitHub</a>
         </p>
+      </div>
+    </section>
+
+    <section id="certifications" className="flex items-center px-[8%] lg:px-[18%] pt-8 pb-16 bg-primary-bg">
+      <div className="flex flex-col gap-12 w-full">
+        <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Professional Certifications</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="flex flex-col gap-4 bg-zinc-50 rounded-2xl p-6 border border-zinc-200 hover:border-zinc-400 transition-colors">
+            <div className="flex items-center justify-between gap-4">
+              <img src="/logos/jpmorgan.png" alt="JP Morgan" className="h-6 object-contain object-left" />
+              <ButtonWithIcon small label="View Certification" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_6q3Di7qt6AadqzD4q_1697294986576_completion_certificate.pdf" />
+            </div>
+            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_6q3Di7qt6AadqzD4q_1697294986576_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" className="flex flex-col gap-2 no-underline">
+              <h3 className="font-primary text-primary-text text-lg lg:text-xl font-bold">JP Morgan Software Engineering Professional Certificate</h3>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base">This virtual experience programme explored real-world software engineering practices within financial technology, covering debugging, repository management, data visualisation, and live market data monitoring using JPMorgan Chase&apos;s Perspective library.</p>
+            </a>
+          </div>
+          <div className="flex flex-col gap-4 bg-zinc-50 rounded-2xl p-6 border border-zinc-200">
+            <img src="/logos/jpmorgan.png" alt="JP Morgan" className="h-6 object-contain object-left" />
+            <div className="flex flex-col gap-2">
+              <h3 className="font-primary text-primary-text text-lg lg:text-xl font-bold">JP Morgan Software Engineering Professional Certificate</h3>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base">This virtual experience programme explored real-world software engineering practices within financial technology, covering debugging, repository management, data visualisation, and live market data monitoring using JPMorgan Chase&apos;s Perspective library.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     </>

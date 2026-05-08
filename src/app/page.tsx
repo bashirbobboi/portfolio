@@ -369,8 +369,8 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <div className="w-full h-64 lg:h-96 rounded-2xl border border-zinc-200 bg-white flex items-center justify-center overflow-hidden">
-            <span className="font-secondary text-zinc-400 text-sm">Preview image</span>
+          <div className="w-full h-64 lg:h-116 rounded-2xl  overflow-hidden">
+            <img src="/logos/elevatorpitch.png" alt="Elevator Pitch" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between gap-4">

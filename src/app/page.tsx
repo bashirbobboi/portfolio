@@ -448,12 +448,15 @@ export default function Home() {
               <p className="font-secondary text-zinc-500 text-sm lg:text-base">This virtual experience programme explored real-world software engineering practices within financial technology, covering debugging, repository management, data visualisation, and live market data monitoring using JPMorgan Chase&apos;s Perspective library.</p>
             </a>
           </div>
-          <div className="flex flex-col gap-4 bg-zinc-50 rounded-2xl p-6 border border-zinc-200">
-            <img src="/logos/jpmorgan.png" alt="JP Morgan" className="h-6 object-contain object-left" />
-            <div className="flex flex-col gap-2">
-              <h3 className="font-primary text-primary-text text-lg lg:text-xl font-bold">JP Morgan Software Engineering Professional Certificate</h3>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base">This virtual experience programme explored real-world software engineering practices within financial technology, covering debugging, repository management, data visualisation, and live market data monitoring using JPMorgan Chase&apos;s Perspective library.</p>
+          <div className="flex flex-col gap-4 bg-zinc-50 rounded-2xl p-6 border border-zinc-200 hover:border-zinc-400 transition-colors">
+            <div className="flex items-center justify-between gap-4">
+              <img src="/tech/google.png" alt="Google" className="h-6 object-contain object-left" />
+              <ButtonWithIcon small label="View Certification" href="https://coursera.org/verify/E6F9DUL2QXLG" />
             </div>
+            <a href="https://coursera.org/verify/E6F9DUL2QXLG" target="_blank" rel="noopener noreferrer" className="flex flex-col gap-2 no-underline">
+              <h3 className="font-primary text-primary-text text-lg lg:text-xl font-bold">Google Python Professional Certificate</h3>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base">Completed Google&apos;s Crash Course on Python via Coursera, covering core programming concepts including data structures, object-oriented programming, and automation scripting in Python.</p>
+            </a>
           </div>
         </div>
       </div>

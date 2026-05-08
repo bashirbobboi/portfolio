@@ -233,8 +233,8 @@ export default function Home() {
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Projects</h2>
         <GithubChart username="bashirbobboi" />
         <div className="flex flex-col gap-4">
-          <div className="w-full h-64 lg:h-96 rounded-2xl border border-zinc-200 bg-white flex items-center justify-center overflow-hidden">
-            <span className="font-secondary text-zinc-400 text-sm">Preview image (Steeze)</span>
+          <div className="w-full h-64 lg:h-130 rounded-2xl border border-zinc-200 overflow-hidden">
+            <video src="/steezewide.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between gap-4">

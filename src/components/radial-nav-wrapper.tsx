@@ -8,7 +8,7 @@ import {
   Briefcase,
   FolderGit2,
   Award,
-  Wrench,
+  Code2,
 } from "lucide-react";
 
 const navItems = [
@@ -17,7 +17,7 @@ const navItems = [
   { id: 3, icon: Briefcase, label: "Experience", angle: 120, sectionId: "experience" },
   { id: 4, icon: FolderGit2, label: "Projects", angle: 180, sectionId: "projects" },
   { id: 5, icon: Award, label: "Certifications", angle: 240, sectionId: "certifications" },
-  { id: 6, icon: Wrench, label: "Skills", angle: 300, sectionId: "skills" },
+  { id: 6, icon: Code2, label: "Skills", angle: 300, sectionId: "skills" },
 ];
 
 export function RadialNavWrapper() {

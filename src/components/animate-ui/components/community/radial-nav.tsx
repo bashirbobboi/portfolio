@@ -9,6 +9,7 @@ type RadialNavProps = {
   items: RadialNavItem[];
   menuButtonConfig?: MenuButtonConfig;
   defaultActiveId?: number;
+  activeId?: number | null;
   onActiveChange?: (id: number) => void;
 };
 
@@ -184,19 +185,22 @@ function RadialNav({
   items,
   menuButtonConfig,
   defaultActiveId,
+  activeId: controlledActiveId,
   onActiveChange,
 }: RadialNavProps) {
   const orbitRadius = size / 2 - 0.5;
-  const [activeId, setActiveId] = React.useState<number | null>(
+  const [internalActiveId, setInternalActiveId] = React.useState<number | null>(
     defaultActiveId ?? null,
   );
+  const isControlled = controlledActiveId !== undefined;
+  const activeId = isControlled ? controlledActiveId : internalActiveId;
 
   const handleActivate = React.useCallback(
     (id: number) => {
-      setActiveId(id);
+      if (!isControlled) setInternalActiveId(id);
       onActiveChange?.(id);
     },
-    [onActiveChange],
+    [isControlled, onActiveChange],
   );
 
   const baseAngle =

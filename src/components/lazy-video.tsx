@@ -41,6 +41,7 @@ export function LazyVideo({
       muted
       loop
       playsInline
+      controls
       preload="metadata"
       className={className}
     />

@@ -52,7 +52,7 @@ export default function Home() {
       <div className="flex flex-col gap-6 lg:gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Education</h2>
 
-        <div className="flex flex-col lg:flex-row gap-6 lg:items-stretch">
+        <div className="flex flex-col gap-2 lg:flex-row lg:gap-6 lg:items-stretch">
           {/* Logo spanning full entry height */}
           <div className="w-full h-64 lg:self-stretch lg:w-100 lg:h-auto shrink-0 flex items-stretch">
             <img loading="lazy" src="/logos/sheffield.webp" alt="University of Sheffield" className="w-full h-full object-contain object-top" />
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col-reverse lg:flex-row gap-6 lg:items-stretch">
+        <div className="flex flex-col-reverse gap-2 lg:flex-row lg:gap-6 lg:items-stretch">
           {/* Entry content */}
           <div className="flex flex-col flex-1 text-center lg:text-left">
             <div className="flex flex-col lg:grid lg:grid-cols-[1fr_auto] gap-x-4 gap-y-1 text-center lg:text-left">
@@ -117,7 +117,7 @@ export default function Home() {
       <div className="flex flex-col gap-6 lg:gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Experience</h2>
 
-        <div className="flex flex-col lg:flex-row gap-6 lg:items-stretch">
+        <div className="flex flex-col gap-0 lg:flex-row lg:gap-6 lg:items-stretch">
           {/* Logo on left */}
           <div className="w-full h-64 lg:self-stretch lg:w-100 lg:h-auto shrink-0 flex items-stretch">
             <img loading="lazy" src="/projects/steeze.webp" alt="Steeze" className="w-full h-full object-contain object-top" />
@@ -140,7 +140,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col-reverse lg:flex-row gap-6 lg:items-stretch mt-8">
+        <div className="flex flex-col-reverse gap-3 lg:flex-row lg:gap-6 lg:items-stretch mt-8">
           {/* Entry content */}
           <div className="flex flex-col flex-1 text-center lg:text-left">
             <div className="flex flex-col lg:grid lg:grid-cols-[1fr_auto] gap-x-4 gap-y-1 text-center lg:text-left">
@@ -159,11 +159,11 @@ export default function Home() {
 
           {/* Logo on right */}
           <div className="w-full h-64 lg:self-stretch lg:w-100 lg:h-auto shrink-0 flex items-stretch">
-            <img loading="lazy" src="/logos/180dc.webp" alt="180DC" className="w-full h-full object-contain object-top" />
+            <img loading="lazy" src="/logos/180dc.webp" alt="180DC" className="w-full h-full object-contain object-bottom lg:object-top" />
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-6 lg:items-stretch mt-8">
+        <div className="flex flex-col gap-2 lg:flex-row lg:gap-6 lg:items-stretch mt-8">
           {/* Logo on left */}
           <div className="w-full h-64 lg:self-stretch lg:w-100 lg:h-auto shrink-0 flex items-stretch">
             <img loading="lazy" src="/logos/amrc.webp" alt="AMRC" className="w-full h-full object-contain object-top" />
@@ -186,7 +186,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col-reverse lg:flex-row gap-6 lg:items-stretch mt-8">
+        <div className="flex flex-col-reverse gap-2 lg:flex-row lg:gap-6 lg:items-stretch mt-8">
           {/* Entry content */}
           <div className="flex flex-col flex-1 text-center lg:text-left">
             <div className="flex flex-col lg:grid lg:grid-cols-[1fr_auto] gap-x-4 gap-y-1 text-center lg:text-left">

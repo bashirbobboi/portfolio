@@ -475,54 +475,59 @@ export default function Home() {
           <div className="flex flex-col gap-6">
             <h3 className="font-secondary text-primary-text text-lg lg:text-xl font-bold">Frontend</h3>
             <div className="flex flex-wrap gap-x-6 gap-y-5">
-              <SkillTile src="/tech/javascript.png" label="JavaScript" contain bg="bg-[#fed703]" />
-              <SkillTile src="/tech/nextjs.svg" label="Next.js" blackBg />
-              <SkillTile src="/tech/reactnative.png" label="React Native" contain whiteBg />
-              <SkillTile src="/tech/expo.jpeg" label="Expo" />
-              <SkillTile src="/tech/streamlit.png" label="Streamlit" whiteBg />
-              <SkillTile src="/tech/figma.png" label="Figma" whiteBg />
+              <SkillTile src="/tech/javascript.png" label="JavaScript" subtitle="Programming Language" contain bg="bg-[#fed703]" />
+              <SkillTile src="/tech/typescript.png" label="TypeScript" subtitle="Programming Language" contain bg="bg-[#2f74c0]" />
+              <SkillTile src="/tech/htmlcss.png" label="HTML & CSS" subtitle="Markup & Styling" contain whiteBg />
+              <SkillTile src="/tech/kotlin.png" label="Kotlin" subtitle="Programming Language" contain bg="bg-white" />
+              <SkillTile src="/tech/nextjs.svg" label="Next.js" subtitle="Web Framework" blackBg />
+              <SkillTile src="/tech/reactnative.png" label="React Native" subtitle="Mobile Framework" contain whiteBg />
+              <SkillTile src="/tech/expo.jpeg" label="Expo" subtitle="Mobile Platform" />
+              <SkillTile src="/tech/streamlit.png" label="Streamlit" subtitle="Web App Framework" whiteBg />
+              <SkillTile src="/tech/figma.png" label="Figma" subtitle="Design Tool" whiteBg />
             </div>
           </div>
 
           <div className="flex flex-col gap-6">
             <h3 className="font-secondary text-primary-text text-lg lg:text-xl font-bold">Backend</h3>
             <div className="flex flex-wrap gap-x-6 gap-y-5">
-              <SkillTile src="/tech/python.png" label="Python" contain whiteBg />
-              <SkillTile src="/tech/nodejs.png" label="Node.js" contain whiteBg />
-              <SkillTile src="/tech/express.png" label="Express" contain whiteBg />
-              <SkillTile src="/tech/typer.png" label="Typer" blackBg />
-              <SkillTile src="/tech/mongodb.png" label="MongoDB" whiteBg />
-              <SkillTile src="/tech/postgres.png" label="PostgreSQL" whiteBg />
-              <SkillTile src="/tech/sqlite.png" label="SQLite" whiteBg />
-              <SkillTile src="/tech/supabase.jpeg" label="Supabase" />
+              <SkillTile src="/tech/python.png" label="Python" subtitle="Programming Language" contain whiteBg />
+              <SkillTile src="/tech/java.png" label="Java" subtitle="Programming Language" whiteBg />
+              <SkillTile src="/tech/rubyonrails.png" label="Ruby on Rails" subtitle="Web Framework" whiteBg />
+              <SkillTile src="/tech/nodejs.png" label="Node.js" subtitle="JavaScript Runtime" contain whiteBg />
+              <SkillTile src="/tech/express.png" label="Express" subtitle="Web Framework" contain whiteBg />
+              <SkillTile src="/tech/typer.png" label="Typer" subtitle="CLI Library" blackBg />
+              <SkillTile src="/tech/mongodb.png" label="MongoDB" subtitle="Database" whiteBg />
+              <SkillTile src="/tech/postgres.png" label="PostgreSQL" subtitle="Database" whiteBg />
+              <SkillTile src="/tech/sqlite.png" label="SQLite" subtitle="Database" whiteBg />
+              <SkillTile src="/tech/supabase.jpeg" label="Supabase" subtitle="Backend-as-a-Service" />
             </div>
           </div>
 
           <div className="flex flex-col gap-6">
             <h3 className="font-secondary text-primary-text text-lg lg:text-xl font-bold">Cloud &amp; DevOps</h3>
             <div className="flex flex-wrap gap-x-6 gap-y-5">
-              <SkillTile src="/tech/s3.png" label="AWS S3" whiteBg />
-              <SkillTile src="/tech/awscognito.jpg" label="Cognito" />
-              <SkillTile src="/tech/docker.png" label="Docker" whiteBg />
-              <SkillTile src="/tech/vercel.jpg" label="Vercel" />
-              <SkillTile src="/tech/cloudinary.png" label="Cloudinary" whiteBg />
-              <SkillTile src="/tech/resend.png" label="Resend" blackBg />
-              <SkillTile src="/tech/google.png" label="Google OAuth" whiteBg />
+              <SkillTile src="/tech/s3.png" label="AWS S3" subtitle="Cloud Storage" whiteBg />
+              <SkillTile src="/tech/awscognito.jpg" label="Cognito" subtitle="Authentication Service" />
+              <SkillTile src="/tech/docker.png" label="Docker" subtitle="Containerisation" whiteBg />
+              <SkillTile src="/tech/vercel.jpg" label="Vercel" subtitle="Hosting Platform" />
+              <SkillTile src="/tech/cloudinary.png" label="Cloudinary" subtitle="Media Platform" whiteBg />
+              <SkillTile src="/tech/resend.png" label="Resend" subtitle="Email API" blackBg />
+              <SkillTile src="/tech/google.png" label="Google OAuth" subtitle="Authentication" whiteBg />
             </div>
           </div>
 
           <div className="flex flex-col gap-6">
             <h3 className="font-secondary text-primary-text text-lg lg:text-xl font-bold">Data &amp; Tools</h3>
             <div className="flex flex-wrap gap-x-6 gap-y-5">
-              <SkillTile src="/tech/pytest.png" label="Pytest" contain whiteBg />
-              <SkillTile src="/tech/jupyter.png" label="Jupyter" whiteBg />
-              <SkillTile src="/tech/numpy.svg" label="NumPy" whiteBg />
-              <SkillTile src="/tech/pandas.png" label="Pandas" />
-              <SkillTile src="/tech/scikit-learn.svg" label="scikit-learn" whiteBg />
-              <SkillTile src="/tech/scipy.svg" label="SciPy" whiteBg />
-              <SkillTile src="/tech/github.webp" label="GitHub" whiteBg />
-              <SkillTile src="/tech/bitbucket.png" label="Bitbucket" whiteBg />
-              <SkillTile src="/tech/xcode.png" label="Xcode" bg="bg-[#207df4]" />
+              <SkillTile src="/tech/pytest.png" label="Pytest" subtitle="Testing Framework" contain whiteBg />
+              <SkillTile src="/tech/jupyter.png" label="Jupyter" subtitle="Notebook Environment" whiteBg />
+              <SkillTile src="/tech/numpy.svg" label="NumPy" subtitle="Numerical Library" whiteBg />
+              <SkillTile src="/tech/pandas.png" label="Pandas" subtitle="Data Analysis Library" />
+              <SkillTile src="/tech/scikit-learn.svg" label="scikit-learn" subtitle="Machine Learning Library" whiteBg />
+              <SkillTile src="/tech/scipy.svg" label="SciPy" subtitle="Scientific Library" whiteBg />
+              <SkillTile src="/tech/github.webp" label="GitHub" subtitle="Version Control" whiteBg />
+              <SkillTile src="/tech/bitbucket.png" label="Bitbucket" subtitle="Version Control" whiteBg />
+              <SkillTile src="/tech/xcode.png" label="Xcode" subtitle="iOS IDE" bg="bg-[#207df4]" />
             </div>
           </div>
         </div>

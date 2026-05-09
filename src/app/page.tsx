@@ -11,7 +11,7 @@ import { LazyVideo } from "@/components/lazy-video";
 export default function Home() {
   return (
     <>
-    <main id="home" className="flex flex-1 flex-col lg:flex-row items-center justify-between px-[8%] lg:px-[18%] pt-24 lg:pt-24 gap-8 bg-primary-bg">
+    <main id="home" className="flex flex-1 flex-col lg:flex-row items-center justify-between px-[8%] lg:px-[18%] pt-24 lg:pt-24 gap-8 bg-primary-bg overflow-x-hidden">
       <div className="flex flex-col gap-6 lg:gap-12 max-w-xl lg:max-w-3xl">
         <h1 className="font-primary text-primary-text text-2xl sm:text-3xl lg:text-5xl font-bold text-center lg:text-left">Mohammed Bobboi is a Software Engineer based in London, England.</h1>
         <p className="font-secondary text-primary-text text-sm sm:text-base lg:text-xl text-center lg:text-left"> He is a Computer Science Graduate from the University of Sheffield with 2+ years of experience in Software Development, AI/ML/GenAI and delivering scalable, business-focused solutions across fintech, startups and R&D environments.</p>
@@ -43,9 +43,7 @@ export default function Home() {
           className="absolute -bottom-12 -right-16 w-56 h-56 sm:-bottom-18 sm:-right-26 sm:w-80 sm:h-80 object-cover rotate-180 z-10"
         />
       </div>
-      <div className="fixed top-4 left-4 lg:top-12 lg:left-16 z-50">
-        <RadialNavWrapper />
-      </div>
+      <RadialNavWrapper />
     </main>
 
     <section id="education" className="flex items-center px-[8%] lg:px-[18%] pt-32 pb-8 bg-primary-bg">

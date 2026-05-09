@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", viaodaLibre.variable, openRunde.variable, "font-sans", geist.variable)}
+      className={cn("h-full overflow-x-hidden", "antialiased", viaodaLibre.variable, openRunde.variable, "font-sans", geist.variable)}
     >
       <body className="min-h-full flex flex-col overflow-x-hidden">
         {children}

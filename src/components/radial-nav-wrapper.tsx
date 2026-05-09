@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion, useMotionValue, animate } from "motion/react";
 import { RadialNav } from "@/components/animate-ui/components/community/radial-nav";
 import {
   Home as HomeIcon,
@@ -31,16 +31,63 @@ export function RadialNavWrapper() {
   const clickScrollTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
   const containerRef = React.useRef<HTMLDivElement>(null);
 
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const preExpandPos = React.useRef<{ x: number; y: number } | null>(null);
+  const [dragConstraints, setDragConstraints] = React.useState({ left: 0, right: 0, top: 0, bottom: 0 });
+
   React.useEffect(() => {
     const update = () => {
       const mobile = window.innerWidth < 1024;
       setIsMobile(mobile);
       setSize(mobile ? 130 : 150);
+      // Constraints assume collapsed button (48px) at base (16,16). Drag only happens collapsed.
+      const COLLAPSED = 48;
+      const BASE = 16;
+      setDragConstraints({
+        left: -BASE,
+        top: -BASE,
+        right: window.innerWidth - BASE - COLLAPSED,
+        bottom: window.innerHeight - BASE - COLLAPSED,
+      });
     };
     update();
     window.addEventListener("resize", update);
     return () => window.removeEventListener("resize", update);
   }, []);
+
+  // When expanding on mobile, ensure full radial fits viewport; shift inward if not.
+  React.useEffect(() => {
+    if (!isMobile) return;
+    if (isExpanded) {
+      preExpandPos.current = { x: x.get(), y: y.get() };
+      const id = requestAnimationFrame(() => {
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+        const pad = 8;
+        const BASE = 16; // top-4 / left-4
+        const overflow = 75; // active item expands to ~140px pill, extending past size box
+        const extent = size + overflow * 2;
+        const left = BASE + x.get() - overflow;
+        const top = BASE + y.get() - overflow;
+        const right = left + extent;
+        const bottom = top + extent;
+        let dx = 0;
+        let dy = 0;
+        if (right > vw - pad) dx = vw - pad - right;
+        if (left + dx < pad) dx = pad - left;
+        if (bottom > vh - pad) dy = vh - pad - bottom;
+        if (top + dy < pad) dy = pad - top;
+        if (dx) animate(x, x.get() + dx, { type: "spring", stiffness: 280, damping: 28 });
+        if (dy) animate(y, y.get() + dy, { type: "spring", stiffness: 280, damping: 28 });
+      });
+      return () => cancelAnimationFrame(id);
+    } else if (preExpandPos.current) {
+      animate(x, preExpandPos.current.x, { type: "spring", stiffness: 280, damping: 28 });
+      animate(y, preExpandPos.current.y, { type: "spring", stiffness: 280, damping: 28 });
+      preExpandPos.current = null;
+    }
+  }, [isExpanded, isMobile, x, y]);
 
   React.useEffect(() => {
     if (!isMobile || !isExpanded) return;
@@ -99,8 +146,25 @@ export function RadialNavWrapper() {
   const activeItem = navItems.find((it) => it.id === activeId);
   const ActiveIcon = activeItem?.icon ?? Menu;
 
+  // Position knobs — tweak freely
+  const collapsedMobilePos = "top-4 left-4";
+  const expandedMobilePos = "top-4 left-4";
+  const desktopPos = "lg:top-12 lg:left-16";
+  const showCollapsed = isMobile && !isExpanded;
+  const posClass = showCollapsed
+    ? `${collapsedMobilePos} ${desktopPos}`
+    : `${expandedMobilePos} ${desktopPos}`;
+
   return (
-    <div ref={containerRef}>
+    <motion.div
+      ref={containerRef}
+      drag={isMobile && !isExpanded}
+      dragMomentum={false}
+      dragElastic={0}
+      dragConstraints={dragConstraints}
+      style={{ x, y }}
+      className={`fixed z-50 ${posClass} touch-none`}
+    >
       <AnimatePresence mode="wait" initial={false}>
         {isMobile && !isExpanded ? (
           <motion.button
@@ -134,6 +198,6 @@ export function RadialNavWrapper() {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 }

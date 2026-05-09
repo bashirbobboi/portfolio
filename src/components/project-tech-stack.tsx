@@ -23,7 +23,7 @@ export function ProjectTechStack({ items }: { items: ProjectTechItem[] }) {
     if (!mq.matches) return;
     const obs = new IntersectionObserver(
       (entries) => entries.forEach((e) => setInView(e.isIntersecting)),
-      { threshold: 0.5 },
+      { rootMargin: "-25% 0px -60% 0px", threshold: 0 },
     );
     obs.observe(el);
     return () => obs.disconnect();

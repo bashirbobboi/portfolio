@@ -11,8 +11,8 @@ import { LazyVideo } from "@/components/lazy-video";
 export default function Home() {
   return (
     <>
-    <main id="home" className="flex flex-1 flex-col lg:flex-row items-center justify-between px-[8%] lg:px-[18%] pt-24 lg:pt-24 gap-8 bg-primary-bg overflow-x-hidden">
-      <div className="flex flex-col gap-6 lg:gap-12 max-w-xl lg:max-w-3xl">
+    <main id="home" className="flex min-h-screen flex-col lg:flex-row items-center justify-center lg:justify-between px-[8%] lg:px-[18%] pt-24 lg:pt-0 gap-8 bg-primary-bg overflow-x-hidden">
+      <div className="flex flex-col mb-8 lg:mb-0 gap-6 lg:gap-12 max-w-xl lg:max-w-3xl">
         <h1 className="font-primary text-primary-text text-2xl sm:text-3xl lg:text-5xl font-bold text-center lg:text-left">Mohammed Bobboi is a Software Engineer based in London, England.</h1>
         <p className="font-secondary text-primary-text text-sm sm:text-base lg:text-xl text-center lg:text-left"> He is a Computer Science Graduate from the University of Sheffield with 2+ years of experience in Software Development, AI/ML/GenAI and delivering scalable, business-focused solutions across fintech, startups and R&D environments.</p>
         <div className="flex gap-4 justify-center lg:justify-start">
@@ -24,7 +24,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="relative w-44 h-[260px] sm:w-56 sm:h-[320px] lg:w-80 lg:h-[400px] shrink-0">
+      <div className="relative w-44 h-[260px] sm:w-56 sm:h-[320px] lg:w-80 lg:h-[400px] shrink-0 -mt-12 lg:mt-0">
         <Image
           src="/myphoto.jpeg"
           alt="My photo"
@@ -35,18 +35,18 @@ export default function Home() {
         <img loading="lazy"
           src="/doodle.gif"
           alt="doodle"
-          className="absolute -top-12 -left-16 w-56 h-56 sm:-top-18 sm:-left-26 sm:w-80 sm:h-80 object-cover"
+          className="absolute -top-8 -left-12 w-36 h-36 sm:w-44 sm:h-44 lg:-top-18 lg:-left-26 lg:w-80 lg:h-80 object-cover"
         />
         <img loading="lazy"
           src="/doodle.gif"
           alt="doodle"
-          className="absolute -bottom-12 -right-16 w-56 h-56 sm:-bottom-18 sm:-right-26 sm:w-80 sm:h-80 object-cover rotate-180 z-10"
+          className="absolute -bottom-8 -right-12 w-36 h-36 sm:w-44 sm:h-44 lg:-bottom-18 lg:-right-26 lg:w-80 lg:h-80 object-cover rotate-180 z-10"
         />
       </div>
       <RadialNavWrapper />
     </main>
 
-    <section id="education" className="flex items-center px-[8%] lg:px-[18%] pt-32 pb-8 bg-primary-bg">
+    <section id="education" className="flex items-center px-[8%] lg:px-[18%] pt-12 lg:pt-0 pb-8 bg-primary-bg">
       <div className="flex flex-col gap-6 lg:gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Education</h2>
 

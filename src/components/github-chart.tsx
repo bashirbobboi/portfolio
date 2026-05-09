@@ -114,7 +114,8 @@ export function GithubChart({ username }: { username: string }) {
       <div className="w-full overflow-x-auto">
         <svg
           viewBox={`0 0 ${width} ${height}`}
-          className="w-full h-auto"
+          preserveAspectRatio="none"
+          className="w-full h-[100px] lg:h-auto"
           xmlns="http://www.w3.org/2000/svg"
           style={{ overflow: "visible" }}
         >

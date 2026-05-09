@@ -9,6 +9,7 @@ import {
   FolderGit2,
   Award,
   Code2,
+  Menu,
 } from "lucide-react";
 
 const navItems = [
@@ -23,15 +24,37 @@ const navItems = [
 export function RadialNavWrapper() {
   const [activeId, setActiveId] = React.useState<number | undefined>(undefined);
   const [size, setSize] = React.useState(150);
+  const [isMobile, setIsMobile] = React.useState(false);
+  const [isExpanded, setIsExpanded] = React.useState(false);
   const isClickScrollingRef = React.useRef(false);
   const clickScrollTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+  const containerRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
-    const update = () => setSize(window.innerWidth < 1024 ? 110 : 150);
+    const update = () => {
+      const mobile = window.innerWidth < 1024;
+      setIsMobile(mobile);
+      setSize(mobile ? 130 : 150);
+    };
     update();
     window.addEventListener("resize", update);
     return () => window.removeEventListener("resize", update);
   }, []);
+
+  React.useEffect(() => {
+    if (!isMobile || !isExpanded) return;
+    const handler = (e: Event) => {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+        setIsExpanded(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    document.addEventListener("touchstart", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler);
+      document.removeEventListener("touchstart", handler);
+    };
+  }, [isMobile, isExpanded]);
 
   const handleActiveChange = React.useCallback((id: number) => {
     const item = navItems.find((it) => it.id === id);
@@ -45,6 +68,7 @@ export function RadialNavWrapper() {
     clickScrollTimerRef.current = setTimeout(() => {
       isClickScrollingRef.current = false;
     }, 800);
+    setIsExpanded(false);
   }, []);
 
   React.useEffect(() => {
@@ -71,12 +95,32 @@ export function RadialNavWrapper() {
     return () => observer.disconnect();
   }, []);
 
+  const activeItem = navItems.find((it) => it.id === activeId);
+  const ActiveIcon = activeItem?.icon ?? Menu;
+
+  if (isMobile && !isExpanded) {
+    return (
+      <div ref={containerRef}>
+        <button
+          type="button"
+          onClick={() => setIsExpanded(true)}
+          aria-label="Open navigation"
+          className="flex items-center justify-center size-12 rounded-full bg-primary-bg border border-neutral-900 text-neutral-900 shadow-md active:scale-95 transition-transform"
+        >
+          <ActiveIcon size={20} />
+        </button>
+      </div>
+    );
+  }
+
   return (
-    <RadialNav
-      items={navItems}
-      size={size}
-      activeId={activeId ?? null}
-      onActiveChange={handleActiveChange}
-    />
+    <div ref={containerRef}>
+      <RadialNav
+        items={navItems}
+        size={size}
+        activeId={activeId ?? null}
+        onActiveChange={handleActiveChange}
+      />
+    </div>
   );
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { RadialNavWrapper } from "@/components/radial-nav-wrapper";
 import { MapPin, Calendar } from "lucide-react";
-import { TechIcon } from "@/components/tech-icon";
+import { ProjectTechStack } from "@/components/project-tech-stack";
 import { GithubChart } from "@/components/github-chart";
 import { ButtonWithIcon } from "@/components/ui/button-with-icon";
 import { WatercolorCard } from "@/components/watercolor-card";
@@ -228,15 +228,15 @@ export default function Home() {
               </a>
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
-                <div className="flex items-center group/stack6">
-                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack6:rotate-0"><TechIcon src="/tech/reactnative.png" label="React Native" subtitle="Mobile Framework" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-50 rotate-[-3deg] group-hover/stack6:rotate-0"><TechIcon src="/tech/expo.jpeg" label="Expo" subtitle="Mobile Platform" /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-30 rotate-[5deg] group-hover/stack6:rotate-0"><TechIcon src="/tech/s3.png" label="AWS S3" subtitle="Cloud Storage" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-40 rotate-[2deg] group-hover/stack6:rotate-0"><TechIcon src="/tech/supabase.jpeg" label="Supabase" subtitle="Backend-as-a-Service" /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-20 rotate-[-4deg] group-hover/stack6:rotate-0"><TechIcon src="/tech/postgres.png" label="PostgreSQL" subtitle="Database" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-10 rotate-[3deg] group-hover/stack6:rotate-0"><TechIcon src="/tech/resend.png" label="Resend" subtitle="Email API" blackBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack6:ml-2 z-0 rotate-[-2deg] group-hover/stack6:rotate-0"><TechIcon src="/tech/figma.png" label="Figma" subtitle="Design Tool" whiteBg /></div>
-                </div>
+                <ProjectTechStack items={[
+                  { src: "/tech/reactnative.png", label: "React Native", contain: true, whiteBg: true, rotate: -6 },
+                  { src: "/tech/expo.jpeg", label: "Expo", rotate: -3 },
+                  { src: "/tech/s3.png", label: "AWS S3", whiteBg: true, rotate: 5 },
+                  { src: "/tech/supabase.jpeg", label: "Supabase", rotate: 2 },
+                  { src: "/tech/postgres.png", label: "PostgreSQL", whiteBg: true, rotate: -4 },
+                  { src: "/tech/resend.png", label: "Resend", blackBg: true, rotate: 3 },
+                  { src: "/tech/figma.png", label: "Figma", whiteBg: true, rotate: -2 },
+                ]} />
               </div>
             </div>
             <p className="font-secondary text-zinc-500 text-sm lg:text-base">Developed a cross-platform mobile application using <span className="font-semibold text-primary-text">React Native</span> and <span className="font-semibold text-primary-text">Expo</span>, backed by a <span className="font-semibold text-primary-text">PostgreSQL</span> database with <span className="font-semibold text-primary-text">Supabase</span> as the backend-as-a-service layer, currently supporting over <span className="font-semibold text-primary-text">1,000 users</span>. Designed and translated complex user requirements into an intuitive mobile experience by producing wireframes and UI flows for <span className="font-semibold text-primary-text">26+ screens</span> in <span className="font-semibold text-primary-text">Figma</span>, while also integrating <span className="font-semibold text-primary-text">AWS S3</span> object storage via Supabase for secure file handling and <span className="font-semibold text-primary-text">Resend</span> for scalable email delivery.</p>
@@ -257,14 +257,14 @@ export default function Home() {
               </a>
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
-                <div className="flex items-center group/stack5">
-                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack5:rotate-0"><TechIcon src="/tech/python.png" label="Python" subtitle="Programming Language" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-50 rotate-[-3deg] group-hover/stack5:rotate-0"><TechIcon src="/tech/pytest.png" label="Pytest" subtitle="Testing Framework" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-10 rotate-[3deg] group-hover/stack5:rotate-0"><TechIcon src="/tech/typer.png" label="Typer" subtitle="CLI Library" blackBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-40 rotate-[2deg] group-hover/stack5:rotate-0"><TechIcon src="/tech/scipy.svg" label="SciPy" subtitle="Scientific Library" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-30 rotate-[5deg] group-hover/stack5:rotate-0"><TechIcon src="/tech/numpy.svg" label="NumPy" subtitle="Numerical Library" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack5:ml-2 z-20 rotate-[-4deg] group-hover/stack5:rotate-0"><TechIcon src="/tech/streamlit.png" label="Streamlit" subtitle="Web App Framework" whiteBg /></div>
-                </div>
+                <ProjectTechStack items={[
+                  { src: "/tech/python.png", label: "Python", contain: true, whiteBg: true, rotate: -6 },
+                  { src: "/tech/pytest.png", label: "Pytest", contain: true, whiteBg: true, rotate: -3 },
+                  { src: "/tech/typer.png", label: "Typer", blackBg: true, rotate: 3 },
+                  { src: "/tech/scipy.svg", label: "SciPy", whiteBg: true, rotate: 2 },
+                  { src: "/tech/numpy.svg", label: "NumPy", whiteBg: true, rotate: 5 },
+                  { src: "/tech/streamlit.png", label: "Streamlit", whiteBg: true, rotate: -4 },
+                ]} />
               </div>
             </div>
             <p className="font-secondary text-zinc-500 text-sm lg:text-base">I was awarded a <span className="font-semibold text-primary-text">distinction</span> for my final-year dissertation, which explored <span className="font-semibold text-primary-text">probabilistic bisimulation</span> and <span className="font-semibold text-primary-text">Wasserstein-based behavioural distances</span>. The project involved interpreting complex mathematical theorems and translating them into a high-performance <span className="font-semibold text-primary-text">Python</span> algorithm, leveraging <span className="font-semibold text-primary-text">SciPy</span> optimisation techniques to improve computational efficiency by <span className="font-semibold text-primary-text">60–75%</span>. I also developed both a command-line interface using <span className="font-semibold text-primary-text">Typer</span> and an interactive GUI with <span className="font-semibold text-primary-text">Streamlit</span> to make the system more accessible for simulation and analysis. To ensure reliability and correctness, I designed a comprehensive <span className="font-semibold text-primary-text">Pytest</span> testing suite with unit and integration tests, achieving over <span className="font-semibold text-primary-text">90% code coverage</span> while maintaining algorithmic accuracy and UI stability.</p>
@@ -285,15 +285,15 @@ export default function Home() {
               </a>
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
-                <div className="flex items-center group/stack4">
-                  <div className="transition-all duration-300 z-70 rotate-[-6deg] group-hover/stack4:rotate-0"><TechIcon src="/tech/mongodb.png" label="MongoDB" subtitle="Database" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-60 rotate-[-3deg] group-hover/stack4:rotate-0"><TechIcon src="/tech/express.png" label="Express JS" subtitle="Web Framework" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-50 rotate-[2deg] group-hover/stack4:rotate-0"><TechIcon src="/tech/reactnative.png" label="React" subtitle="JavaScript Library" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-40 rotate-[5deg] group-hover/stack4:rotate-0"><TechIcon src="/tech/nodejs.png" label="Node JS" subtitle="JavaScript Runtime" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-30 rotate-[-4deg] group-hover/stack4:rotate-0"><TechIcon src="/tech/cloudinary.png" label="Cloudinary" subtitle="Media Platform" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-20 rotate-[3deg] group-hover/stack4:rotate-0"><TechIcon src="/tech/github.webp" label="GitHub" subtitle="Version Control" whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack4:ml-2 z-10 rotate-[-5deg] group-hover/stack4:rotate-0"><TechIcon src="/tech/vercel.jpg" label="Vercel" subtitle="Hosting Platform" /></div>
-                </div>
+                <ProjectTechStack items={[
+                  { src: "/tech/mongodb.png", label: "MongoDB", whiteBg: true, rotate: -6 },
+                  { src: "/tech/express.png", label: "Express JS", contain: true, whiteBg: true, rotate: -3 },
+                  { src: "/tech/reactnative.png", label: "React", contain: true, whiteBg: true, rotate: 2 },
+                  { src: "/tech/nodejs.png", label: "Node JS", contain: true, whiteBg: true, rotate: 5 },
+                  { src: "/tech/cloudinary.png", label: "Cloudinary", whiteBg: true, rotate: -4 },
+                  { src: "/tech/github.webp", label: "GitHub", whiteBg: true, rotate: 3 },
+                  { src: "/tech/vercel.jpg", label: "Vercel", rotate: -5 },
+                ]} />
               </div>
             </div>
             <p className="font-secondary text-zinc-500 text-sm lg:text-base"><span className="font-semibold text-primary-text">Elevator Pitch</span> is an open-source <span className="font-semibold text-primary-text">video CV platform</span> used by <span className="font-semibold text-primary-text">40+ users</span>, enabling candidates to embed <span className="font-semibold text-primary-text">90-second pitch videos</span> directly into job applications and personal CVs. Built using the <span className="font-semibold text-primary-text">MERN stack</span> with <span className="font-semibold text-primary-text">Cloudinary</span>-based media storage, supporting seamless video upload, management, and delivery.</p>
@@ -314,12 +314,12 @@ export default function Home() {
               </a>
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
-                <div className="flex items-center group/stack7">
-                  <div className="transition-all duration-300 z-40 rotate-[-6deg] group-hover/stack7:rotate-0"><TechIcon src="/tech/javascript.png" label="JavaScript" subtitle="Programming Language" bg="bg-[#fed703]" contain /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack7:ml-2 z-30 rotate-[-3deg] group-hover/stack7:rotate-0"><TechIcon src="/tech/sqlite.png" label="SQLite" subtitle="Database" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack7:ml-2 z-20 rotate-[3deg] group-hover/stack7:rotate-0"><TechIcon src="/tech/trello.png" label="Trello" subtitle="Project Management" bg="bg-[#1e88e5]" contain /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack7:ml-2 z-10 rotate-[5deg] group-hover/stack7:rotate-0"><TechIcon src="/tech/github.webp" label="GitHub" subtitle="Version Control" whiteBg /></div>
-                </div>
+                <ProjectTechStack items={[
+                  { src: "/tech/javascript.png", label: "JavaScript", bg: "bg-[#fed703]", contain: true, rotate: -6 },
+                  { src: "/tech/sqlite.png", label: "SQLite", contain: true, whiteBg: true, rotate: -3 },
+                  { src: "/tech/trello.png", label: "Trello", bg: "bg-[#1e88e5]", contain: true, rotate: 3 },
+                  { src: "/tech/github.webp", label: "GitHub", whiteBg: true, rotate: 5 },
+                ]} />
               </div>
             </div>
             <p className="font-secondary text-zinc-500 text-sm lg:text-base">Developed the website for <span className="font-semibold text-primary-text">Binani Air</span>, a private jet chartering company, as part of my internship, building a booking-focused platform that now serves over <span className="font-semibold text-primary-text">15,000 weekly visitors</span>. Built the application using <span className="font-semibold text-primary-text">JavaScript</span> with an <span className="font-semibold text-primary-text">SQLite</span>-backed backend, while collaborating closely with non-technical stakeholders to translate business requirements into an intuitive customer experience. I also used <span className="font-semibold text-primary-text">Trello</span> for task tracking and project coordination, helping manage feature delivery and communication throughout development.</p>
@@ -340,12 +340,12 @@ export default function Home() {
               </a>
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
-                <div className="flex items-center group/stack8">
-                  <div className="transition-all duration-300 z-40 rotate-[-6deg] group-hover/stack8:rotate-0"><TechIcon src="/tech/python.png" label="Python" subtitle="Programming Language" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack8:ml-2 z-30 rotate-[-3deg] group-hover/stack8:rotate-0"><TechIcon src="/tech/scikit-learn.svg" label="scikit-learn" subtitle="ML Library" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack8:ml-2 z-20 rotate-[3deg] group-hover/stack8:rotate-0"><TechIcon src="/tech/pandas.png" label="Pandas" subtitle="Data Analysis" /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack8:ml-2 z-10 rotate-[5deg] group-hover/stack8:rotate-0"><TechIcon src="/tech/jupyter.png" label="Jupyter Notebook" subtitle="Interactive Notebook" contain whiteBg /></div>
-                </div>
+                <ProjectTechStack items={[
+                  { src: "/tech/python.png", label: "Python", contain: true, whiteBg: true, rotate: -6 },
+                  { src: "/tech/scikit-learn.svg", label: "scikit-learn", contain: true, whiteBg: true, rotate: -3 },
+                  { src: "/tech/pandas.png", label: "Pandas", rotate: 3 },
+                  { src: "/tech/jupyter.png", label: "Jupyter", contain: true, whiteBg: true, rotate: 5 },
+                ]} />
               </div>
             </div>
             <p className="font-secondary text-zinc-500 text-sm lg:text-base">Built an end-to-end <span className="font-semibold text-primary-text">machine learning pipeline</span> in <span className="font-semibold text-primary-text">Python</span> to predict English Premier League match outcomes, processing over a decade of historical data covering <span className="font-semibold text-primary-text">3,800+ matches</span> to train and evaluate the model. Implemented a <span className="font-semibold text-primary-text">Random Forest Classifier</span> using <span className="font-semibold text-primary-text">scikit-learn</span>, leveraging <span className="font-semibold text-primary-text">25+ engineered features</span> to classify match results, achieving a cross-validated accuracy of <span className="font-semibold text-primary-text">62%</span>. Improved predictive performance by engineering rolling-window features (5- and 10-match averages of team statistics such as goals and shots), increasing precision from <span className="font-semibold text-primary-text">47%</span> to <span className="font-semibold text-primary-text">67.5%</span>.</p>
@@ -366,14 +366,14 @@ export default function Home() {
               </a>
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
-                <div className="flex items-center group/stack9">
-                  <div className="transition-all duration-300 z-60 rotate-[-6deg] group-hover/stack9:rotate-0"><TechIcon src="/tech/nextjs.svg" label="Next JS" subtitle="React Framework" contain blackBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-50 rotate-[-3deg] group-hover/stack9:rotate-0"><TechIcon src="/tech/awscognito.jpg" label="AWS Cognito" subtitle="Authentication" /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-40 rotate-[2deg] group-hover/stack9:rotate-0"><TechIcon src="/tech/google.png" label="Google OAuth" subtitle="Authentication" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-30 rotate-[5deg] group-hover/stack9:rotate-0"><TechIcon src="/tech/jira.png" label="Jira" subtitle="Project Management" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-20 rotate-[-4deg] group-hover/stack9:rotate-0"><TechIcon src="/tech/bitbucket.png" label="Bitbucket" subtitle="Version Control" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack9:ml-2 z-10 rotate-[3deg] group-hover/stack9:rotate-0"><TechIcon src="/tech/docker.png" label="Docker" subtitle="Containerization" contain whiteBg /></div>
-                </div>
+                <ProjectTechStack items={[
+                  { src: "/tech/nextjs.svg", label: "Next JS", contain: true, blackBg: true, rotate: -6 },
+                  { src: "/tech/awscognito.jpg", label: "AWS Cognito", rotate: -3 },
+                  { src: "/tech/google.png", label: "Google OAuth", contain: true, whiteBg: true, rotate: 2 },
+                  { src: "/tech/jira.png", label: "Jira", contain: true, whiteBg: true, rotate: 5 },
+                  { src: "/tech/bitbucket.png", label: "Bitbucket", contain: true, whiteBg: true, rotate: -4 },
+                  { src: "/tech/docker.png", label: "Docker", contain: true, whiteBg: true, rotate: 3 },
+                ]} />
               </div>
             </div>
             <p className="font-secondary text-zinc-500 text-sm lg:text-base">Built and shipped frontend features for a wellness booking platform using <span className="font-semibold text-primary-text">Next.js</span>, contributing across the full feature lifecycle from design and implementation to deployment within a four-person <span className="font-semibold text-primary-text">Agile</span> team serving <span className="font-semibold text-primary-text">60+ active customers</span>. Implemented <span className="font-semibold text-primary-text">Google OAuth</span> authentication with <span className="font-semibold text-primary-text">AWS Cognito</span>, significantly improving account verification reliability while reducing manual onboarding issues and support intervention by an estimated <span className="font-semibold text-primary-text">70–80%</span>. Worked within bi-weekly Agile sprints, consistently managing and delivering <span className="font-semibold text-primary-text">10+ Jira tickets</span> per sprint in collaboration with designers and developers.</p>
@@ -394,15 +394,15 @@ export default function Home() {
               </a>
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
-                <div className="flex items-center group/stack10">
-                  <div className="transition-all duration-300 z-70 rotate-[-6deg] group-hover/stack10:rotate-0"><TechIcon src="/tech/googleplay.svg.png" label="Google Play Store" subtitle="App Distribution" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack10:ml-2 z-60 rotate-[-3deg] group-hover/stack10:rotate-0"><TechIcon src="/tech/appstore.svg.png" label="App Store" subtitle="App Distribution" contain bg="bg-[#207df4]" /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack10:ml-2 z-50 rotate-[2deg] group-hover/stack10:rotate-0"><TechIcon src="/tech/reactnative.png" label="React Native" subtitle="Mobile Framework" contain whiteBg /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack10:ml-2 z-40 rotate-[5deg] group-hover/stack10:rotate-0"><TechIcon src="/tech/expo.jpeg" label="Expo" subtitle="Mobile Platform" /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack10:ml-2 z-30 rotate-[-4deg] group-hover/stack10:rotate-0"><TechIcon src="/tech/xcode.png" label="Xcode" subtitle="iOS IDE" contain bg="bg-[#207df4]" /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack10:ml-2 z-20 rotate-[3deg] group-hover/stack10:rotate-0"><TechIcon src="/tech/supabase.jpeg" label="Supabase" subtitle="Backend-as-a-Service" /></div>
-                  <div className="transition-all duration-300 -ml-2 group-hover/stack10:ml-2 z-10 rotate-[-5deg] group-hover/stack10:rotate-0"><TechIcon src="/tech/nextjs.svg" label="Next JS" subtitle="React Framework" contain blackBg /></div>
-                </div>
+                <ProjectTechStack items={[
+                  { src: "/tech/googleplay.svg.png", label: "Google Play", contain: true, whiteBg: true, rotate: -6 },
+                  { src: "/tech/appstore.svg.png", label: "App Store", contain: true, bg: "bg-[#207df4]", rotate: -3 },
+                  { src: "/tech/reactnative.png", label: "React Native", contain: true, whiteBg: true, rotate: 2 },
+                  { src: "/tech/expo.jpeg", label: "Expo", rotate: 5 },
+                  { src: "/tech/xcode.png", label: "Xcode", contain: true, bg: "bg-[#207df4]", rotate: -4 },
+                  { src: "/tech/supabase.jpeg", label: "Supabase", rotate: 3 },
+                  { src: "/tech/nextjs.svg", label: "Next JS", contain: true, blackBg: true, rotate: -5 },
+                ]} />
               </div>
             </div>
             <p className="font-secondary text-zinc-500 text-sm lg:text-base">Built <span className="font-semibold text-primary-text">Wakamate</span>, a mobile-first <span className="font-semibold text-primary-text">&ldquo;Uber for artisans&rdquo;</span> platform in <span className="font-semibold text-primary-text">Nigeria</span> connecting users with vetted service providers such as cleaners, plumbers, and tilers to improve access and trust in home and office services. Developed the cross-platform mobile application using <span className="font-semibold text-primary-text">React Native (Expo)</span> with <span className="font-semibold text-primary-text">Supabase</span> as the backend, implementing secure authentication flows including <span className="font-semibold text-primary-text">Google OAuth</span> and <span className="font-semibold text-primary-text">Sign in with Apple</span>, alongside SMS verification via <span className="font-semibold text-primary-text">Termii</span>. Built a <span className="font-semibold text-primary-text">Next.js</span> landing page to support product rollout and early user acquisition, with initial traction of <span className="font-semibold text-primary-text">20+ onboarded artisans</span>.</p>

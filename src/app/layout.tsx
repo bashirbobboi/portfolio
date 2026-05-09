@@ -41,7 +41,7 @@ export default function RootLayout({
       lang="en"
       className={cn("h-full", "antialiased", viaodaLibre.variable, openRunde.variable, "font-sans", geist.variable)}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col overflow-x-hidden">
         {children}
         <Analytics />
       </body>

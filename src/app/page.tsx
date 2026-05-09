@@ -52,27 +52,24 @@ export default function Home() {
       <div className="flex flex-col gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Education</h2>
 
-        <div className="flex gap-6 items-stretch">
+        <div className="flex flex-col lg:flex-row gap-6 lg:items-stretch">
           {/* Logo spanning full entry height */}
-          <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
+          <div className="w-full h-64 lg:self-stretch lg:w-100 lg:h-auto shrink-0 flex items-stretch">
             <img loading="lazy" src="/logos/sheffield.webp" alt="University of Sheffield" className="w-full h-full object-contain object-top" />
           </div>
 
           {/* Entry content */}
-          <div className="flex flex-col flex-1">
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1">
-              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">University of Sheffield</h3>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" />Sept. 2022 — Jun. 2025</p>
-            </div>
-
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 mt-1">
-              <p className="font-secondary text-primary-text text-base lg:text-lg italic tracking-tight">BSc. Computer Science</p>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
+          <div className="flex flex-col flex-1 text-center lg:text-left">
+            <div className="flex flex-col lg:grid lg:grid-cols-2 gap-1 text-center lg:text-left">
+              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold lg:col-start-1 lg:row-start-1">University of Sheffield</h3>
+              <p className="font-secondary text-primary-text text-base lg:text-lg italic tracking-tight order-1 lg:order-none lg:col-start-1 lg:row-start-2 mb-3 lg:mb-0">BSc. Computer Science</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base order-2 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-2 lg:self-center"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base order-3 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-1 lg:self-center"><Calendar size={13} className="shrink-0" />Sept. 2022 — Jun. 2025</p>
             </div>
 
             <p className="font-secondary text-primary-text text-base mt-4">Grade: <span className="font-semibold">First Class</span></p>
 
-            <div className="flex flex-col gap-6 mt-2">
+            <div className="flex flex-col gap-6 mt-3 lg:mt-2">
               <div className="flex flex-col gap-2">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Selected Highlights:</p>
                 <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-1">
@@ -85,22 +82,19 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex gap-6 items-stretch">
+        <div className="flex flex-col-reverse lg:flex-row gap-6 lg:items-stretch">
           {/* Entry content */}
-          <div className="flex flex-col flex-1">
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1">
-              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">INTO Manchester</h3>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" />Sept. 2021 — Jun. 2022</p>
-            </div>
-
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 mt-1">
-              <p className="font-secondary text-primary-text text-base lg:text-lg italic tracking-tight">NCUK International Foundation Year</p>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><MapPin size={13} className="shrink-0" />Manchester, United Kingdom</p>
+          <div className="flex flex-col flex-1 text-center lg:text-left">
+            <div className="flex flex-col lg:grid lg:grid-cols-2 gap-1 text-center lg:text-left">
+              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold lg:col-start-1 lg:row-start-1">INTO Manchester</h3>
+              <p className="font-secondary text-primary-text text-base lg:text-lg italic tracking-tight order-1 lg:order-none lg:col-start-1 lg:row-start-2 mb-3 lg:mb-0">NCUK International Foundation Year</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base order-2 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-2 lg:self-center"><MapPin size={13} className="shrink-0" />Manchester, United Kingdom</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base order-3 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-1 lg:self-center"><Calendar size={13} className="shrink-0" />Sept. 2021 — Jun. 2022</p>
             </div>
 
             <p className="font-secondary text-primary-text text-base mt-4">Grade: <span className="font-semibold">Mathematics: A*, English: A*, Physics: A & Further Mathematics: B</span></p>
 
-            <div className="flex flex-col gap-6 mt-2">
+            <div className="flex flex-col gap-6 mt-6 lg:mt-2">
               <div className="flex flex-col gap-2">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Selected Highlights:</p>
                 <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-1">
@@ -113,7 +107,7 @@ export default function Home() {
           </div>
 
           {/* Logo on right spanning full entry height */}
-          <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
+          <div className="w-full h-64 lg:self-stretch lg:w-100 lg:h-auto shrink-0 flex items-stretch">
             <img loading="lazy" src="/logos/into.webp" alt="INTO" className="w-full h-full object-contain object-top" />
           </div>
         </div>
@@ -131,12 +125,12 @@ export default function Home() {
 
           {/* Entry content */}
           <div className="flex flex-col flex-1">
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Steeze</h3>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><MapPin size={13} className="shrink-0" />London, United Kingdom</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-0 lg:ml-4 flex items-center gap-1 justify-center lg:justify-start"><MapPin size={13} className="shrink-0" />London, United Kingdom</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 mt-1">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left mt-1">
               <p className="font-secondary text-primary-text text-base lg:text-lg italic">Founder & Chief Technology Officer</p>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base italic shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" />Oct. 2025 — Present</p>
             </div>
@@ -152,12 +146,12 @@ export default function Home() {
         <div className="flex gap-6 items-stretch mt-8">
           {/* Entry content */}
           <div className="flex flex-col flex-1">
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">180 Degrees Consulting</h3>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-0 lg:ml-4 flex items-center gap-1 justify-center lg:justify-start"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 mt-1">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left mt-1">
               <p className="font-secondary text-primary-text text-base lg:text-lg italic">Technology Director</p>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base italic shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" /> Oct. 2024 — Jun. 2025</p>
             </div>
@@ -183,12 +177,12 @@ export default function Home() {
 
           {/* Entry content */}
           <div className="flex flex-col flex-1">
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Advanced Manufacturing Research Centre</h3>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><MapPin size={13} className="shrink-0" />Sheffield, England</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-0 lg:ml-4 flex items-center gap-1 justify-center lg:justify-start"><MapPin size={13} className="shrink-0" />Sheffield, England</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 mt-1">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left mt-1">
               <p className="font-secondary text-primary-text text-base lg:text-lg italic">Software Engineer Intern</p>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base italic shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" />Jul. 2024 — Sept. 2024</p>
             </div>
@@ -204,12 +198,12 @@ export default function Home() {
         <div className="flex gap-6 items-stretch mt-8">
           {/* Entry content */}
           <div className="flex flex-col flex-1">
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Twikker Fund, USIS</h3>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-0 lg:ml-4 flex items-center gap-1 justify-center lg:justify-start"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 mt-1">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left mt-1">
               <p className="font-secondary text-primary-text text-base lg:text-lg italic">Portfolio Analytics Analyst</p>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base italic shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" />Oct. 2023 — Sept. 2024</p>
             </div>

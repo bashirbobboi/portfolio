@@ -69,7 +69,7 @@ export function RadialNavWrapper() {
     clickScrollTimerRef.current = setTimeout(() => {
       isClickScrollingRef.current = false;
     }, 800);
-    setTimeout(() => setIsExpanded(false), 600);
+    setTimeout(() => setIsExpanded(false), 1200);
   }, []);
 
   React.useEffect(() => {

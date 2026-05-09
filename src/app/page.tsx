@@ -158,7 +158,7 @@ export default function Home() {
           </div>
 
           {/* Logo on right */}
-          <div className="w-full h-64 lg:self-stretch lg:w-100 lg:h-auto shrink-0 flex items-stretch">
+          <div className="w-full h-64a lg:self-stretch lg:w-100 lg:h-auto shrink-0 flex items-stretch">
             <img loading="lazy" src="/logos/180dc.webp" alt="180DC" className="w-full h-full object-contain object-bottom lg:object-top" />
           </div>
         </div>

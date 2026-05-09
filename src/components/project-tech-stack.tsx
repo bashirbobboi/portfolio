@@ -33,7 +33,7 @@ export function ProjectTechStack({ items }: { items: ProjectTechItem[] }) {
     <div
       ref={ref}
       data-inview={inView}
-      className="group/pstack flex items-start"
+      className="group/pstack flex flex-wrap items-start gap-y-2"
     >
       {items.map((it, i) => (
         <div
@@ -44,7 +44,7 @@ export function ProjectTechStack({ items }: { items: ProjectTechItem[] }) {
               zIndex: items.length - i,
             } as React.CSSProperties
           }
-          className={`flex flex-col items-center gap-1 transition-all duration-300 rotate-[var(--r)] group-hover/pstack:rotate-0 group-data-[inview=true]/pstack:rotate-0 ${
+          className={`flex flex-col items-center gap-1 shrink-0 transition-all duration-300 rotate-[var(--r)] group-hover/pstack:rotate-0 group-data-[inview=true]/pstack:rotate-0 ${
             i === 0
               ? ''
               : '-ml-2 group-hover/pstack:ml-2 group-data-[inview=true]/pstack:ml-2'

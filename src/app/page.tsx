@@ -227,13 +227,13 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <ProjectTechStack items={[
-                  { src: "/tech/reactnative.png", label: "React Native", contain: true, whiteBg: true, rotate: -6 },
-                  { src: "/tech/expo.jpeg", label: "Expo", rotate: -3 },
-                  { src: "/tech/s3.png", label: "AWS S3", whiteBg: true, rotate: 5 },
-                  { src: "/tech/supabase.jpeg", label: "Supabase", rotate: 2 },
-                  { src: "/tech/postgres.png", label: "PostgreSQL", whiteBg: true, rotate: -4 },
-                  { src: "/tech/resend.png", label: "Resend", blackBg: true, rotate: 3 },
-                  { src: "/tech/figma.png", label: "Figma", whiteBg: true, rotate: -2 },
+                  { src: "/tech/reactnative.png", label: "React Native", subtitle: "Mobile Framework", contain: true, whiteBg: true, rotate: -6 },
+                  { src: "/tech/expo.jpeg", label: "Expo", subtitle: "Dev Platform", rotate: -3 },
+                  { src: "/tech/s3.png", label: "AWS S3", subtitle: "Cloud Storage", whiteBg: true, rotate: 5 },
+                  { src: "/tech/supabase.jpeg", label: "Supabase", subtitle: "Backend as a Service", rotate: 2 },
+                  { src: "/tech/postgres.png", label: "PostgreSQL", subtitle: "Relational DB", whiteBg: true, rotate: -4 },
+                  { src: "/tech/resend.png", label: "Resend", subtitle: "Email API", blackBg: true, rotate: 3 },
+                  { src: "/tech/figma.png", label: "Figma", subtitle: "Design Tool", whiteBg: true, rotate: -2 },
                 ]} />
               </div>
             </div>
@@ -256,12 +256,12 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <ProjectTechStack items={[
-                  { src: "/tech/python.png", label: "Python", contain: true, whiteBg: true, rotate: -6 },
-                  { src: "/tech/pytest.png", label: "Pytest", contain: true, whiteBg: true, rotate: -3 },
-                  { src: "/tech/typer.png", label: "Typer", blackBg: true, rotate: 3 },
-                  { src: "/tech/scipy.svg", label: "SciPy", whiteBg: true, rotate: 2 },
-                  { src: "/tech/numpy.svg", label: "NumPy", whiteBg: true, rotate: 5 },
-                  { src: "/tech/streamlit.png", label: "Streamlit", whiteBg: true, rotate: -4 },
+                  { src: "/tech/python.png", label: "Python", subtitle: "Language", contain: true, whiteBg: true, rotate: -6 },
+                  { src: "/tech/pytest.png", label: "Pytest", subtitle: "Testing", contain: true, whiteBg: true, rotate: -3 },
+                  { src: "/tech/typer.png", label: "Typer", subtitle: "CLI Framework", blackBg: true, rotate: 3 },
+                  { src: "/tech/scipy.svg", label: "SciPy", subtitle: "Scientific Computing", whiteBg: true, rotate: 2 },
+                  { src: "/tech/numpy.svg", label: "NumPy", subtitle: "Numerical Computing", whiteBg: true, rotate: 5 },
+                  { src: "/tech/streamlit.png", label: "Streamlit", subtitle: "Data Apps", whiteBg: true, rotate: -4 },
                 ]} />
               </div>
             </div>
@@ -284,13 +284,13 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <ProjectTechStack items={[
-                  { src: "/tech/mongodb.png", label: "MongoDB", whiteBg: true, rotate: -6 },
-                  { src: "/tech/express.png", label: "Express JS", contain: true, whiteBg: true, rotate: -3 },
-                  { src: "/tech/reactnative.png", label: "React", contain: true, whiteBg: true, rotate: 2 },
-                  { src: "/tech/nodejs.png", label: "Node JS", contain: true, whiteBg: true, rotate: 5 },
-                  { src: "/tech/cloudinary.png", label: "Cloudinary", whiteBg: true, rotate: -4 },
-                  { src: "/tech/github.webp", label: "GitHub", whiteBg: true, rotate: 3 },
-                  { src: "/tech/vercel.jpg", label: "Vercel", rotate: -5 },
+                  { src: "/tech/mongodb.png", label: "MongoDB", subtitle: "NoSQL DB", whiteBg: true, rotate: -6 },
+                  { src: "/tech/express.png", label: "Express JS", subtitle: "Web Framework", contain: true, whiteBg: true, rotate: -3 },
+                  { src: "/tech/reactnative.png", label: "React", subtitle: "UI Library", contain: true, whiteBg: true, rotate: 2 },
+                  { src: "/tech/nodejs.png", label: "Node JS", subtitle: "Runtime", contain: true, whiteBg: true, rotate: 5 },
+                  { src: "/tech/cloudinary.png", label: "Cloudinary", subtitle: "Media CDN", whiteBg: true, rotate: -4 },
+                  { src: "/tech/github.webp", label: "GitHub", subtitle: "Version Control", whiteBg: true, rotate: 3 },
+                  { src: "/tech/vercel.jpg", label: "Vercel", subtitle: "Deployment", rotate: -5 },
                 ]} />
               </div>
             </div>
@@ -313,10 +313,10 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <ProjectTechStack items={[
-                  { src: "/tech/javascript.png", label: "JavaScript", bg: "bg-[#fed703]", contain: true, rotate: -6 },
-                  { src: "/tech/sqlite.png", label: "SQLite", contain: true, whiteBg: true, rotate: -3 },
-                  { src: "/tech/trello.png", label: "Trello", bg: "bg-[#1e88e5]", contain: true, rotate: 3 },
-                  { src: "/tech/github.webp", label: "GitHub", whiteBg: true, rotate: 5 },
+                  { src: "/tech/javascript.png", label: "JavaScript", subtitle: "Language", bg: "bg-[#fed703]", contain: true, rotate: -6 },
+                  { src: "/tech/sqlite.png", label: "SQLite", subtitle: "Embedded DB", contain: true, whiteBg: true, rotate: -3 },
+                  { src: "/tech/trello.png", label: "Trello", subtitle: "Project Management", bg: "bg-[#1e88e5]", contain: true, rotate: 3 },
+                  { src: "/tech/github.webp", label: "GitHub", subtitle: "Version Control", whiteBg: true, rotate: 5 },
                 ]} />
               </div>
             </div>
@@ -339,10 +339,10 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <ProjectTechStack items={[
-                  { src: "/tech/python.png", label: "Python", contain: true, whiteBg: true, rotate: -6 },
-                  { src: "/tech/scikit-learn.svg", label: "scikit-learn", contain: true, whiteBg: true, rotate: -3 },
-                  { src: "/tech/pandas.png", label: "Pandas", rotate: 3 },
-                  { src: "/tech/jupyter.png", label: "Jupyter", contain: true, whiteBg: true, rotate: 5 },
+                  { src: "/tech/python.png", label: "Python", subtitle: "Language", contain: true, whiteBg: true, rotate: -6 },
+                  { src: "/tech/scikit-learn.svg", label: "scikit-learn", subtitle: "ML Library", contain: true, whiteBg: true, rotate: -3 },
+                  { src: "/tech/pandas.png", label: "Pandas", subtitle: "Data Analysis", rotate: 3 },
+                  { src: "/tech/jupyter.png", label: "Jupyter", subtitle: "Notebooks", contain: true, whiteBg: true, rotate: 5 },
                 ]} />
               </div>
             </div>
@@ -365,12 +365,12 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <ProjectTechStack items={[
-                  { src: "/tech/nextjs.svg", label: "Next JS", contain: true, blackBg: true, rotate: -6 },
-                  { src: "/tech/awscognito.jpg", label: "AWS Cognito", rotate: -3 },
-                  { src: "/tech/google.png", label: "Google OAuth", contain: true, whiteBg: true, rotate: 2 },
-                  { src: "/tech/jira.png", label: "Jira", contain: true, whiteBg: true, rotate: 5 },
-                  { src: "/tech/bitbucket.png", label: "Bitbucket", contain: true, whiteBg: true, rotate: -4 },
-                  { src: "/tech/docker.png", label: "Docker", contain: true, whiteBg: true, rotate: 3 },
+                  { src: "/tech/nextjs.svg", label: "Next JS", subtitle: "Web Framework", contain: true, blackBg: true, rotate: -6 },
+                  { src: "/tech/awscognito.jpg", label: "AWS Cognito", subtitle: "Auth Service", rotate: -3 },
+                  { src: "/tech/google.png", label: "Google OAuth", subtitle: "Authentication", contain: true, whiteBg: true, rotate: 2 },
+                  { src: "/tech/jira.png", label: "Jira", subtitle: "Project Management", contain: true, whiteBg: true, rotate: 5 },
+                  { src: "/tech/bitbucket.png", label: "Bitbucket", subtitle: "Version Control", contain: true, whiteBg: true, rotate: -4 },
+                  { src: "/tech/docker.png", label: "Docker", subtitle: "Containerisation", contain: true, whiteBg: true, rotate: 3 },
                 ]} />
               </div>
             </div>
@@ -393,13 +393,13 @@ export default function Home() {
               <div className="flex items-center gap-3 shrink-0">
                 <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
                 <ProjectTechStack items={[
-                  { src: "/tech/googleplay.svg.png", label: "Google Play", contain: true, whiteBg: true, rotate: -6 },
-                  { src: "/tech/appstore.svg.png", label: "App Store", contain: true, bg: "bg-[#207df4]", rotate: -3 },
-                  { src: "/tech/reactnative.png", label: "React Native", contain: true, whiteBg: true, rotate: 2 },
-                  { src: "/tech/expo.jpeg", label: "Expo", rotate: 5 },
-                  { src: "/tech/xcode.png", label: "Xcode", contain: true, bg: "bg-[#207df4]", rotate: -4 },
-                  { src: "/tech/supabase.jpeg", label: "Supabase", rotate: 3 },
-                  { src: "/tech/nextjs.svg", label: "Next JS", contain: true, blackBg: true, rotate: -5 },
+                  { src: "/tech/googleplay.svg.png", label: "Google Play", subtitle: "Android Store", contain: true, whiteBg: true, rotate: -6 },
+                  { src: "/tech/appstore.svg.png", label: "App Store", subtitle: "iOS Store", contain: true, bg: "bg-[#207df4]", rotate: -3 },
+                  { src: "/tech/reactnative.png", label: "React Native", subtitle: "Mobile Framework", contain: true, whiteBg: true, rotate: 2 },
+                  { src: "/tech/expo.jpeg", label: "Expo", subtitle: "Dev Platform", rotate: 5 },
+                  { src: "/tech/xcode.png", label: "Xcode", subtitle: "iOS IDE", contain: true, bg: "bg-[#207df4]", rotate: -4 },
+                  { src: "/tech/supabase.jpeg", label: "Supabase", subtitle: "Backend as a Service", rotate: 3 },
+                  { src: "/tech/nextjs.svg", label: "Next JS", subtitle: "Web Framework", contain: true, blackBg: true, rotate: -5 },
                 ]} />
               </div>
             </div>

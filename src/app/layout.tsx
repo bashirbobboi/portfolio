@@ -26,9 +26,30 @@ const openRunde = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bashir.is-a.dev"),
   title: "Mohammed Bobboi",
   description: "Mohammed Bobboi's Portfolio",
   manifest: "/site.webmanifest",
+  openGraph: {
+    title: "Mohammed Bobboi",
+    description: "Mohammed Bobboi's Portfolio",
+    type: "website",
+    url: "https://bashir.is-a.dev",
+    images: [
+      {
+        url: "/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Mohammed Bobboi's Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mohammed Bobboi",
+    description: "Mohammed Bobboi's Portfolio",
+    images: ["/preview.png"],
+  },
 };
 
 export default function RootLayout({

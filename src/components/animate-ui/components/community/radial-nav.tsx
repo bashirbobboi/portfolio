@@ -205,7 +205,12 @@ function RadialNav({
 
   const [isArrowMoving, setIsArrowMoving] = React.useState(false);
   const arrowMoveTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+  const isMountedRef = React.useRef(false);
   React.useEffect(() => {
+    if (!isMountedRef.current) {
+      isMountedRef.current = true;
+      return;
+    }
     setIsArrowMoving(true);
     if (arrowMoveTimerRef.current) clearTimeout(arrowMoveTimerRef.current);
     arrowMoveTimerRef.current = setTimeout(() => setIsArrowMoving(false), 350);
@@ -228,7 +233,8 @@ function RadialNav({
     >
       {/* Outer ring */}
       <motion.div
-        className="absolute inset-0 rounded-full border border-neutral-800 dark:border-neutral-200"
+        className={`absolute inset-0 rounded-full border ${activeId !== null ? 'border-neutral-900 dark:border-neutral-100' : 'border-neutral-500 dark:border-neutral-400'}`}
+        initial={{ opacity: 0.4 }}
         animate={{ opacity: isArrowMoving ? 1 : 0.4 }}
         transition={{ duration: 0.2 }}
       />
@@ -241,7 +247,7 @@ function RadialNav({
         style={{ originX: 0.5, originY: 0.5 }}
         aria-hidden="true"
       >
-        <MousePointer2 className="size-5 text-neutral-900" />
+        <MousePointer2 className={`size-5 ${activeId !== null ? 'text-neutral-900' : 'text-neutral-500'}`} />
       </motion.div>
       {items.map((item) => {
         const { id, angle } = item;

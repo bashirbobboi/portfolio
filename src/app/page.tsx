@@ -17,10 +17,10 @@ export default function Home() {
         <p className="font-secondary text-primary-text text-base lg:text-xl text-left"> He is a Computer Science Graduate from the University of Sheffield with 2+ years of experience in Software Development, AI/ML/GenAI and delivering scalable, business-focused solutions across fintech, startups and R&D environments.</p>
         <div className="flex gap-4">
           <a href="https://github.com/bashirbobboi" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="flex items-center">
-            <img src="/githubb.png" alt="GitHub" className="h-18 lg:h-22 w-auto object-contain" />
+            <img src="/githubb.webp" alt="GitHub" className="h-18 lg:h-22 w-auto object-contain" />
           </a>
           <a href="https://linkedin.com/in/mohammed-bobboi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="flex items-center">
-            <img src="/linkedin.png" alt="LinkedIn" className="h-20 lg:h-24 w-auto object-contain" />
+            <img src="/linkedin.webp" alt="LinkedIn" className="h-20 lg:h-24 w-auto object-contain" />
           </a>
         </div>
       </div>

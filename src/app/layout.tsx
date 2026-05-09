@@ -28,6 +28,7 @@ const openRunde = localFont({
 export const metadata: Metadata = {
   title: "Mohammed Bobboi",
   description: "Mohammed Bobboi's Portfolio",
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({

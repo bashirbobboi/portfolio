@@ -141,7 +141,11 @@ function MenuButton({
       {...BUTTON_MOTION_CONFIG}
       initial={false}
       animate={isActive ? 'hover' : 'rest'}
-      className="relative flex space-x-1 items-center overflow-hidden whitespace-nowrap rounded-full border border-neutral-800 dark:border-neutral-200 bg-background text-foreground font-medium"
+      className={`relative flex space-x-1 items-center overflow-hidden whitespace-nowrap rounded-full border font-medium ${
+        isActive
+          ? 'bg-primary-bg text-neutral-900 border-neutral-900'
+          : 'bg-primary-bg text-neutral-400 border-neutral-400'
+      }`}
       style={{
         height: buttonSize,
         minWidth: buttonSize,
@@ -199,6 +203,17 @@ function RadialNav({
     (items.find((it) => it.id === activeId)?.angle ?? 0) + POINTER_BASE_DEG;
   const rotateAngle = useShortestRotation(baseAngle);
 
+  const [isArrowMoving, setIsArrowMoving] = React.useState(false);
+  const arrowMoveTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+  React.useEffect(() => {
+    setIsArrowMoving(true);
+    if (arrowMoveTimerRef.current) clearTimeout(arrowMoveTimerRef.current);
+    arrowMoveTimerRef.current = setTimeout(() => setIsArrowMoving(false), 350);
+    return () => {
+      if (arrowMoveTimerRef.current) clearTimeout(arrowMoveTimerRef.current);
+    };
+  }, [rotateAngle]);
+
   const resolvedMenuButtonConfig = withDefaults(
     defaultMenuButtonConfig,
     menuButtonConfig,
@@ -206,24 +221,32 @@ function RadialNav({
 
   return (
     <div
-      className="relative flex items-center justify-center rounded-full border border-neutral-800 dark:border-neutral-200"
+      className="relative flex items-center justify-center rounded-full"
       style={{ width: size, height: size }}
       role="menu"
       aria-label="Radial navigation"
     >
+      {/* Outer ring */}
+      <motion.div
+        className="absolute inset-0 rounded-full border border-neutral-800 dark:border-neutral-200"
+        animate={{ opacity: isArrowMoving ? 1 : 0.4 }}
+        transition={{ duration: 0.2 }}
+      />
+
       <motion.div
         initial={false}
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-        animate={{ rotate: rotateAngle }}
-        transition={POINTER_ROT_SPRING}
+        animate={{ rotate: rotateAngle, opacity: isArrowMoving ? 1 : 0.4 }}
+        transition={{ rotate: POINTER_ROT_SPRING, opacity: { duration: 0.2 } }}
         style={{ originX: 0.5, originY: 0.5 }}
         aria-hidden="true"
       >
-        <MousePointer2 className="size-5 text-foreground" />
+        <MousePointer2 className="size-5 text-neutral-900" />
       </motion.div>
       {items.map((item) => {
         const { id, angle } = item;
         const { x, y } = getPolarCoordinates(angle, orbitRadius);
+        const isActive = activeId === id;
         return (
           <div
             key={id}
@@ -236,7 +259,7 @@ function RadialNav({
           >
             <MenuButton
               item={item}
-              isActive={activeId === id}
+              isActive={isActive}
               onActivate={() => handleActivate(id)}
               menuButtonConfig={resolvedMenuButtonConfig}
             />

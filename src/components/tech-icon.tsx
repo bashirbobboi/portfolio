@@ -2,6 +2,7 @@ export function TechIcon({ src, label, subtitle, whiteBg, blackBg, contain, bg }
   return (
     <div className="relative group">
       <img
+        loading="lazy"
         src={src}
         alt={label}
         className={`w-10 h-10 rounded-sm shadow-md block ${contain ? 'object-contain' : 'object-cover'}${whiteBg ? ' bg-white p-0.5' : ''}${blackBg ? ' bg-black p-0.5' : ''}${bg ? ` ${bg}` : ''}`}

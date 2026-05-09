@@ -8,6 +8,7 @@ import { GithubChart } from "@/components/github-chart";
 import { ButtonWithIcon } from "@/components/ui/button-with-icon";
 import { WatercolorCard } from "@/components/watercolor-card";
 import { SkillTile } from "@/components/skill-tile";
+import { LazyVideo } from "@/components/lazy-video";
 
 export default function Home() {
   return (
@@ -35,12 +36,12 @@ export default function Home() {
           className="object-cover z-0"
           priority
         />
-        <img
+        <img loading="lazy"
           src="/doodle.gif"
           alt="doodle"
           className="absolute -top-18 -left-26 w-80 h-80 object-cover"
         />
-        <img
+        <img loading="lazy"
           src="/doodle.gif"
           alt="doodle"
           className="absolute -bottom-18 -right-26 w-80 h-80 object-cover rotate-180 z-10"
@@ -58,7 +59,7 @@ export default function Home() {
         <div className="flex gap-6 items-stretch">
           {/* Logo spanning full entry height */}
           <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
-            <img src="/logos/sheffield.png" alt="University of Sheffield" className="w-full h-full object-contain object-top" />
+            <img loading="lazy" src="/logos/sheffield.webp" alt="University of Sheffield" className="w-full h-full object-contain object-top" />
           </div>
 
           {/* Entry content */}
@@ -117,7 +118,7 @@ export default function Home() {
 
           {/* Logo on right spanning full entry height */}
           <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
-            <img src="/logos/into.png" alt="INTO" className="w-full h-full object-contain object-top" />
+            <img loading="lazy" src="/logos/into.webp" alt="INTO" className="w-full h-full object-contain object-top" />
           </div>
         </div>
       </div>
@@ -129,7 +130,7 @@ export default function Home() {
         <div className="flex gap-6 items-stretch">
           {/* Logo on left */}
           <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
-            <img src="/projects/steeze.png" alt="Steeze" className="w-full h-full object-contain object-top" />
+            <img loading="lazy" src="/projects/steeze.webp" alt="Steeze" className="w-full h-full object-contain object-top" />
           </div>
 
           {/* Entry content */}
@@ -174,14 +175,14 @@ export default function Home() {
 
           {/* Logo on right */}
           <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
-            <img src="/logos/180dc.png" alt="180DC" className="w-full h-full object-contain object-top" />
+            <img loading="lazy" src="/logos/180dc.webp" alt="180DC" className="w-full h-full object-contain object-top" />
           </div>
         </div>
 
         <div className="flex gap-6 items-stretch mt-8">
           {/* Logo on left */}
           <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
-            <img src="/logos/amrc.png" alt="AMRC" className="w-full h-full object-contain object-top" />
+            <img loading="lazy" src="/logos/amrc.webp" alt="AMRC" className="w-full h-full object-contain object-top" />
           </div>
 
           {/* Entry content */}
@@ -226,7 +227,7 @@ export default function Home() {
 
           {/* Logo on right */}
           <div className="self-start w-16 lg:w-100 shrink-0 flex h-72 lg:h-96">
-            <img src="/projects/twikkerfund.png" alt="Twikker Fund" className="w-full h-full object-contain object-top" />
+            <img loading="lazy" src="/projects/twikkerfund.webp" alt="Twikker Fund" className="w-full h-full object-contain object-top" />
           </div>
         </div>
       </div>
@@ -237,7 +238,7 @@ export default function Home() {
         <GithubChart username="bashirbobboi" />
         <div className="flex flex-col gap-4">
           <div className="w-full h-64 lg:h-130 rounded-2xl border border-zinc-200 overflow-hidden">
-            <video src="/steezewide.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
+            <LazyVideo src="/projects/steezewide.mp4" poster="/projects/steezewide-poster.jpg" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between gap-4">
@@ -266,7 +267,7 @@ export default function Home() {
 
         <div className="flex flex-col gap-4">
           <div className="w-full h-64 lg:h-120 rounded-2xl border border-zinc-200 overflow-hidden">
-            <video src="/dissertation.mov" autoPlay muted loop playsInline className="w-full h-full object-cover" />
+            <LazyVideo src="/projects/dissertation.mp4" poster="/projects/dissertation-poster.jpg" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between gap-4">
@@ -294,7 +295,7 @@ export default function Home() {
 
         <div className="flex flex-col gap-4">
           <div className="w-full h-64 lg:h-116 rounded-2xl  overflow-hidden">
-            <img src="/logos/elevatorpitch.png" alt="Elevator Pitch" className="w-full h-full object-cover" />
+            <img loading="lazy" src="/logos/elevatorpitch.webp" alt="Elevator Pitch" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between gap-4">
@@ -323,7 +324,7 @@ export default function Home() {
 
         <div className="flex flex-col gap-4">
           <div className="w-full h-64 lg:h-120 rounded-2xl border border-zinc-200 overflow-hidden">
-            <video src="/binaniair.mov" autoPlay muted loop playsInline className="w-full h-full object-cover" />
+            <LazyVideo src="/projects/binaniair.mp4" poster="/projects/binaniair-poster.jpg" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between gap-4">
@@ -349,7 +350,7 @@ export default function Home() {
 
         <div className="flex flex-col gap-4">
           <div className="w-full h-64 lg:h-96 rounded-2xl overflow-hidden">
-            <img src="/logos/premierleague.png" alt="Machine Learning Premier League Predictor" className="w-full h-full object-contain" />
+            <img loading="lazy" src="/logos/premierleague.webp" alt="Machine Learning Premier League Predictor" className="w-full h-full object-contain" />
           </div>
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between gap-4">
@@ -375,7 +376,7 @@ export default function Home() {
 
         <div className="flex flex-col gap-4">
           <div className="w-full h-64 lg:h-116 rounded-2xl border border-zinc-200 overflow-hidden">
-            <video src="/mmxxwellness.mov" autoPlay muted loop playsInline className="w-full h-full object-cover" />
+            <LazyVideo src="/projects/mmxxwellness.mp4" poster="/projects/mmxxwellness-poster.jpg" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between gap-4">
@@ -403,7 +404,7 @@ export default function Home() {
 
         <div className="flex flex-col gap-4">
           <div className="w-full h-64 lg:h-116 rounded-2xl border border-zinc-200 overflow-hidden">
-            <video src="/wakamate.mov" autoPlay muted loop playsInline className="w-full h-full object-cover" />
+            <LazyVideo src="/projects/wakamate.mp4" poster="/projects/wakamate-poster.jpg" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col gap-5">
             <div className="flex items-center justify-between gap-4">
@@ -443,7 +444,7 @@ export default function Home() {
           <WatercolorCard>
             <div className="flex flex-col gap-4 mt-4">
               <div className="flex items-center justify-between gap-4">
-                <img src="/logos/jpmorgan.png" alt="JP Morgan" className="h-10 object-contain object-left" />
+                <img loading="lazy" src="/logos/jpmorgan.png" alt="JP Morgan" className="h-10 object-contain object-left" />
                 <ButtonWithIcon small label="View Certification" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_6q3Di7qt6AadqzD4q_1697294986576_completion_certificate.pdf" />
               </div>
               <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_6q3Di7qt6AadqzD4q_1697294986576_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" className="flex flex-col gap-2 no-underline">
@@ -455,7 +456,7 @@ export default function Home() {
           <WatercolorCard>
             <div className="flex flex-col gap-4 mt-4">
               <div className="flex items-center justify-between gap-4">
-                <img src="/tech/google.png" alt="Google" className="h-10 object-contain object-left" />
+                <img loading="lazy" src="/tech/google.png" alt="Google" className="h-10 object-contain object-left" />
                 <ButtonWithIcon small label="View Certification" href="https://coursera.org/verify/E6F9DUL2QXLG" />
               </div>
               <a href="https://coursera.org/verify/E6F9DUL2QXLG" target="_blank" rel="noopener noreferrer" className="flex flex-col gap-2 no-underline">
@@ -533,6 +534,15 @@ export default function Home() {
         </div>
       </div>
     </section>
+
+    <footer className="flex flex-col items-center gap-3 px-[8%] lg:px-[18%] pt-8 pb-12 bg-primary-bg">
+      <p className="font-secondary text-primary-text text-base lg:text-lg">
+        Want to say hi? <a href="mailto:bashirbobboi@gmail.com" className="text-blue-500 hover:text-blue-600 transition-colors">Contact Me</a>
+      </p>
+      <p className="font-secondary text-zinc-500 text-xs lg:text-sm">
+        © {new Date().getFullYear()} Mohammed Bobboi
+      </p>
+    </footer>
     </>
   );
 }

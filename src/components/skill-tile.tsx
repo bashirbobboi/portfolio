@@ -18,6 +18,7 @@ export function SkillTile({
   return (
     <div className="flex flex-col items-center gap-2 w-16 group relative">
       <img
+        loading="lazy"
         src={src}
         alt={label}
         className={`w-12 h-12 rounded-lg shadow-md ${contain ? "object-contain" : "object-cover"}${whiteBg ? " bg-white p-1" : ""}${blackBg ? " bg-black p-1" : ""}${bg ? ` ${bg}` : ""}`}

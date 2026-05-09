@@ -22,8 +22,16 @@ const navItems = [
 
 export function RadialNavWrapper() {
   const [activeId, setActiveId] = React.useState<number | undefined>(undefined);
+  const [size, setSize] = React.useState(150);
   const isClickScrollingRef = React.useRef(false);
   const clickScrollTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  React.useEffect(() => {
+    const update = () => setSize(window.innerWidth < 1024 ? 110 : 150);
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
 
   const handleActiveChange = React.useCallback((id: number) => {
     const item = navItems.find((it) => it.id === id);
@@ -66,7 +74,7 @@ export function RadialNavWrapper() {
   return (
     <RadialNav
       items={navItems}
-      size={150}
+      size={size}
       activeId={activeId ?? null}
       onActiveChange={handleActiveChange}
     />

@@ -11,20 +11,20 @@ import { LazyVideo } from "@/components/lazy-video";
 export default function Home() {
   return (
     <>
-    <main id="home" className="flex flex-1 items-center justify-between px-[8%] lg:px-[18%] pt-24 gap-8 bg-primary-bg">
+    <main id="home" className="flex flex-1 flex-col lg:flex-row items-center justify-between px-[8%] lg:px-[18%] pt-24 lg:pt-24 gap-8 bg-primary-bg">
       <div className="flex flex-col gap-6 lg:gap-12 max-w-xl lg:max-w-3xl">
-        <h1 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Mohammed Bobboi is a Software Engineer based in London, England.</h1>
-        <p className="font-secondary text-primary-text text-base lg:text-xl text-left"> He is a Computer Science Graduate from the University of Sheffield with 2+ years of experience in Software Development, AI/ML/GenAI and delivering scalable, business-focused solutions across fintech, startups and R&D environments.</p>
-        <div className="flex gap-4">
+        <h1 className="font-primary text-primary-text text-2xl sm:text-3xl lg:text-5xl font-bold text-center lg:text-left">Mohammed Bobboi is a Software Engineer based in London, England.</h1>
+        <p className="font-secondary text-primary-text text-sm sm:text-base lg:text-xl text-center lg:text-left"> He is a Computer Science Graduate from the University of Sheffield with 2+ years of experience in Software Development, AI/ML/GenAI and delivering scalable, business-focused solutions across fintech, startups and R&D environments.</p>
+        <div className="flex gap-4 justify-center lg:justify-start">
           <a href="https://github.com/bashirbobboi" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="flex items-center">
-            <img src="/githubb.webp" alt="GitHub" className="h-18 lg:h-22 w-auto object-contain" />
+            <img src="/githubb.webp" alt="GitHub" className="h-20 sm:h-20 lg:h-22 w-auto object-contain" />
           </a>
           <a href="https://linkedin.com/in/mohammed-bobboi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="flex items-center">
-            <img src="/linkedin.webp" alt="LinkedIn" className="h-20 lg:h-24 w-auto object-contain" />
+            <img src="/linkedin.webp" alt="LinkedIn" className="h-22 sm:h-22 lg:h-24 w-auto object-contain" />
           </a>
         </div>
       </div>
-      <div className="relative w-56 h-[320px] lg:w-80 lg:h-[400px] shrink-0">
+      <div className="relative w-44 h-[260px] sm:w-56 sm:h-[320px] lg:w-80 lg:h-[400px] shrink-0">
         <Image
           src="/myphoto.jpeg"
           alt="My photo"
@@ -35,15 +35,15 @@ export default function Home() {
         <img loading="lazy"
           src="/doodle.gif"
           alt="doodle"
-          className="absolute -top-18 -left-26 w-80 h-80 object-cover"
+          className="absolute -top-12 -left-16 w-56 h-56 sm:-top-18 sm:-left-26 sm:w-80 sm:h-80 object-cover"
         />
         <img loading="lazy"
           src="/doodle.gif"
           alt="doodle"
-          className="absolute -bottom-18 -right-26 w-80 h-80 object-cover rotate-180 z-10"
+          className="absolute -bottom-12 -right-16 w-56 h-56 sm:-bottom-18 sm:-right-26 sm:w-80 sm:h-80 object-cover rotate-180 z-10"
         />
       </div>
-      <div className="fixed top-12 left-16 z-50">
+      <div className="fixed top-4 left-4 lg:top-12 lg:left-16 z-50">
         <RadialNavWrapper />
       </div>
     </main>
@@ -60,12 +60,12 @@ export default function Home() {
 
           {/* Entry content */}
           <div className="flex flex-col flex-1">
-            <div className="flex items-baseline justify-between">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">University of Sheffield</h3>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" />Sept. 2022 — Jun. 2025</p>
             </div>
 
-            <div className="flex items-baseline justify-between mt-1">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 mt-1">
               <p className="font-secondary text-primary-text text-base lg:text-lg italic tracking-tight">BSc. Computer Science</p>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
             </div>
@@ -88,12 +88,12 @@ export default function Home() {
         <div className="flex gap-6 items-stretch">
           {/* Entry content */}
           <div className="flex flex-col flex-1">
-            <div className="flex items-baseline justify-between">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">INTO Manchester</h3>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" />Sept. 2021 — Jun. 2022</p>
             </div>
 
-            <div className="flex items-baseline justify-between mt-1">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 mt-1">
               <p className="font-secondary text-primary-text text-base lg:text-lg italic tracking-tight">NCUK International Foundation Year</p>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><MapPin size={13} className="shrink-0" />Manchester, United Kingdom</p>
             </div>
@@ -131,12 +131,12 @@ export default function Home() {
 
           {/* Entry content */}
           <div className="flex flex-col flex-1">
-            <div className="flex items-baseline justify-between">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Steeze</h3>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><MapPin size={13} className="shrink-0" />London, United Kingdom</p>
             </div>
 
-            <div className="flex items-baseline justify-between mt-1">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 mt-1">
               <p className="font-secondary text-primary-text text-base lg:text-lg italic">Founder & Chief Technology Officer</p>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base italic shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" />Oct. 2025 — Present</p>
             </div>
@@ -152,12 +152,12 @@ export default function Home() {
         <div className="flex gap-6 items-stretch mt-8">
           {/* Entry content */}
           <div className="flex flex-col flex-1">
-            <div className="flex items-baseline justify-between">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">180 Degrees Consulting</h3>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
             </div>
 
-            <div className="flex items-baseline justify-between mt-1">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 mt-1">
               <p className="font-secondary text-primary-text text-base lg:text-lg italic">Technology Director</p>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base italic shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" /> Oct. 2024 — Jun. 2025</p>
             </div>
@@ -183,12 +183,12 @@ export default function Home() {
 
           {/* Entry content */}
           <div className="flex flex-col flex-1">
-            <div className="flex items-baseline justify-between">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Advanced Manufacturing Research Centre</h3>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><MapPin size={13} className="shrink-0" />Sheffield, England</p>
             </div>
 
-            <div className="flex items-baseline justify-between mt-1">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 mt-1">
               <p className="font-secondary text-primary-text text-base lg:text-lg italic">Software Engineer Intern</p>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base italic shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" />Jul. 2024 — Sept. 2024</p>
             </div>
@@ -204,12 +204,12 @@ export default function Home() {
         <div className="flex gap-6 items-stretch mt-8">
           {/* Entry content */}
           <div className="flex flex-col flex-1">
-            <div className="flex items-baseline justify-between">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Twikker Fund, USIS</h3>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-4 flex items-center gap-1"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
             </div>
 
-            <div className="flex items-baseline justify-between mt-1">
+            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 mt-1">
               <p className="font-secondary text-primary-text text-base lg:text-lg italic">Portfolio Analytics Analyst</p>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base italic shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" />Oct. 2023 — Sept. 2024</p>
             </div>
@@ -237,7 +237,7 @@ export default function Home() {
             <LazyVideo src="/projects/steezewide.mp4" poster="/projects/steezewide-poster.jpg" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col gap-5">
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
               <a href="https://www.steeze.ng/" target="_blank" rel="noopener noreferrer" className="group/card6 flex items-center gap-1 no-underline">
                 <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Steeze Mobile App</h3>
                 <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card6:border-black group-hover/card6:text-black transition-all duration-300 shrink-0">
@@ -266,7 +266,7 @@ export default function Home() {
             <LazyVideo src="/projects/dissertation.mp4" poster="/projects/dissertation-poster.jpg" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col gap-5">
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
               <a href="https://github.com/bashirbobboi/Bisimulation" target="_blank" rel="noopener noreferrer" className="group/card5 flex items-center gap-1 no-underline">
                 <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Dissertation</h3>
                 <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card5:border-black group-hover/card5:text-black transition-all duration-300 shrink-0">
@@ -294,7 +294,7 @@ export default function Home() {
             <img loading="lazy" src="/logos/elevatorpitch.webp" alt="Elevator Pitch" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col gap-5">
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
               <a href="https://github.com/bashirbobboi/elevator-pitch" target="_blank" rel="noopener noreferrer" className="group/card flex items-center gap-1 no-underline">
                 <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Elevator Pitch</h3>
                 <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card:border-black group-hover/card:text-black transition-all duration-300 shrink-0">
@@ -323,7 +323,7 @@ export default function Home() {
             <LazyVideo src="/projects/binaniair.mp4" poster="/projects/binaniair-poster.jpg" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col gap-5">
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
               <a href="https://binaniair.com" target="_blank" rel="noopener noreferrer" className="group/card7 flex items-center gap-1 no-underline">
                 <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Binani Air</h3>
                 <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card7:border-black group-hover/card7:text-black transition-all duration-300 shrink-0">
@@ -349,7 +349,7 @@ export default function Home() {
             <img loading="lazy" src="/logos/premierleague.webp" alt="Machine Learning Premier League Predictor" className="w-full h-full object-contain" />
           </div>
           <div className="flex flex-col gap-5">
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
               <a href="https://github.com/bashirbobboi/predictor" target="_blank" rel="noopener noreferrer" className="group/card8 flex items-center gap-1 no-underline">
                 <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Machine Learning Premier League Predictor</h3>
                 <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card8:border-black group-hover/card8:text-black transition-all duration-300 shrink-0">
@@ -375,7 +375,7 @@ export default function Home() {
             <LazyVideo src="/projects/mmxxwellness.mp4" poster="/projects/mmxxwellness-poster.jpg" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col gap-5">
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
               <a href="https://mmxxdynamics.com" target="_blank" rel="noopener noreferrer" className="group/card9 flex items-center gap-1 no-underline">
                 <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">MMXX Dynamics Wellness</h3>
                 <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card9:border-black group-hover/card9:text-black transition-all duration-300 shrink-0">
@@ -403,7 +403,7 @@ export default function Home() {
             <LazyVideo src="/projects/wakamate.mp4" poster="/projects/wakamate-poster.jpg" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col gap-5">
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
               <a href="https://wakamate.ng" target="_blank" rel="noopener noreferrer" className="group/card10 flex items-center gap-1 no-underline">
                 <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Wakamate — Get vetted artisans</h3>
                 <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card10:border-black group-hover/card10:text-black transition-all duration-300 shrink-0">
@@ -439,7 +439,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 pt-2">
           <WatercolorCard>
             <div className="flex flex-col gap-4 mt-4">
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
                 <img loading="lazy" src="/logos/jpmorgan.png" alt="JP Morgan" className="h-10 object-contain object-left" />
                 <ButtonWithIcon small label="View Certification" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_6q3Di7qt6AadqzD4q_1697294986576_completion_certificate.pdf" />
               </div>
@@ -451,7 +451,7 @@ export default function Home() {
           </WatercolorCard>
           <WatercolorCard>
             <div className="flex flex-col gap-4 mt-4">
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
                 <img loading="lazy" src="/tech/google.png" alt="Google" className="h-10 object-contain object-left" />
                 <ButtonWithIcon small label="View Certification" href="https://coursera.org/verify/E6F9DUL2QXLG" />
               </div>

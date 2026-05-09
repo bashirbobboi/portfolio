@@ -49,7 +49,7 @@ export default function Home() {
     </main>
 
     <section id="education" className="flex items-center px-[8%] lg:px-[18%] pt-32 pb-8 bg-primary-bg">
-      <div className="flex flex-col gap-12 w-full">
+      <div className="flex flex-col gap-6 lg:gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Education</h2>
 
         <div className="flex flex-col lg:flex-row gap-6 lg:items-stretch">
@@ -60,7 +60,7 @@ export default function Home() {
 
           {/* Entry content */}
           <div className="flex flex-col flex-1 text-center lg:text-left">
-            <div className="flex flex-col lg:grid lg:grid-cols-2 gap-1 text-center lg:text-left">
+            <div className="flex flex-col lg:grid lg:grid-cols-[1fr_auto] gap-x-4 gap-y-1 text-center lg:text-left">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold lg:col-start-1 lg:row-start-1">University of Sheffield</h3>
               <p className="font-secondary text-primary-text text-base lg:text-lg italic tracking-tight order-1 lg:order-none lg:col-start-1 lg:row-start-2 mb-3 lg:mb-0">BSc. Computer Science</p>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base order-2 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-2 lg:self-center"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
@@ -85,7 +85,7 @@ export default function Home() {
         <div className="flex flex-col-reverse lg:flex-row gap-6 lg:items-stretch">
           {/* Entry content */}
           <div className="flex flex-col flex-1 text-center lg:text-left">
-            <div className="flex flex-col lg:grid lg:grid-cols-2 gap-1 text-center lg:text-left">
+            <div className="flex flex-col lg:grid lg:grid-cols-[1fr_auto] gap-x-4 gap-y-1 text-center lg:text-left">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold lg:col-start-1 lg:row-start-1">INTO Manchester</h3>
               <p className="font-secondary text-primary-text text-base lg:text-lg italic tracking-tight order-1 lg:order-none lg:col-start-1 lg:row-start-2 mb-3 lg:mb-0">NCUK International Foundation Year</p>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base order-2 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-2 lg:self-center"><MapPin size={13} className="shrink-0" />Manchester, United Kingdom</p>
@@ -114,28 +114,25 @@ export default function Home() {
       </div>
     </section>
     <section id="experience" className="flex items-center px-[8%] lg:px-[18%] pt-8 pb-16 bg-primary-bg">
-      <div className="flex flex-col gap-12 w-full">
+      <div className="flex flex-col gap-6 lg:gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Experience</h2>
 
-        <div className="flex gap-6 items-stretch">
+        <div className="flex flex-col lg:flex-row gap-6 lg:items-stretch">
           {/* Logo on left */}
-          <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
+          <div className="w-full h-64 lg:self-stretch lg:w-100 lg:h-auto shrink-0 flex items-stretch">
             <img loading="lazy" src="/projects/steeze.webp" alt="Steeze" className="w-full h-full object-contain object-top" />
           </div>
 
           {/* Entry content */}
-          <div className="flex flex-col flex-1">
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left">
-              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Steeze</h3>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-0 lg:ml-4 flex items-center gap-1 justify-center lg:justify-start"><MapPin size={13} className="shrink-0" />London, United Kingdom</p>
+          <div className="flex flex-col flex-1 text-center lg:text-left">
+            <div className="flex flex-col lg:grid lg:grid-cols-[1fr_auto] gap-x-4 gap-y-1 text-center lg:text-left">
+              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold lg:col-start-1 lg:row-start-1">Steeze</h3>
+              <p className="font-secondary text-primary-text text-base lg:text-lg italic order-1 lg:order-none lg:col-start-1 lg:row-start-2 mb-3 lg:mb-0">Founder & Chief Technology Officer</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base order-2 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-1 lg:self-center"><MapPin size={13} className="shrink-0" />London, United Kingdom</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base italic order-3 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-2 lg:self-center"><Calendar size={13} className="shrink-0" />Oct. 2025 — Present</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left mt-1">
-              <p className="font-secondary text-primary-text text-base lg:text-lg italic">Founder & Chief Technology Officer</p>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base italic shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" />Oct. 2025 — Present</p>
-            </div>
-
-            <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-4">
+            <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-8 lg:mt-4">
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Founded and led the development of <span className="font-semibold text-primary-text">Steeze</span>, a peer-to-peer fashion marketplace designed to make shopping for fashion convenient for buyers and sellers.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Built the mobile application using <span className="font-semibold text-primary-text">React Native</span>, creating a cross-platform experience focused on usability, performance, and modern UI design — now serving <span className="font-semibold text-primary-text">1,000+ users</span>.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Partnered with <span className="font-semibold text-primary-text">20+ fashion businesses</span> to list and sell their products on Steeze, expanding the platform&apos;s catalogue and driving seller-side growth.</span></li>
@@ -143,20 +140,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex gap-6 items-stretch mt-8">
+        <div className="flex flex-col-reverse lg:flex-row gap-6 lg:items-stretch mt-8">
           {/* Entry content */}
-          <div className="flex flex-col flex-1">
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left">
-              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">180 Degrees Consulting</h3>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-0 lg:ml-4 flex items-center gap-1 justify-center lg:justify-start"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
+          <div className="flex flex-col flex-1 text-center lg:text-left">
+            <div className="flex flex-col lg:grid lg:grid-cols-[1fr_auto] gap-x-4 gap-y-1 text-center lg:text-left">
+              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold lg:col-start-1 lg:row-start-1">180 Degrees Consulting</h3>
+              <p className="font-secondary text-primary-text text-base lg:text-lg italic order-1 lg:order-none lg:col-start-1 lg:row-start-2 mb-3 lg:mb-0">Technology Director</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base order-2 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-1 lg:self-center"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base italic order-3 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-2 lg:self-center"><Calendar size={13} className="shrink-0" /> Oct. 2024 — Jun. 2025</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left mt-1">
-              <p className="font-secondary text-primary-text text-base lg:text-lg italic">Technology Director</p>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base italic shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" /> Oct. 2024 — Jun. 2025</p>
-            </div>
-
-            <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-4">
+            <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-8 lg:mt-4">
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Contributed within the <span className="font-semibold text-primary-text">world&apos;s largest student-led consultancy</span>, operating across <span className="font-semibold text-primary-text">200+ branches</span> globally.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Served as the <span className="font-semibold text-primary-text">founding Technology Director</span> for the Sheffield branch, contributing to the branch being recognised as the organisation&apos;s <span className="font-semibold text-primary-text">&quot;Best New Branch&quot;</span>.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Led development of a client outreach web app, independently building the <span className="font-semibold text-primary-text">TypeScript</span> frontend and integrating third-party APIs to identify potential clients, resulting in a <span className="font-semibold text-primary-text">500% increase</span> in client reach.</span></li>
@@ -164,30 +158,27 @@ export default function Home() {
           </div>
 
           {/* Logo on right */}
-          <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
+          <div className="w-full h-64 lg:self-stretch lg:w-100 lg:h-auto shrink-0 flex items-stretch">
             <img loading="lazy" src="/logos/180dc.webp" alt="180DC" className="w-full h-full object-contain object-top" />
           </div>
         </div>
 
-        <div className="flex gap-6 items-stretch mt-8">
+        <div className="flex flex-col lg:flex-row gap-6 lg:items-stretch mt-8">
           {/* Logo on left */}
-          <div className="self-stretch w-16 lg:w-100 shrink-0 flex items-stretch">
+          <div className="w-full h-64 lg:self-stretch lg:w-100 lg:h-auto shrink-0 flex items-stretch">
             <img loading="lazy" src="/logos/amrc.webp" alt="AMRC" className="w-full h-full object-contain object-top" />
           </div>
 
           {/* Entry content */}
-          <div className="flex flex-col flex-1">
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left">
-              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Advanced Manufacturing Research Centre</h3>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-0 lg:ml-4 flex items-center gap-1 justify-center lg:justify-start"><MapPin size={13} className="shrink-0" />Sheffield, England</p>
+          <div className="flex flex-col flex-1 text-center lg:text-left">
+            <div className="flex flex-col lg:grid lg:grid-cols-[1fr_auto] gap-x-4 gap-y-1 text-center lg:text-left">
+              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold lg:col-start-1 lg:row-start-1">Advanced Manufacturing Research Centre</h3>
+              <p className="font-secondary text-primary-text text-base lg:text-lg italic order-1 lg:order-none lg:col-start-1 lg:row-start-2 mb-3 lg:mb-0">Software Engineer Intern</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base order-2 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-1 lg:self-center"><MapPin size={13} className="shrink-0" />Sheffield, England</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base italic order-3 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-2 lg:self-center"><Calendar size={13} className="shrink-0" />Jul. 2024 — Sept. 2024</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left mt-1">
-              <p className="font-secondary text-primary-text text-base lg:text-lg italic">Software Engineer Intern</p>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base italic shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" />Jul. 2024 — Sept. 2024</p>
-            </div>
-
-            <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-4">
+            <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-8 lg:mt-4">
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Operated within a world-leading manufacturing research centre collaborating with industry leaders including <span className="font-semibold text-primary-text">Boeing</span>, <span className="font-semibold text-primary-text">Rolls-Royce</span> and <span className="font-semibold text-primary-text">Airbus</span>.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Selected as the <span className="font-semibold text-primary-text">first student</span> to participate in the centre&apos;s inaugural internship programme.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Built a full-stack device management web app on <span className="font-semibold text-primary-text">Ruby on Rails</span>, following <span className="font-semibold text-primary-text">MVC</span> design, <span className="font-semibold text-primary-text">PostgreSQL</span> database and <span className="font-semibold text-primary-text">HTML &amp; CSS</span>, saving <span className="font-semibold text-primary-text">£2,000+</span> annually on lost devices.</span></li>
@@ -195,20 +186,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex gap-6 items-stretch mt-8">
+        <div className="flex flex-col-reverse lg:flex-row gap-6 lg:items-stretch mt-8">
           {/* Entry content */}
-          <div className="flex flex-col flex-1">
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left">
-              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold">Twikker Fund, USIS</h3>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base shrink-0 ml-0 lg:ml-4 flex items-center gap-1 justify-center lg:justify-start"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
+          <div className="flex flex-col flex-1 text-center lg:text-left">
+            <div className="flex flex-col lg:grid lg:grid-cols-[1fr_auto] gap-x-4 gap-y-1 text-center lg:text-left">
+              <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold lg:col-start-1 lg:row-start-1">Twikker Fund, USIS</h3>
+              <p className="font-secondary text-primary-text text-base lg:text-lg italic order-1 lg:order-none lg:col-start-1 lg:row-start-2 mb-3 lg:mb-0">Portfolio Analytics Analyst</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base order-2 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-1 lg:self-center"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base italic order-3 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-2 lg:self-center"><Calendar size={13} className="shrink-0" />Oct. 2023 — Sept. 2024</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between gap-1 text-center lg:text-left mt-1">
-              <p className="font-secondary text-primary-text text-base lg:text-lg italic">Portfolio Analytics Analyst</p>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base italic shrink-0 ml-4 flex items-center gap-1"><Calendar size={13} className="shrink-0" />Oct. 2023 — Sept. 2024</p>
-            </div>
-
-            <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-4">
+            <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-8 lg:mt-4">
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Worked within <span className="font-semibold text-primary-text">Europe&apos;s largest student-led investment fund</span>, overseeing more than <span className="font-semibold text-primary-text">£250,000</span> in assets under management.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Developed a portfolio analytics dashboard by integrating data from the fund&apos;s <span className="font-semibold text-primary-text">C# investment platform API</span> to improve visibility into portfolio performance and allocation data.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Explored quantitative portfolio optimisation approaches using <span className="font-semibold text-primary-text">Modern Portfolio Theory</span> to investigate future allocation strategies and risk-adjusted portfolio balancing.</span></li>
@@ -216,14 +204,14 @@ export default function Home() {
           </div>
 
           {/* Logo on right */}
-          <div className="self-start w-16 lg:w-100 shrink-0 flex h-72 lg:h-96">
+          <div className="w-full h-64 lg:self-start lg:w-100 lg:h-96 shrink-0 flex">
             <img loading="lazy" src="/projects/twikkerfund.webp" alt="Twikker Fund" className="w-full h-full object-contain object-top" />
           </div>
         </div>
       </div>
     </section>
     <section id="projects" className="flex items-center px-[8%] lg:px-[18%] pt-8 pb-16 bg-primary-bg">
-      <div className="flex flex-col gap-12 w-full">
+      <div className="flex flex-col gap-6 lg:gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Projects</h2>
         <GithubChart username="bashirbobboi" />
         <div className="flex flex-col gap-4">
@@ -428,7 +416,7 @@ export default function Home() {
     </section>
 
     <section id="certifications" className="flex items-center px-[8%] lg:px-[18%] pt-8 pb-16 bg-primary-bg">
-      <div className="flex flex-col gap-12 w-full">
+      <div className="flex flex-col gap-6 lg:gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Professional Certifications</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 pt-2">
           <WatercolorCard>
@@ -460,7 +448,7 @@ export default function Home() {
     </section>
 
     <section id="skills" className="flex items-center px-[8%] lg:px-[18%] pt-8 pb-16 bg-primary-bg">
-      <div className="flex flex-col gap-12 w-full">
+      <div className="flex flex-col gap-6 lg:gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Skills</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-10">
           <div className="flex flex-col gap-6">

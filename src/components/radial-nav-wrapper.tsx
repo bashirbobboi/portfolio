@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from "react";
+import { AnimatePresence, motion } from "motion/react";
 import { RadialNav } from "@/components/animate-ui/components/community/radial-nav";
 import {
   Home as HomeIcon,
@@ -68,7 +69,7 @@ export function RadialNavWrapper() {
     clickScrollTimerRef.current = setTimeout(() => {
       isClickScrollingRef.current = false;
     }, 800);
-    setIsExpanded(false);
+    setTimeout(() => setIsExpanded(false), 600);
   }, []);
 
   React.useEffect(() => {
@@ -98,29 +99,41 @@ export function RadialNavWrapper() {
   const activeItem = navItems.find((it) => it.id === activeId);
   const ActiveIcon = activeItem?.icon ?? Menu;
 
-  if (isMobile && !isExpanded) {
-    return (
-      <div ref={containerRef}>
-        <button
-          type="button"
-          onClick={() => setIsExpanded(true)}
-          aria-label="Open navigation"
-          className="flex items-center justify-center size-12 rounded-full bg-primary-bg border border-neutral-900 text-neutral-900 shadow-md active:scale-95 transition-transform"
-        >
-          <ActiveIcon size={20} />
-        </button>
-      </div>
-    );
-  }
-
   return (
     <div ref={containerRef}>
-      <RadialNav
-        items={navItems}
-        size={size}
-        activeId={activeId ?? null}
-        onActiveChange={handleActiveChange}
-      />
+      <AnimatePresence mode="wait" initial={false}>
+        {isMobile && !isExpanded ? (
+          <motion.button
+            key="collapsed"
+            type="button"
+            onClick={() => setIsExpanded(true)}
+            aria-label="Open navigation"
+            initial={{ scale: 0.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.5, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 320, damping: 24 }}
+            className="flex items-center justify-center size-12 rounded-full bg-primary-bg border border-neutral-900 text-neutral-900 shadow-md active:scale-95"
+          >
+            <ActiveIcon size={20} />
+          </motion.button>
+        ) : (
+          <motion.div
+            key="expanded"
+            initial={{ scale: 0.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.5, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 280, damping: 26 }}
+            style={{ originX: 0, originY: 0 }}
+          >
+            <RadialNav
+              items={navItems}
+              size={size}
+              activeId={activeId ?? null}
+              onActiveChange={handleActiveChange}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

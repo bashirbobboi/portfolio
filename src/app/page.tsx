@@ -6,6 +6,8 @@ import { MapPin, Calendar } from "lucide-react";
 import { TechIcon } from "@/components/tech-icon";
 import { GithubChart } from "@/components/github-chart";
 import { ButtonWithIcon } from "@/components/ui/button-with-icon";
+import { WatercolorCard } from "@/components/watercolor-card";
+import { SkillTile } from "@/components/skill-tile";
 
 export default function Home() {
   return (
@@ -437,26 +439,91 @@ export default function Home() {
     <section id="certifications" className="flex items-center px-[8%] lg:px-[18%] pt-8 pb-16 bg-primary-bg">
       <div className="flex flex-col gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Professional Certifications</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="flex flex-col gap-4 bg-zinc-50 rounded-2xl p-6 border border-zinc-200 hover:border-zinc-400 transition-colors">
-            <div className="flex items-center justify-between gap-4">
-              <img src="/logos/jpmorgan.png" alt="JP Morgan" className="h-6 object-contain object-left" />
-              <ButtonWithIcon small label="View Certification" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_6q3Di7qt6AadqzD4q_1697294986576_completion_certificate.pdf" />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 pt-2">
+          <WatercolorCard>
+            <div className="flex flex-col gap-4 mt-4">
+              <div className="flex items-center justify-between gap-4">
+                <img src="/logos/jpmorgan.png" alt="JP Morgan" className="h-10 object-contain object-left" />
+                <ButtonWithIcon small label="View Certification" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_6q3Di7qt6AadqzD4q_1697294986576_completion_certificate.pdf" />
+              </div>
+              <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_6q3Di7qt6AadqzD4q_1697294986576_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" className="flex flex-col gap-2 no-underline">
+                <h3 className="font-primary text-primary-text text-lg lg:text-xl font-bold">JP Morgan Software Engineering Professional Certificate</h3>
+                <p className="font-secondary text-zinc-600 text-sm lg:text-base">This virtual experience programme explored real-world software engineering practices within financial technology, covering debugging, repository management, data visualisation, and live market data monitoring using JPMorgan Chase&apos;s Perspective library.</p>
+              </a>
             </div>
-            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_6q3Di7qt6AadqzD4q_1697294986576_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" className="flex flex-col gap-2 no-underline">
-              <h3 className="font-primary text-primary-text text-lg lg:text-xl font-bold">JP Morgan Software Engineering Professional Certificate</h3>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base">This virtual experience programme explored real-world software engineering practices within financial technology, covering debugging, repository management, data visualisation, and live market data monitoring using JPMorgan Chase&apos;s Perspective library.</p>
-            </a>
+          </WatercolorCard>
+          <WatercolorCard>
+            <div className="flex flex-col gap-4 mt-4">
+              <div className="flex items-center justify-between gap-4">
+                <img src="/tech/google.png" alt="Google" className="h-10 object-contain object-left" />
+                <ButtonWithIcon small label="View Certification" href="https://coursera.org/verify/E6F9DUL2QXLG" />
+              </div>
+              <a href="https://coursera.org/verify/E6F9DUL2QXLG" target="_blank" rel="noopener noreferrer" className="flex flex-col gap-2 no-underline">
+                <h3 className="font-primary text-primary-text text-lg lg:text-xl font-bold">Google Python Professional Certificate</h3>
+                <p className="font-secondary text-zinc-600 text-sm lg:text-base">Completed Google&apos;s Crash Course on Python via Coursera, covering core programming concepts including data structures, object-oriented programming, and automation scripting in Python.</p>
+              </a>
+            </div>
+          </WatercolorCard>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" className="flex items-center px-[8%] lg:px-[18%] pt-8 pb-16 bg-primary-bg">
+      <div className="flex flex-col gap-12 w-full">
+        <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Skills</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-10">
+          <div className="flex flex-col gap-6">
+            <h3 className="font-secondary text-primary-text text-lg lg:text-xl font-bold">Frontend</h3>
+            <div className="flex flex-wrap gap-x-6 gap-y-5">
+              <SkillTile src="/tech/javascript.png" label="JavaScript" contain bg="bg-[#fed703]" />
+              <SkillTile src="/tech/nextjs.svg" label="Next.js" blackBg />
+              <SkillTile src="/tech/reactnative.png" label="React Native" contain whiteBg />
+              <SkillTile src="/tech/expo.jpeg" label="Expo" />
+              <SkillTile src="/tech/streamlit.png" label="Streamlit" whiteBg />
+              <SkillTile src="/tech/figma.png" label="Figma" whiteBg />
+            </div>
           </div>
-          <div className="flex flex-col gap-4 bg-zinc-50 rounded-2xl p-6 border border-zinc-200 hover:border-zinc-400 transition-colors">
-            <div className="flex items-center justify-between gap-4">
-              <img src="/tech/google.png" alt="Google" className="h-6 object-contain object-left" />
-              <ButtonWithIcon small label="View Certification" href="https://coursera.org/verify/E6F9DUL2QXLG" />
+
+          <div className="flex flex-col gap-6">
+            <h3 className="font-secondary text-primary-text text-lg lg:text-xl font-bold">Backend</h3>
+            <div className="flex flex-wrap gap-x-6 gap-y-5">
+              <SkillTile src="/tech/python.png" label="Python" contain whiteBg />
+              <SkillTile src="/tech/nodejs.png" label="Node.js" contain whiteBg />
+              <SkillTile src="/tech/express.png" label="Express" contain whiteBg />
+              <SkillTile src="/tech/typer.png" label="Typer" blackBg />
+              <SkillTile src="/tech/mongodb.png" label="MongoDB" whiteBg />
+              <SkillTile src="/tech/postgres.png" label="PostgreSQL" whiteBg />
+              <SkillTile src="/tech/sqlite.png" label="SQLite" whiteBg />
+              <SkillTile src="/tech/supabase.jpeg" label="Supabase" />
             </div>
-            <a href="https://coursera.org/verify/E6F9DUL2QXLG" target="_blank" rel="noopener noreferrer" className="flex flex-col gap-2 no-underline">
-              <h3 className="font-primary text-primary-text text-lg lg:text-xl font-bold">Google Python Professional Certificate</h3>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base">Completed Google&apos;s Crash Course on Python via Coursera, covering core programming concepts including data structures, object-oriented programming, and automation scripting in Python.</p>
-            </a>
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <h3 className="font-secondary text-primary-text text-lg lg:text-xl font-bold">Cloud &amp; DevOps</h3>
+            <div className="flex flex-wrap gap-x-6 gap-y-5">
+              <SkillTile src="/tech/s3.png" label="AWS S3" whiteBg />
+              <SkillTile src="/tech/awscognito.jpg" label="Cognito" />
+              <SkillTile src="/tech/docker.png" label="Docker" whiteBg />
+              <SkillTile src="/tech/vercel.jpg" label="Vercel" />
+              <SkillTile src="/tech/cloudinary.png" label="Cloudinary" whiteBg />
+              <SkillTile src="/tech/resend.png" label="Resend" blackBg />
+              <SkillTile src="/tech/google.png" label="Google OAuth" whiteBg />
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <h3 className="font-secondary text-primary-text text-lg lg:text-xl font-bold">Data &amp; Tools</h3>
+            <div className="flex flex-wrap gap-x-6 gap-y-5">
+              <SkillTile src="/tech/pytest.png" label="Pytest" contain whiteBg />
+              <SkillTile src="/tech/jupyter.png" label="Jupyter" whiteBg />
+              <SkillTile src="/tech/numpy.svg" label="NumPy" whiteBg />
+              <SkillTile src="/tech/pandas.png" label="Pandas" />
+              <SkillTile src="/tech/scikit-learn.svg" label="scikit-learn" whiteBg />
+              <SkillTile src="/tech/scipy.svg" label="SciPy" whiteBg />
+              <SkillTile src="/tech/github.webp" label="GitHub" whiteBg />
+              <SkillTile src="/tech/bitbucket.png" label="Bitbucket" whiteBg />
+              <SkillTile src="/tech/xcode.png" label="Xcode" bg="bg-[#207df4]" />
+            </div>
           </div>
         </div>
       </div>

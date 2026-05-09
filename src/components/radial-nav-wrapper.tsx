@@ -145,6 +145,19 @@ export function RadialNavWrapper() {
 
   const activeItem = navItems.find((it) => it.id === activeId);
   const ActiveIcon = activeItem?.icon ?? Menu;
+  const [flashLabel, setFlashLabel] = React.useState(false);
+  const flashTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+  const prevActiveIdRef = React.useRef<number | undefined>(undefined);
+
+  React.useEffect(() => {
+    if (!isMobile || isExpanded) return;
+    if (activeId === undefined) return;
+    if (activeId === prevActiveIdRef.current) return;
+    prevActiveIdRef.current = activeId;
+    setFlashLabel(true);
+    if (flashTimerRef.current) clearTimeout(flashTimerRef.current);
+    flashTimerRef.current = setTimeout(() => setFlashLabel(false), 2000);
+  }, [activeId, isMobile, isExpanded]);
 
   // Position knobs — tweak freely
   const collapsedMobilePos = "top-4 left-4";
@@ -173,12 +186,19 @@ export function RadialNavWrapper() {
             onClick={() => setIsExpanded(true)}
             aria-label="Open navigation"
             initial={{ scale: 0.5, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
+            animate={{ scale: 1, opacity: 1, maxWidth: flashLabel ? 160 : 48 }}
             exit={{ scale: 0.5, opacity: 0 }}
             transition={{ type: "spring", stiffness: 320, damping: 24 }}
-            className="flex items-center justify-center size-12 rounded-full bg-primary-bg border border-neutral-900 text-neutral-900 shadow-md active:scale-95"
+            className="flex items-center gap-2 overflow-hidden whitespace-nowrap h-12 px-3 rounded-full bg-primary-bg border border-neutral-900 text-neutral-900 shadow-md active:scale-95"
           >
-            <ActiveIcon size={20} />
+            <ActiveIcon size={20} className="shrink-0" />
+            <motion.span
+              animate={{ opacity: flashLabel ? 1 : 0, width: flashLabel ? "auto" : 0 }}
+              transition={{ type: "spring", stiffness: 280, damping: 28 }}
+              className="text-sm font-medium overflow-hidden"
+            >
+              {activeItem?.label}
+            </motion.span>
           </motion.button>
         ) : (
           <motion.div

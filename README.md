@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio site of Bashir Bobboi. Built with Next.js 16 App Router, React 19, and Tailwind v4.
+Personal portfolio site of Mohammed Bashir Bobboi. Built with Next.js 16 App Router, React 19, and Tailwind v4.
 
 ## Stack
 

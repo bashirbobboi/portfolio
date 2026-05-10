@@ -1,38 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+Personal portfolio site of Bashir Bobboi. Built with Next.js 16 App Router, React 19, and Tailwind v4.
 
-First, run the development server:
+## Stack
+
+- **Next.js 16.2.5** (App Router)
+- **React 19.2.4** with React Compiler enabled
+- **Tailwind CSS v4** via `@tailwindcss/postcss` — theme tokens inline in `src/app/globals.css`, no `tailwind.config`
+- **TypeScript**, ESLint flat config (`eslint.config.mjs`)
+- **Motion** for animations
+- **shadcn/ui** + Radix Slot + Base UI primitives
+- **Geist Sans / Geist Mono** via `next/font/google`
+- `@vercel/analytics`
+
+## Scripts
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev      # dev server at http://localhost:3000
+npm run build    # production build
+npm run start    # serve production build
+npm run lint     # ESLint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+No test runner configured.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Layout
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+  app/
+    layout.tsx       # root layout, fonts, metadata
+    page.tsx         # home page
+    globals.css      # Tailwind import + @theme tokens + dark mode
+  components/        # feature components
+    ui/              # shadcn primitives
+    animate-ui/      # animation helpers
+  lib/utils.ts
+public/              # static assets
+```
 
-## Learn More
+Path alias: `@/*` → `src/*`.
 
-To learn more about Next.js, take a look at the following resources:
+## Notable components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `radial-nav-wrapper` — draggable radial nav, mobile flashing label
+- `project-tech-stack` — animated tech tile grid with tooltips
+- `github-chart`, `watercolor-card`, `lazy-video`, `tappable-video`, `skill-tile`, `tech-icon`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# my_portfolio
-# my_portfolio
+Deployed on Vercel. Push to `main` triggers production build.

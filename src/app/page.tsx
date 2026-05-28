@@ -11,7 +11,7 @@ import { LazyVideo } from "@/components/lazy-video";
 export default function Home() {
   return (
     <>
-    <main id="home" className="flex min-h-[100svh] lg:min-h-screen flex-col lg:flex-row items-center justify-center lg:justify-between px-[8%] lg:px-[18%] pt-16 lg:pt-0 gap-4 lg:gap-8 bg-primary-bg overflow-x-hidden">
+    <main id="home" className="flex min-h-[100svh] lg:min-h-screen flex-col lg:flex-row items-center justify-center lg:justify-between px-[8%] lg:px-[18%] pt-16 lg:pt-0 gap-4 lg:gap-8 bg-primary-bg overflow-x-clip">
       <div className="flex flex-col mb-8 lg:mb-0 gap-6 lg:gap-12 max-w-xl lg:max-w-3xl">
         <h1 className="font-primary text-primary-text text-2xl sm:text-3xl lg:text-5xl font-bold text-center lg:text-left">Mohammed Bobboi is a Software Engineer based in London, England.</h1>
         <p className="font-secondary text-primary-text text-sm sm:text-base lg:text-xl text-center lg:text-left"> He is a Computer Science Graduate from the University of Sheffield with 2+ years of experience in Software Development, AI/ML/GenAI and delivering scalable, business-focused solutions across fintech, startups and R&D environments.</p>
@@ -32,14 +32,22 @@ export default function Home() {
           className="object-cover z-0"
           priority
         />
-        <img loading="lazy"
+        <img
           src="/doodle.gif"
           alt="doodle"
+          fetchPriority="high"
+          decoding="async"
+          width={320}
+          height={320}
           className="absolute -top-8 -left-12 w-36 h-36 sm:w-44 sm:h-44 lg:-top-18 lg:-left-26 lg:w-80 lg:h-80 object-cover"
         />
-        <img loading="lazy"
+        <img
           src="/doodle.gif"
           alt="doodle"
+          fetchPriority="high"
+          decoding="async"
+          width={320}
+          height={320}
           className="absolute -bottom-8 -right-12 w-36 h-36 sm:w-44 sm:h-44 lg:-bottom-18 lg:-right-26 lg:w-80 lg:h-80 object-cover rotate-180 z-10"
         />
       </div>

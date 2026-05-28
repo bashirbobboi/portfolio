@@ -60,9 +60,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full overflow-x-hidden", "antialiased", viaodaLibre.variable, openRunde.variable, "font-sans", geist.variable)}
+      className={cn("overflow-x-clip", "antialiased", viaodaLibre.variable, openRunde.variable, "font-sans", geist.variable)}
     >
-      <body className="min-h-full flex flex-col overflow-x-hidden">
+      <body className="flex flex-col overflow-x-clip">
         {children}
         <Analytics />
       </body>

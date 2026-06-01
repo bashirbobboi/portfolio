@@ -134,7 +134,7 @@ export default function Home() {
             <div className="flex flex-col lg:grid lg:grid-cols-[1fr_auto] gap-x-4 gap-y-1 text-center lg:text-left">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold lg:col-start-1 lg:row-start-1">Steeze</h3>
               <p className="font-secondary text-primary-text text-base lg:text-lg italic order-1 lg:order-none lg:col-start-1 lg:row-start-2 mb-3 lg:mb-0">Founder & Chief Technology Officer</p>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base order-2 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-1 lg:self-center"><MapPin size={13} className="shrink-0" />London, United Kingdom</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base order-2 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-1 lg:self-center"><MapPin size={13} className="shrink-0" />Abuja, Nigeria</p>
               <p className="font-secondary text-zinc-500 text-sm lg:text-base italic order-3 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-2 lg:self-center"><Calendar size={13} className="shrink-0" />Oct. 2025 — Present</p>
             </div>
 

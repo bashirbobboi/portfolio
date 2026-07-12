@@ -14,7 +14,7 @@ export default function Home() {
     <main id="home" className="flex min-h-[100svh] lg:min-h-screen flex-col lg:flex-row items-center justify-center lg:justify-between px-[8%] lg:px-[18%] pt-16 lg:pt-0 gap-4 lg:gap-8 bg-primary-bg overflow-x-clip">
       <div className="flex flex-col mb-8 lg:mb-0 gap-6 lg:gap-12 max-w-xl lg:max-w-3xl">
         <h1 className="font-primary text-primary-text text-2xl sm:text-3xl lg:text-5xl font-bold text-center lg:text-left">Mohammed Bobboi is a Software Engineer based in London, England.</h1>
-        <p className="font-secondary text-primary-text text-sm sm:text-base lg:text-xl text-center lg:text-left"> He is a Computer Science Graduate from the University of Sheffield with 2+ years of experience in Software Development, AI/ML/GenAI and delivering scalable, business-focused solutions across fintech, startups and R&D environments.</p>
+        <p className="font-secondary text-primary-text text-sm sm:text-base lg:text-xl text-center lg:text-left"> He is a Computer Science Graduate from the University of Sheffield with 2+ years of experience in Software Development, AI/Machine Learning and delivering scalable, business-focused solutions across fintech, startups and R&D environments.</p>
         <div className="flex gap-4 justify-center lg:justify-start">
           <a href="https://github.com/bashirbobboi" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="flex items-center">
             <img src="/githubb.webp" alt="GitHub" className="h-20 sm:h-20 lg:h-22 w-auto object-contain" />
@@ -73,7 +73,6 @@ export default function Home() {
               <p className="font-secondary text-zinc-500 text-sm lg:text-base order-3 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-1 lg:self-center"><Calendar size={13} className="shrink-0" />Sept. 2022 — Jun. 2025</p>
             </div>
 
-            <p className="font-secondary text-primary-text text-base mt-4">Grade: <span className="font-semibold">First Class</span></p>
 
             <div className="flex flex-col gap-6 mt-3 lg:mt-2">
               <div className="flex flex-col gap-2">

@@ -122,13 +122,14 @@ export default function Home() {
       <div className="flex flex-col gap-6 lg:gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Experience</h2>
 
+        {/* TEMPORARILY HIDDEN: Steeze experience entry (still listed under Projects). Uncomment to restore.
         <div className="flex flex-col gap-0 lg:flex-row lg:gap-6 lg:items-stretch">
-          {/* Logo on left */}
+          // Logo on left
           <div className="w-full h-64 lg:self-stretch lg:w-100 lg:h-auto shrink-0 flex items-stretch">
             <img loading="lazy" src="/projects/steeze.webp" alt="Steeze" className="w-full h-full object-contain object-top" />
           </div>
 
-          {/* Entry content */}
+          // Entry content
           <div className="flex flex-col flex-1 text-center lg:text-left">
             <div className="flex flex-col lg:grid lg:grid-cols-[1fr_auto] gap-x-4 gap-y-1 text-center lg:text-left">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold lg:col-start-1 lg:row-start-1">Steeze</h3>
@@ -144,21 +145,24 @@ export default function Home() {
             </ul>
           </div>
         </div>
+        */}
 
         <div className="flex flex-col-reverse gap-3 lg:flex-row lg:gap-6 lg:items-stretch mt-8">
           {/* Entry content */}
           <div className="flex flex-col flex-1 text-center lg:text-left">
             <div className="flex flex-col lg:grid lg:grid-cols-[1fr_auto] gap-x-4 gap-y-1 text-center lg:text-left">
               <h3 className="font-primary text-primary-text text-2xl lg:text-3xl font-bold lg:col-start-1 lg:row-start-1">180 Degrees Consulting</h3>
-              <p className="font-secondary text-primary-text text-base lg:text-lg italic order-1 lg:order-none lg:col-start-1 lg:row-start-2 mb-3 lg:mb-0">Technology Director</p>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base order-2 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-1 lg:self-center"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
-              <p className="font-secondary text-zinc-500 text-sm lg:text-base italic order-3 lg:order-none flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-2 lg:self-center"><Calendar size={13} className="shrink-0" /> Oct. 2024 — Jun. 2025</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-1 lg:self-center mb-3 lg:mb-0"><MapPin size={13} className="shrink-0" />Sheffield, United Kingdom</p>
+              <p className="font-secondary text-primary-text text-base lg:text-lg italic lg:col-start-1 lg:row-start-2">Project Manager & Technical Lead</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base italic flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-2 lg:self-center"><Calendar size={13} className="shrink-0" />Jul. 2026 — Sept. 2026</p>
+              <p className="font-secondary text-primary-text text-base lg:text-lg italic mt-2 lg:mt-0 lg:col-start-1 lg:row-start-3">Technology Director</p>
+              <p className="font-secondary text-zinc-500 text-sm lg:text-base italic flex items-center gap-1 justify-center lg:justify-end lg:col-start-2 lg:row-start-3 lg:self-center"><Calendar size={13} className="shrink-0" />Oct. 2024 — Jun. 2025</p>
             </div>
 
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-8 lg:mt-4">
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Contributed within the <span className="font-semibold text-primary-text">world&apos;s largest student-led consultancy</span>, operating across <span className="font-semibold text-primary-text">200+ branches</span> globally.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Served as the <span className="font-semibold text-primary-text">founding Technology Director</span> for the Sheffield branch, contributing to the branch being recognised as the organisation&apos;s <span className="font-semibold text-primary-text">&quot;Best New Branch&quot;</span>.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Led development of a client outreach web app, independently building the <span className="font-semibold text-primary-text">TypeScript</span> frontend and integrating third-party APIs to identify potential clients, resulting in a <span className="font-semibold text-primary-text">500% increase</span> in client reach.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Led an <span className="font-semibold text-primary-text">agile team of 6</span> to build <span className="font-semibold text-primary-text">180Connect</span>, an <span className="font-semibold text-primary-text">AI-powered CRM and outreach platform</span>, integrating third-party APIs to identify potential clients, cutting prospect research from <span className="font-semibold text-primary-text">~1 week to ~1 hour</span>.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>As <span className="font-semibold text-primary-text">founding Technology Director</span> for the Sheffield branch, established core technical infrastructure shaping long-term development practices.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Contributed within the <span className="font-semibold text-primary-text">world&apos;s largest student-led consultancy</span>, operating across <span className="font-semibold text-primary-text">200+ branches</span> globally, helping the Sheffield branch be recognised as the organisation&apos;s <span className="font-semibold text-primary-text">&quot;Best New Branch&quot;</span>.</span></li>
             </ul>
           </div>
 
@@ -184,9 +188,9 @@ export default function Home() {
             </div>
 
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-8 lg:mt-4">
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Operated within a world-leading manufacturing research centre collaborating with industry leaders including <span className="font-semibold text-primary-text">Boeing</span>, <span className="font-semibold text-primary-text">Rolls-Royce</span> and <span className="font-semibold text-primary-text">Airbus</span>.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Selected as the <span className="font-semibold text-primary-text">first student</span> to participate in the centre&apos;s inaugural internship programme.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Built a full-stack device management web app on <span className="font-semibold text-primary-text">Ruby on Rails</span>, following <span className="font-semibold text-primary-text">MVC</span> design, <span className="font-semibold text-primary-text">PostgreSQL</span> database and <span className="font-semibold text-primary-text">HTML &amp; CSS</span>, saving <span className="font-semibold text-primary-text">£2,000+</span> annually on lost devices.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Selected as the <span className="font-semibold text-primary-text">first student</span> to participate in the centre&apos;s inaugural internship programme.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Operated within a world-leading manufacturing research centre collaborating with industry leaders including <span className="font-semibold text-primary-text">Boeing</span>, <span className="font-semibold text-primary-text">Rolls-Royce</span> and <span className="font-semibold text-primary-text">Airbus</span>.</span></li>
             </ul>
           </div>
         </div>
@@ -202,9 +206,9 @@ export default function Home() {
             </div>
 
             <ul className="font-secondary text-zinc-600 text-sm lg:text-base space-y-3 mt-8 lg:mt-4">
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Built a data pipeline syncing live portfolio holdings from the <span className="font-semibold text-primary-text">Hargreaves Lansdown API</span> into a <span className="font-semibold text-primary-text">PostgreSQL</span> database, extending an open-source <span className="font-semibold text-primary-text">C#</span> client to support the fund&apos;s portfolio.</span></li>
+              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Replaced manual spreadsheet reporting for <span className="font-semibold text-primary-text">4 investment teams</span> with a live dashboard (<span className="font-semibold text-primary-text">Next.js</span>, <span className="font-semibold text-primary-text">shadcn/ui</span>) of <span className="font-semibold text-primary-text">20+ portfolio metrics</span>, cutting reporting time from <span className="font-semibold text-primary-text">~5 hours a week to zero</span>.</span></li>
               <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Worked within <span className="font-semibold text-primary-text">Europe&apos;s largest student-led investment fund</span>, overseeing more than <span className="font-semibold text-primary-text">£250,000</span> in assets under management.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Developed a portfolio analytics dashboard by integrating data from the fund&apos;s <span className="font-semibold text-primary-text">C# investment platform API</span> to improve visibility into portfolio performance and allocation data.</span></li>
-              <li className="flex gap-2"><span className="text-xs mt-1 shrink-0">◇</span><span>Explored quantitative portfolio optimisation approaches using <span className="font-semibold text-primary-text">Modern Portfolio Theory</span> to investigate future allocation strategies and risk-adjusted portfolio balancing.</span></li>
             </ul>
           </div>
 
@@ -219,6 +223,61 @@ export default function Home() {
       <div className="flex flex-col gap-6 lg:gap-12 w-full">
         <h2 className="font-primary text-primary-text text-3xl lg:text-5xl font-bold">Projects</h2>
         <GithubChart username="bashirbobboi" />
+        <div className="flex flex-col gap-4">
+          <div className="w-full h-64 lg:h-120 rounded-2xl border border-zinc-200 overflow-hidden">
+            <LazyVideo src="/projects/180connect.mp4" poster="/projects/180connect-poster.jpg" className="w-full h-full object-cover" />
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
+              <a href="https://180connect-demo.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" className="group/card11 flex items-center gap-1 no-underline">
+                <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">180Connect</h3>
+                <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card11:border-black group-hover/card11:text-black transition-all duration-300 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+              </a>
+              <div className="flex items-center gap-3 shrink-0">
+                <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
+                <ProjectTechStack items={[
+                  { src: "/tech/nextjs.svg", label: "Next JS", subtitle: "Web Framework", contain: true, blackBg: true, rotate: -6 },
+                  { src: "/tech/typescript.png", label: "TypeScript", subtitle: "Language", contain: true, bg: "bg-[#2f74c0]", rotate: -3 },
+                  { src: "/tech/supabase.jpeg", label: "Supabase", subtitle: "Backend as a Service", rotate: 4 },
+                  { src: "/tech/postgres.png", label: "PostgreSQL", subtitle: "Relational DB", whiteBg: true, rotate: -4 },
+                  { src: "/tech/github.webp", label: "GitHub Actions", subtitle: "CI/CD", whiteBg: true, rotate: 3 },
+                  { src: "/tech/vercel.jpg", label: "Vercel", subtitle: "Deployment", rotate: -5 },
+                ]} />
+              </div>
+            </div>
+            <p className="font-secondary text-zinc-500 text-sm lg:text-base"><span className="font-semibold text-primary-text">180Connect</span> is an <span className="font-semibold text-primary-text">AI-powered CRM and prospecting platform</span> built for 180 Degrees Consulting Sheffield, cutting prospect research time from <span className="font-semibold text-primary-text">~1 week to ~1 hour</span>. I led a <span className="font-semibold text-primary-text">team of 6</span> in two-week agile sprints, building back-end services and REST APIs that integrate the <span className="font-semibold text-primary-text">Companies House</span>, <span className="font-semibold text-primary-text">Charity Commission</span>, <span className="font-semibold text-primary-text">360Giving</span> and <span className="font-semibold text-primary-text">Gmail</span> APIs, with scheduled jobs that ingest, standardise and de-duplicate <span className="font-semibold text-primary-text">5.4 million organisation records</span>. To keep quality high across <span className="font-semibold text-primary-text">200+ merged PRs</span>, I built CI/CD pipelines in <span className="font-semibold text-primary-text">GitHub Actions</span> running <span className="font-semibold text-primary-text">300+ automated tests</span>, secret scanning and row-level-security checks, with automated migration deploys to staging and production.</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <div className="w-full h-64 lg:h-120 rounded-2xl border border-zinc-200 overflow-hidden">
+            <img loading="lazy" src="/projects/bashui.webp" alt="bash-ui" className="w-full h-full object-cover object-top" />
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
+              <a href="https://bash-ui-registry.vercel.app" target="_blank" rel="noopener noreferrer" className="group/card12 flex items-center gap-1 no-underline">
+                <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">bash-ui</h3>
+                <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card12:border-black group-hover/card12:text-black transition-all duration-300 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+              </a>
+              <div className="flex items-center gap-3 shrink-0">
+                <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
+                <ProjectTechStack items={[
+                  { src: "/tech/nextjs.svg", label: "Next JS", subtitle: "Web Framework", contain: true, blackBg: true, rotate: -6 },
+                  { src: "/tech/typescript.png", label: "TypeScript", subtitle: "Language", contain: true, bg: "bg-[#2f74c0]", rotate: -3 },
+                  { src: "/tech/reactnative.png", label: "React", subtitle: "UI Library", contain: true, whiteBg: true, rotate: 4 },
+                  { src: "/tech/github.webp", label: "GitHub", subtitle: "Version Control", whiteBg: true, rotate: 3 },
+                  { src: "/tech/vercel.jpg", label: "Vercel", subtitle: "Deployment", rotate: -5 },
+                ]} />
+              </div>
+            </div>
+            <p className="font-secondary text-zinc-500 text-sm lg:text-base"><span className="font-semibold text-primary-text">bash-ui</span> is my open-source component library and <span className="font-semibold text-primary-text">shadcn registry</span>, bringing together <span className="font-semibold text-primary-text">6 design systems</span> and <span className="font-semibold text-primary-text">50+ components</span> from my projects, each installable into any codebase with a single command. Every component is written against a shared design-token contract, so it renders correctly in every design system, and the gallery lets you switch between systems live. The registry is listed in <span className="font-semibold text-primary-text">shadcn&apos;s official registry index</span>, and ships an <span className="font-semibold text-primary-text">llms.txt</span> index so coding agents can pick the right design system and components when starting a new project.</p>
+          </div>
+        </div>
+
         <div className="flex flex-col gap-4">
           <div className="w-full h-64 lg:h-130 rounded-2xl border border-zinc-200 overflow-hidden">
             <LazyVideo src="/projects/steezewide.mp4" poster="/projects/steezewide-poster.jpg" className="w-full h-full object-cover" />

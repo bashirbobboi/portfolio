@@ -391,32 +391,6 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <div className="w-full h-64 lg:h-96 rounded-2xl overflow-hidden">
-            <img loading="lazy" src="/logos/premierleague.webp" alt="Machine Learning Premier League Predictor" className="w-full h-full object-contain" />
-          </div>
-          <div className="flex flex-col gap-5">
-            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
-              <a href="https://github.com/bashirbobboi/predictor" target="_blank" rel="noopener noreferrer" className="group/card8 flex items-center gap-1 no-underline">
-                <h3 className="font-secondary text-primary-text text-sm lg:text-base font-semibold">Machine Learning Premier League Predictor</h3>
-                <div className="w-5 h-5 rounded-full border border-zinc-400 flex items-center justify-center text-zinc-400 group-hover/card8:border-black group-hover/card8:text-black transition-all duration-300 shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                </div>
-              </a>
-              <div className="flex items-center gap-3 shrink-0">
-                <p className="font-secondary text-primary-text text-sm lg:text-base font-semibold shrink-0">Built With</p>
-                <ProjectTechStack items={[
-                  { src: "/tech/python.png", label: "Python", subtitle: "Language", contain: true, whiteBg: true, rotate: -6 },
-                  { src: "/tech/scikit-learn.svg", label: "scikit-learn", subtitle: "ML Library", contain: true, whiteBg: true, rotate: -3 },
-                  { src: "/tech/pandas.png", label: "Pandas", subtitle: "Data Analysis", rotate: 3 },
-                  { src: "/tech/jupyter.png", label: "Jupyter", subtitle: "Notebooks", contain: true, whiteBg: true, rotate: 5 },
-                ]} />
-              </div>
-            </div>
-            <p className="font-secondary text-zinc-500 text-sm lg:text-base">Built an end-to-end <span className="font-semibold text-primary-text">machine learning pipeline</span> in <span className="font-semibold text-primary-text">Python</span> to predict English Premier League match outcomes, processing over a decade of historical data covering <span className="font-semibold text-primary-text">3,800+ matches</span> to train and evaluate the model. Implemented a <span className="font-semibold text-primary-text">Random Forest Classifier</span> using <span className="font-semibold text-primary-text">scikit-learn</span>, leveraging <span className="font-semibold text-primary-text">25+ engineered features</span> to classify match results, achieving a cross-validated accuracy of <span className="font-semibold text-primary-text">62%</span>. Improved predictive performance by engineering rolling-window features (5- and 10-match averages of team statistics such as goals and shots), increasing precision from <span className="font-semibold text-primary-text">47%</span> to <span className="font-semibold text-primary-text">67.5%</span>.</p>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-4">
           <div className="w-full h-64 lg:h-116 rounded-2xl border border-zinc-200 overflow-hidden">
             <LazyVideo src="/projects/mmxxwellness.mp4" poster="/projects/mmxxwellness-poster.jpg" className="w-full h-full object-cover" />
           </div>
